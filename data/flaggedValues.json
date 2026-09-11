@@ -1,0 +1,435 @@
+{
+  "bookingType": [
+    {
+      "value": "Web Lead",
+      "count": 3,
+      "examples": [
+        {
+          "sheet": "July-2024",
+          "row": 6,
+          "clientName": "Bikram Kalra (Web Lead)"
+        },
+        {
+          "sheet": "July-2024",
+          "row": 23,
+          "clientName": "Ajay Jadhav (Web Lead)"
+        },
+        {
+          "sheet": "July-2024",
+          "row": 46,
+          "clientName": "Mr. Ayush (Web Lead)"
+        }
+      ]
+    },
+    {
+      "value": "School Booking",
+      "count": 2,
+      "examples": [
+        {
+          "sheet": "April-2023",
+          "row": 5,
+          "clientName": "MANAV RACHNA INTERNATIONAL SCHOOL"
+        },
+        {
+          "sheet": "Oct-2023",
+          "row": 65,
+          "clientName": "Manav Sthali Global School"
+        }
+      ]
+    },
+    {
+      "value": "Birthday",
+      "count": 2,
+      "examples": [
+        {
+          "sheet": "April-2023",
+          "row": 40,
+          "clientName": "Ayesha Chenoy"
+        },
+        {
+          "sheet": "April-2023",
+          "row": 41,
+          "clientName": "Vandana Telecom"
+        }
+      ]
+    },
+    {
+      "value": "Event",
+      "count": 2,
+      "examples": [
+        {
+          "sheet": "June-2023",
+          "row": 80,
+          "clientName": "Anand"
+        },
+        {
+          "sheet": "June-2023",
+          "row": 83,
+          "clientName": "EMVEEBEE MEDIA"
+        }
+      ]
+    },
+    {
+      "value": "Physical Gift Cards",
+      "count": 2,
+      "examples": [
+        {
+          "sheet": "June-2025",
+          "row": 12,
+          "clientName": "Ashok "
+        },
+        {
+          "sheet": "June-2025",
+          "row": 13,
+          "clientName": "Naeem"
+        }
+      ]
+    }
+  ],
+  "clientCategory": [],
+  "movieIndustry": [],
+  "movieLanguage": [],
+  "city": [
+    {
+      "value": "Jaipur",
+      "count": 75,
+      "examples": [
+        {
+          "sheet": "July-2023",
+          "row": 7,
+          "clientName": "Metellio"
+        },
+        {
+          "sheet": "August-2023",
+          "row": 44,
+          "clientName": "Khushi Advertising (Prince Pipe)"
+        },
+        {
+          "sheet": "Oct-2023",
+          "row": 38,
+          "clientName": "Everest"
+        }
+      ]
+    },
+    {
+      "value": "Nagpur",
+      "count": 34,
+      "examples": [
+        {
+          "sheet": "May-2023",
+          "row": 56,
+          "clientName": "Sanskriti Group"
+        },
+        {
+          "sheet": "June-2023",
+          "row": 77,
+          "clientName": "Sanskriti Group"
+        },
+        {
+          "sheet": "Sep-2023",
+          "row": 10,
+          "clientName": "Everest"
+        }
+      ]
+    },
+    {
+      "value": "Udaipur",
+      "count": 32,
+      "examples": [
+        {
+          "sheet": "April-2023",
+          "row": 15,
+          "clientName": "THE OBERIO UDAIVILAS"
+        },
+        {
+          "sheet": "Oct-2023",
+          "row": 37,
+          "clientName": "Everest"
+        },
+        {
+          "sheet": "Dec-2023",
+          "row": 27,
+          "clientName": "GM Moduler"
+        }
+      ]
+    },
+    {
+      "value": "Cyberabad",
+      "count": 26,
+      "examples": [
+        {
+          "sheet": "Aug-2025",
+          "row": 40,
+          "clientName": "Jayaprakash"
+        },
+        {
+          "sheet": "Aug-2025",
+          "row": 42,
+          "clientName": "Jayaprakash"
+        },
+        {
+          "sheet": "Dec-2025",
+          "row": 832,
+          "clientName": "Kalpesh"
+        }
+      ]
+    },
+    {
+      "value": "Kanpur",
+      "count": 24,
+      "examples": [
+        {
+          "sheet": "June-2023",
+          "row": 72,
+          "clientName": "Eve Events"
+        },
+        {
+          "sheet": "August-2023",
+          "row": 35,
+          "clientName": "Khushi Advertising (Prince Pipe)"
+        },
+        {
+          "sheet": "Oct-2023",
+          "row": 25,
+          "clientName": "Everest"
+        }
+      ]
+    },
+    {
+      "value": "GOREGAON",
+      "count": 23,
+      "examples": [
+        {
+          "sheet": "October - 2024",
+          "row": 80,
+          "clientName": "Zee telefilms"
+        },
+        {
+          "sheet": "October - 2024",
+          "row": 81,
+          "clientName": "Zee telefilms"
+        },
+        {
+          "sheet": "October - 2024",
+          "row": 138,
+          "clientName": "Zee telefilms"
+        }
+      ]
+    },
+    {
+      "value": "NASHIK",
+      "count": 16,
+      "examples": [
+        {
+          "sheet": "Sep-2023",
+          "row": 8,
+          "clientName": "Everest"
+        },
+        {
+          "sheet": "Sep-2023",
+          "row": 9,
+          "clientName": "Everest"
+        },
+        {
+          "sheet": "Sep - 2024",
+          "row": 5,
+          "clientName": "Bandhan Bank"
+        }
+      ]
+    },
+    {
+      "value": "KANDIVALI EAST",
+      "count": 15,
+      "examples": [
+        {
+          "sheet": "October - 2024",
+          "row": 82,
+          "clientName": "Zee telefilms"
+        },
+        {
+          "sheet": "October - 2024",
+          "row": 83,
+          "clientName": "Zee telefilms"
+        },
+        {
+          "sheet": "October - 2024",
+          "row": 140,
+          "clientName": "Zee telefilms"
+        }
+      ]
+    },
+    {
+      "value": "NALASOPARA",
+      "count": 8,
+      "examples": [
+        {
+          "sheet": "Nov-2023",
+          "row": 22,
+          "clientName": "Everest"
+        },
+        {
+          "sheet": "AUG - 2026",
+          "row": 128,
+          "clientName": "ANIDRA"
+        },
+        {
+          "sheet": "AUG - 2026",
+          "row": 129,
+          "clientName": "ANIDRA"
+        }
+      ]
+    },
+    {
+      "value": "Lower Parel",
+      "count": 7,
+      "examples": [
+        {
+          "sheet": "February - 2025",
+          "row": 92,
+          "clientName": "Rahul & mehul"
+        },
+        {
+          "sheet": "AUG - 2026",
+          "row": 15,
+          "clientName": "ANIDRA"
+        },
+        {
+          "sheet": "AUG - 2026",
+          "row": 16,
+          "clientName": "ANIDRA"
+        }
+      ]
+    },
+    {
+      "value": "Mangalore",
+      "count": 4,
+      "examples": [
+        {
+          "sheet": "August-2023",
+          "row": 18,
+          "clientName": "Red Chillies"
+        },
+        {
+          "sheet": "Nov-2023",
+          "row": 51,
+          "clientName": "GM Moduler"
+        },
+        {
+          "sheet": "June-2025",
+          "row": 61,
+          "clientName": "kavita"
+        }
+      ]
+    },
+    {
+      "value": "Vishakhapatanam",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "August-2023",
+          "row": 6,
+          "clientName": "Bisleri"
+        }
+      ]
+    },
+    {
+      "value": "Malegaon",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "August-2023",
+          "row": 12,
+          "clientName": "Red Chillies"
+        }
+      ]
+    },
+    {
+      "value": "Velacherry",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "Oct-2023",
+          "row": 60,
+          "clientName": "Interactive"
+        }
+      ]
+    },
+    {
+      "value": "SATNA",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "Jan-2024",
+          "row": 28,
+          "clientName": "GM Moduler"
+        }
+      ]
+    },
+    {
+      "value": "South Delhi",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "December - 2024",
+          "row": 80,
+          "clientName": "Ankita"
+        }
+      ]
+    },
+    {
+      "value": "Wakad",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "January - 2025",
+          "row": 58,
+          "clientName": "Zee"
+        }
+      ]
+    },
+    {
+      "value": "Bhillai",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "Dec-2025",
+          "row": 54,
+          "clientName": "Dalip jain"
+        }
+      ]
+    },
+    {
+      "value": "YAMUNANAGAR",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "Dec-2025",
+          "row": 630,
+          "clientName": "Kalpesh"
+        }
+      ]
+    },
+    {
+      "value": "SAKET",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "Dec-2025",
+          "row": 925,
+          "clientName": "Bal"
+        }
+      ]
+    },
+    {
+      "value": "BHIWADI",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "JUNE-2026",
+          "row": 121,
+          "clientName": "Girish"
+        }
+      ]
+    }
+  ]
+}

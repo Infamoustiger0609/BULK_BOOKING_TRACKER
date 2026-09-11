@@ -1,0 +1,870 @@
+[
+  {
+    "sheet": "Year 2022 data",
+    "row": 178,
+    "field": "totalAmount",
+    "rawValue": "-",
+    "reason": "non-numeric total amount"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 51,
+    "field": "month",
+    "rawValue": 45597,
+    "reason": "resolves to 2024-11, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 52,
+    "field": "month",
+    "rawValue": 45627,
+    "reason": "resolves to 2024-12, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 53,
+    "field": "month",
+    "rawValue": 45658,
+    "reason": "resolves to 2025-01, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 54,
+    "field": "month",
+    "rawValue": 45689,
+    "reason": "resolves to 2025-02, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 55,
+    "field": "month",
+    "rawValue": 45717,
+    "reason": "resolves to 2025-03, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 56,
+    "field": "month",
+    "rawValue": 45748,
+    "reason": "resolves to 2025-04, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 57,
+    "field": "month",
+    "rawValue": 45778,
+    "reason": "resolves to 2025-05, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 58,
+    "field": "month",
+    "rawValue": 45809,
+    "reason": "resolves to 2025-06, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 59,
+    "field": "month",
+    "rawValue": 45839,
+    "reason": "resolves to 2025-07, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 60,
+    "field": "month",
+    "rawValue": 45870,
+    "reason": "resolves to 2025-08, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 61,
+    "field": "month",
+    "rawValue": 45901,
+    "reason": "resolves to 2025-09, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 62,
+    "field": "month",
+    "rawValue": 45931,
+    "reason": "resolves to 2025-10, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 63,
+    "field": "month",
+    "rawValue": 45962,
+    "reason": "resolves to 2025-11, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 64,
+    "field": "month",
+    "rawValue": 45992,
+    "reason": "resolves to 2025-12, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 65,
+    "field": "month",
+    "rawValue": 46023,
+    "reason": "resolves to 2026-01, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 66,
+    "field": "month",
+    "rawValue": 46054,
+    "reason": "resolves to 2026-02, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 67,
+    "field": "month",
+    "rawValue": 46082,
+    "reason": "resolves to 2026-03, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 68,
+    "field": "month",
+    "rawValue": 46113,
+    "reason": "resolves to 2026-04, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 69,
+    "field": "month",
+    "rawValue": 46143,
+    "reason": "resolves to 2026-05, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 70,
+    "field": "month",
+    "rawValue": 46174,
+    "reason": "resolves to 2026-06, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 71,
+    "field": "month",
+    "rawValue": 46204,
+    "reason": "resolves to 2026-07, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 72,
+    "field": "month",
+    "rawValue": 46235,
+    "reason": "resolves to 2026-08, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 73,
+    "field": "month",
+    "rawValue": 46266,
+    "reason": "resolves to 2026-09, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 74,
+    "field": "month",
+    "rawValue": 46296,
+    "reason": "resolves to 2026-10, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 75,
+    "field": "month",
+    "rawValue": 46327,
+    "reason": "resolves to 2026-11, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 76,
+    "field": "month",
+    "rawValue": 46357,
+    "reason": "resolves to 2026-12, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 77,
+    "field": "month",
+    "rawValue": 46388,
+    "reason": "resolves to 2027-01, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 78,
+    "field": "month",
+    "rawValue": 46419,
+    "reason": "resolves to 2027-02, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 79,
+    "field": "month",
+    "rawValue": 46447,
+    "reason": "resolves to 2027-03, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 80,
+    "field": "month",
+    "rawValue": 46478,
+    "reason": "resolves to 2027-04, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 81,
+    "field": "month",
+    "rawValue": 46508,
+    "reason": "resolves to 2027-05, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 82,
+    "field": "month",
+    "rawValue": 46539,
+    "reason": "resolves to 2027-06, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 83,
+    "field": "month",
+    "rawValue": 46569,
+    "reason": "resolves to 2027-07, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 84,
+    "field": "month",
+    "rawValue": 46600,
+    "reason": "resolves to 2027-08, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 85,
+    "field": "month",
+    "rawValue": 46631,
+    "reason": "resolves to 2027-09, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 86,
+    "field": "month",
+    "rawValue": 46661,
+    "reason": "resolves to 2027-10, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 87,
+    "field": "month",
+    "rawValue": 46692,
+    "reason": "resolves to 2027-11, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 88,
+    "field": "month",
+    "rawValue": 46722,
+    "reason": "resolves to 2027-12, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 89,
+    "field": "month",
+    "rawValue": 46753,
+    "reason": "resolves to 2028-01, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 90,
+    "field": "month",
+    "rawValue": 46784,
+    "reason": "resolves to 2028-02, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 91,
+    "field": "month",
+    "rawValue": 46813,
+    "reason": "resolves to 2028-03, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 92,
+    "field": "month",
+    "rawValue": 46844,
+    "reason": "resolves to 2028-04, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 93,
+    "field": "month",
+    "rawValue": 46874,
+    "reason": "resolves to 2028-05, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 94,
+    "field": "month",
+    "rawValue": 46905,
+    "reason": "resolves to 2028-06, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 95,
+    "field": "month",
+    "rawValue": 46935,
+    "reason": "resolves to 2028-07, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 96,
+    "field": "month",
+    "rawValue": 46966,
+    "reason": "resolves to 2028-08, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 97,
+    "field": "month",
+    "rawValue": 46997,
+    "reason": "resolves to 2028-09, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 98,
+    "field": "month",
+    "rawValue": 47027,
+    "reason": "resolves to 2028-10, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 99,
+    "field": "month",
+    "rawValue": 47058,
+    "reason": "resolves to 2028-11, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 100,
+    "field": "month",
+    "rawValue": 47088,
+    "reason": "resolves to 2028-12, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 101,
+    "field": "month",
+    "rawValue": 47119,
+    "reason": "resolves to 2029-01, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 102,
+    "field": "month",
+    "rawValue": 47150,
+    "reason": "resolves to 2029-02, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 103,
+    "field": "month",
+    "rawValue": 47178,
+    "reason": "resolves to 2029-03, inconsistent with the sheet's dominant month 2024-09 — used the sheet default instead"
+  },
+  {
+    "sheet": "February - 2025",
+    "row": 70,
+    "field": "clientType",
+    "rawValue": "PVR Kuamr pacfic",
+    "reason": "client identity duplicates the cinema location across every identity column — row dropped as corrupted"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 88,
+    "field": "month",
+    "rawValue": 45901,
+    "reason": "resolves to 2025-09, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 89,
+    "field": "month",
+    "rawValue": 45931,
+    "reason": "resolves to 2025-10, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 90,
+    "field": "month",
+    "rawValue": 45962,
+    "reason": "resolves to 2025-11, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 91,
+    "field": "month",
+    "rawValue": 45992,
+    "reason": "resolves to 2025-12, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 92,
+    "field": "month",
+    "rawValue": 46023,
+    "reason": "resolves to 2026-01, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 93,
+    "field": "month",
+    "rawValue": 46054,
+    "reason": "resolves to 2026-02, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 94,
+    "field": "month",
+    "rawValue": 46082,
+    "reason": "resolves to 2026-03, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 95,
+    "field": "month",
+    "rawValue": 46113,
+    "reason": "resolves to 2026-04, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 96,
+    "field": "month",
+    "rawValue": 46143,
+    "reason": "resolves to 2026-05, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 97,
+    "field": "month",
+    "rawValue": 46174,
+    "reason": "resolves to 2026-06, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 98,
+    "field": "month",
+    "rawValue": 46204,
+    "reason": "resolves to 2026-07, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 99,
+    "field": "month",
+    "rawValue": 46235,
+    "reason": "resolves to 2026-08, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 100,
+    "field": "month",
+    "rawValue": 46266,
+    "reason": "resolves to 2026-09, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 101,
+    "field": "month",
+    "rawValue": 46296,
+    "reason": "resolves to 2026-10, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "July-2025",
+    "row": 102,
+    "field": "month",
+    "rawValue": 46327,
+    "reason": "resolves to 2026-11, inconsistent with the sheet's dominant month 2025-07 — used the sheet default instead"
+  },
+  {
+    "sheet": "Dec-2025",
+    "row": 947,
+    "field": "dateOfScreening",
+    "rawValue": 46375,
+    "reason": "resolves to 2026-12-19, 12 months from the booking's own 2025-12 — likely a data entry error"
+  },
+  {
+    "sheet": "Dec-2025",
+    "row": 948,
+    "field": "dateOfScreening",
+    "rawValue": 46361,
+    "reason": "resolves to 2026-12-05, 12 months from the booking's own 2025-12 — likely a data entry error"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 124,
+    "field": "month",
+    "rawValue": 46143,
+    "reason": "resolves to 2026-05, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 125,
+    "field": "month",
+    "rawValue": 46174,
+    "reason": "resolves to 2026-06, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 126,
+    "field": "month",
+    "rawValue": 46204,
+    "reason": "resolves to 2026-07, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 127,
+    "field": "month",
+    "rawValue": 46235,
+    "reason": "resolves to 2026-08, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 128,
+    "field": "month",
+    "rawValue": 46266,
+    "reason": "resolves to 2026-09, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 129,
+    "field": "month",
+    "rawValue": 46296,
+    "reason": "resolves to 2026-10, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 130,
+    "field": "month",
+    "rawValue": 46327,
+    "reason": "resolves to 2026-11, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 131,
+    "field": "month",
+    "rawValue": 46357,
+    "reason": "resolves to 2026-12, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 132,
+    "field": "month",
+    "rawValue": 46388,
+    "reason": "resolves to 2027-01, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 133,
+    "field": "month",
+    "rawValue": 46419,
+    "reason": "resolves to 2027-02, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 134,
+    "field": "month",
+    "rawValue": 46447,
+    "reason": "resolves to 2027-03, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 135,
+    "field": "month",
+    "rawValue": 46478,
+    "reason": "resolves to 2027-04, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 136,
+    "field": "month",
+    "rawValue": 46508,
+    "reason": "resolves to 2027-05, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 137,
+    "field": "month",
+    "rawValue": 46539,
+    "reason": "resolves to 2027-06, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 138,
+    "field": "month",
+    "rawValue": 46569,
+    "reason": "resolves to 2027-07, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 139,
+    "field": "month",
+    "rawValue": 46600,
+    "reason": "resolves to 2027-08, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 140,
+    "field": "month",
+    "rawValue": 46631,
+    "reason": "resolves to 2027-09, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 141,
+    "field": "month",
+    "rawValue": 46661,
+    "reason": "resolves to 2027-10, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 142,
+    "field": "month",
+    "rawValue": 46692,
+    "reason": "resolves to 2027-11, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 143,
+    "field": "month",
+    "rawValue": 46722,
+    "reason": "resolves to 2027-12, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 144,
+    "field": "month",
+    "rawValue": 46753,
+    "reason": "resolves to 2028-01, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 145,
+    "field": "month",
+    "rawValue": 46784,
+    "reason": "resolves to 2028-02, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 146,
+    "field": "month",
+    "rawValue": 46813,
+    "reason": "resolves to 2028-03, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 147,
+    "field": "month",
+    "rawValue": 46844,
+    "reason": "resolves to 2028-04, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 148,
+    "field": "month",
+    "rawValue": 46874,
+    "reason": "resolves to 2028-05, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 149,
+    "field": "month",
+    "rawValue": 46905,
+    "reason": "resolves to 2028-06, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 150,
+    "field": "month",
+    "rawValue": 46935,
+    "reason": "resolves to 2028-07, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 151,
+    "field": "month",
+    "rawValue": 46966,
+    "reason": "resolves to 2028-08, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 152,
+    "field": "month",
+    "rawValue": 46997,
+    "reason": "resolves to 2028-09, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 153,
+    "field": "month",
+    "rawValue": 47027,
+    "reason": "resolves to 2028-10, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 154,
+    "field": "month",
+    "rawValue": 47058,
+    "reason": "resolves to 2028-11, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 155,
+    "field": "month",
+    "rawValue": 47088,
+    "reason": "resolves to 2028-12, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 156,
+    "field": "month",
+    "rawValue": 47119,
+    "reason": "resolves to 2029-01, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 157,
+    "field": "month",
+    "rawValue": 47150,
+    "reason": "resolves to 2029-02, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 158,
+    "field": "month",
+    "rawValue": 47178,
+    "reason": "resolves to 2029-03, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 159,
+    "field": "month",
+    "rawValue": 47209,
+    "reason": "resolves to 2029-04, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 160,
+    "field": "month",
+    "rawValue": 47239,
+    "reason": "resolves to 2029-05, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 161,
+    "field": "month",
+    "rawValue": 47270,
+    "reason": "resolves to 2029-06, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 162,
+    "field": "month",
+    "rawValue": 47300,
+    "reason": "resolves to 2029-07, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 163,
+    "field": "month",
+    "rawValue": 47331,
+    "reason": "resolves to 2029-08, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 164,
+    "field": "month",
+    "rawValue": 47362,
+    "reason": "resolves to 2029-09, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 165,
+    "field": "month",
+    "rawValue": 47392,
+    "reason": "resolves to 2029-10, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 166,
+    "field": "month",
+    "rawValue": 47423,
+    "reason": "resolves to 2029-11, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 167,
+    "field": "month",
+    "rawValue": 47453,
+    "reason": "resolves to 2029-12, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 168,
+    "field": "month",
+    "rawValue": 47484,
+    "reason": "resolves to 2030-01, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 169,
+    "field": "month",
+    "rawValue": 47515,
+    "reason": "resolves to 2030-02, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 170,
+    "field": "month",
+    "rawValue": 47543,
+    "reason": "resolves to 2030-03, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 171,
+    "field": "month",
+    "rawValue": 47574,
+    "reason": "resolves to 2030-04, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 172,
+    "field": "month",
+    "rawValue": 47604,
+    "reason": "resolves to 2030-05, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 173,
+    "field": "month",
+    "rawValue": 47635,
+    "reason": "resolves to 2030-06, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "March-2026",
+    "row": 174,
+    "field": "month",
+    "rawValue": 47665,
+    "reason": "resolves to 2030-07, inconsistent with the sheet's dominant month 2026-03 — used the sheet default instead"
+  },
+  {
+    "sheet": "April-2026",
+    "row": 33,
+    "field": "dateOfScreening",
+    "rawValue": "Dhurendhar 2",
+    "reason": "unparseable date string"
+  }
+]

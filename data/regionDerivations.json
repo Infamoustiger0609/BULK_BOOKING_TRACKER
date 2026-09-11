@@ -1,0 +1,3346 @@
+[
+  {
+    "sheet": "Year 2022 data",
+    "row": 13,
+    "city": null,
+    "cinemaLocation": "PVR Selectcity",
+    "originalRegion": "TLC",
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 33,
+    "city": null,
+    "cinemaLocation": "PVR Ambience",
+    "originalRegion": "TLC",
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 36,
+    "city": null,
+    "cinemaLocation": "PVR Ambience",
+    "originalRegion": "TLC",
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 37,
+    "city": null,
+    "cinemaLocation": "PVR Ambience",
+    "originalRegion": "TLC",
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 47,
+    "city": null,
+    "cinemaLocation": "PVR Ambience Gurgaon",
+    "originalRegion": "TLC",
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 49,
+    "city": null,
+    "cinemaLocation": "PVR Ambience Gurgaon",
+    "originalRegion": "TLC",
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 50,
+    "city": null,
+    "cinemaLocation": "SCW",
+    "originalRegion": "TLC",
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 52,
+    "city": null,
+    "cinemaLocation": "Maison & Ambience",
+    "originalRegion": "TLC",
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 61,
+    "city": null,
+    "cinemaLocation": "Ambi GGN",
+    "originalRegion": "TLC",
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 64,
+    "city": null,
+    "cinemaLocation": "Ambi GGN",
+    "originalRegion": "TLC",
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 65,
+    "city": null,
+    "cinemaLocation": "SCW Gold",
+    "originalRegion": "TLC",
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 67,
+    "city": null,
+    "cinemaLocation": "DCGGN",
+    "originalRegion": "TLC",
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 96,
+    "city": null,
+    "cinemaLocation": "SCW",
+    "originalRegion": "TLC",
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 117,
+    "city": null,
+    "cinemaLocation": "PVR Juhu",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 118,
+    "city": null,
+    "cinemaLocation": "PVR Pondi",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 119,
+    "city": null,
+    "cinemaLocation": "PVR Star Mall",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 120,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 121,
+    "city": null,
+    "cinemaLocation": "PVR Galada",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 122,
+    "city": null,
+    "cinemaLocation": "PVR Satyam",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 123,
+    "city": null,
+    "cinemaLocation": "multipal cinemas in pune",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 124,
+    "city": null,
+    "cinemaLocation": "Mega Mall / Logix",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 125,
+    "city": null,
+    "cinemaLocation": "Kurla",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 126,
+    "city": null,
+    "cinemaLocation": "Ambi/ Maison/ Forum / VR Chennai",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 127,
+    "city": null,
+    "cinemaLocation": "PVR Subash Nagar",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 128,
+    "city": null,
+    "cinemaLocation": "PVR Plaza",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 129,
+    "city": null,
+    "cinemaLocation": "PVR Elante",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 130,
+    "city": null,
+    "cinemaLocation": "PVR Pavallion Pune",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 131,
+    "city": null,
+    "cinemaLocation": "PVR MGF",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 132,
+    "city": null,
+    "cinemaLocation": "PVR Ampa",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 133,
+    "city": null,
+    "cinemaLocation": "PVR Juhu",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 134,
+    "city": null,
+    "cinemaLocation": "PVR City Center GGN",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 137,
+    "city": null,
+    "cinemaLocation": "PVR Pune",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 138,
+    "city": null,
+    "cinemaLocation": "PVR Ambi",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 139,
+    "city": null,
+    "cinemaLocation": "PVR Forum",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 140,
+    "city": null,
+    "cinemaLocation": "PVR Citi Andheri",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 141,
+    "city": null,
+    "cinemaLocation": "PVR Citi Andheri",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 142,
+    "city": null,
+    "cinemaLocation": "PVR, Acropolis-",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 143,
+    "city": null,
+    "cinemaLocation": "PVR EVA Mall Vadodara",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 144,
+    "city": null,
+    "cinemaLocation": "PVR EMPRESS NAGPUR",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 145,
+    "city": null,
+    "cinemaLocation": "PVR, Forum Mall, Koramangala",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 146,
+    "city": null,
+    "cinemaLocation": "PVR Ambi/ Forum / Maison",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 147,
+    "city": null,
+    "cinemaLocation": "Multipal Cities",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 148,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 149,
+    "city": null,
+    "cinemaLocation": "PVR Chanakya",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 150,
+    "city": null,
+    "cinemaLocation": "PVR Chanakya",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 151,
+    "city": null,
+    "cinemaLocation": "PVR Juhu",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 152,
+    "city": null,
+    "cinemaLocation": "PVR Satyam",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 153,
+    "city": null,
+    "cinemaLocation": "PVR MGF",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 154,
+    "city": null,
+    "cinemaLocation": "PVR City Gurgaon",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 155,
+    "city": null,
+    "cinemaLocation": "PVR Acropolis",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 156,
+    "city": null,
+    "cinemaLocation": "PVR Market City Kurla",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 157,
+    "city": null,
+    "cinemaLocation": "PVR PAVALLION (PUNE)",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 158,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 159,
+    "city": null,
+    "cinemaLocation": "PVR Chanakya",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 160,
+    "city": null,
+    "cinemaLocation": "PVR City Gurgaon",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 161,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 162,
+    "city": null,
+    "cinemaLocation": "PVR City Andheri",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 163,
+    "city": null,
+    "cinemaLocation": "PVR EDM",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 164,
+    "city": null,
+    "cinemaLocation": "PVR City Andheri",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 165,
+    "city": null,
+    "cinemaLocation": "PVR Infinity Malad",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 166,
+    "city": null,
+    "cinemaLocation": "PVR Juhu",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 167,
+    "city": null,
+    "cinemaLocation": "PVR Elante",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 168,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 169,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 170,
+    "city": null,
+    "cinemaLocation": "PVR Oberoi Goregaon",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 171,
+    "city": null,
+    "cinemaLocation": "Logix",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 172,
+    "city": null,
+    "cinemaLocation": "Mega Mall",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 173,
+    "city": null,
+    "cinemaLocation": "Plaza",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 174,
+    "city": null,
+    "cinemaLocation": "Multipal Cities",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 175,
+    "city": null,
+    "cinemaLocation": "PVR Juhu",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 176,
+    "city": null,
+    "cinemaLocation": "PVR Logix",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 177,
+    "city": null,
+    "cinemaLocation": "PVR Logix",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 178,
+    "city": null,
+    "cinemaLocation": "PVR Logix / MGF / Forum / Market City Kurla",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 179,
+    "city": null,
+    "cinemaLocation": "PVR Satyam",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 180,
+    "city": null,
+    "cinemaLocation": "Logix",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 181,
+    "city": null,
+    "cinemaLocation": "PVR MGF",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 182,
+    "city": null,
+    "cinemaLocation": "PVR Indore",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 185,
+    "city": null,
+    "cinemaLocation": "PVR Lucknow / Kanpur",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 186,
+    "city": null,
+    "cinemaLocation": "pvr Pomanade",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 187,
+    "city": null,
+    "cinemaLocation": "Bangalore, Mumbai, Gurgaon, Noida",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 188,
+    "city": null,
+    "cinemaLocation": "JIO",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 189,
+    "city": null,
+    "cinemaLocation": "PVR Mumbai",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 190,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 191,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 192,
+    "city": null,
+    "cinemaLocation": "Multipal Place",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 193,
+    "city": null,
+    "cinemaLocation": "Juhu",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 194,
+    "city": null,
+    "cinemaLocation": "Forum",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 195,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 196,
+    "city": null,
+    "cinemaLocation": "Hyderabad",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 197,
+    "city": null,
+    "cinemaLocation": "Multipal Place",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 198,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 199,
+    "city": null,
+    "cinemaLocation": "Vegas Dwarka",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 200,
+    "city": null,
+    "cinemaLocation": "MCB",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 201,
+    "city": null,
+    "cinemaLocation": "PVR Select gold",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 202,
+    "city": null,
+    "cinemaLocation": "Next Galleria Panjagutta",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 203,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 204,
+    "city": null,
+    "cinemaLocation": "Promanade",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 205,
+    "city": null,
+    "cinemaLocation": "Escape",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 206,
+    "city": null,
+    "cinemaLocation": "Soul Sprit",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 207,
+    "city": null,
+    "cinemaLocation": "Select/ Ambi",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 208,
+    "city": null,
+    "cinemaLocation": "Mkt City Kurla",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 209,
+    "city": null,
+    "cinemaLocation": "PVR City Centre Chandighar",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 210,
+    "city": null,
+    "cinemaLocation": "PVR Ambience",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 211,
+    "city": null,
+    "cinemaLocation": "PVR MGF",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 212,
+    "city": null,
+    "cinemaLocation": "PVR MCB",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 213,
+    "city": null,
+    "cinemaLocation": "PVR Plaza",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 214,
+    "city": null,
+    "cinemaLocation": "PVR PLAZA",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 215,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 216,
+    "city": null,
+    "cinemaLocation": "PVR City Mall Andheri Mumbai",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 217,
+    "city": null,
+    "cinemaLocation": "PVR Logix Noida",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 218,
+    "city": null,
+    "cinemaLocation": "PVR Mega Mall",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 219,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 220,
+    "city": null,
+    "cinemaLocation": "PVR Koramnagla, Bangalore",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 221,
+    "city": null,
+    "cinemaLocation": "Phoenix United Lucknow",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 222,
+    "city": null,
+    "cinemaLocation": "Logix Noida",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 223,
+    "city": null,
+    "cinemaLocation": "Multi locations",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 226,
+    "city": null,
+    "cinemaLocation": "Kurla",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 227,
+    "city": null,
+    "cinemaLocation": "Coimbatore",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 228,
+    "city": null,
+    "cinemaLocation": "Palazzo",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 229,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 230,
+    "city": null,
+    "cinemaLocation": "Palazzo / VR",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 231,
+    "city": null,
+    "cinemaLocation": "Coimbatore",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 232,
+    "city": null,
+    "cinemaLocation": "Galada",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 233,
+    "city": null,
+    "cinemaLocation": "S2 Perambur",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 234,
+    "city": null,
+    "cinemaLocation": "Plaza",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 235,
+    "city": null,
+    "cinemaLocation": "PVR Escape",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 236,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 237,
+    "city": null,
+    "cinemaLocation": "PVR Cinemas Chennai",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 238,
+    "city": null,
+    "cinemaLocation": "PVR Cinemas Chennai",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 239,
+    "city": null,
+    "cinemaLocation": "PVR BKC",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 240,
+    "city": null,
+    "cinemaLocation": "PVR Escape",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 241,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 242,
+    "city": null,
+    "cinemaLocation": "PVR Logix",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 243,
+    "city": null,
+    "cinemaLocation": "PVR Plaza",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 244,
+    "city": null,
+    "cinemaLocation": "PVR MGF",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 245,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 246,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 247,
+    "city": null,
+    "cinemaLocation": "PVR Forum Bangalore",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 248,
+    "city": null,
+    "cinemaLocation": "PVR Maison",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 249,
+    "city": null,
+    "cinemaLocation": "PVR Vega Bangalore",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 250,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 251,
+    "city": null,
+    "cinemaLocation": "PVR Multipal",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 252,
+    "city": null,
+    "cinemaLocation": "PVR Multipal",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 253,
+    "city": null,
+    "cinemaLocation": "PVR Multipal",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 254,
+    "city": null,
+    "cinemaLocation": "PVR Juhu and Pune",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 255,
+    "city": null,
+    "cinemaLocation": "PVR Lower parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 256,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 257,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 258,
+    "city": null,
+    "cinemaLocation": "PVR Ambience",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 259,
+    "city": null,
+    "cinemaLocation": "PVR Rivoli",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 260,
+    "city": null,
+    "cinemaLocation": "PVR Logix",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 261,
+    "city": null,
+    "cinemaLocation": "PVR Ludhiana",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 262,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 263,
+    "city": null,
+    "cinemaLocation": "PVR BKC",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 264,
+    "city": null,
+    "cinemaLocation": "PVR Escape",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 265,
+    "city": null,
+    "cinemaLocation": "PVR Multipal",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 266,
+    "city": null,
+    "cinemaLocation": "PVR Juhu",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 267,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 268,
+    "city": null,
+    "cinemaLocation": "PVR Vegas",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 269,
+    "city": null,
+    "cinemaLocation": "PVR Phoenix Mumbai",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 270,
+    "city": null,
+    "cinemaLocation": "PVR Phoenix Mumbai",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 271,
+    "city": null,
+    "cinemaLocation": "PVR Mcpune",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 272,
+    "city": null,
+    "cinemaLocation": "PVR Plaza",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 273,
+    "city": null,
+    "cinemaLocation": "PVR Malad",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 274,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 277,
+    "city": null,
+    "cinemaLocation": "Chennai",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 278,
+    "city": null,
+    "cinemaLocation": "Juhu",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 279,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 280,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 281,
+    "city": null,
+    "cinemaLocation": "Ghatkopar",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 282,
+    "city": null,
+    "cinemaLocation": "Lower parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 283,
+    "city": null,
+    "cinemaLocation": "Malad",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 284,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 285,
+    "city": null,
+    "cinemaLocation": "Multipal",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 286,
+    "city": null,
+    "cinemaLocation": "Multipal",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 287,
+    "city": null,
+    "cinemaLocation": "Ambience",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 288,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 289,
+    "city": null,
+    "cinemaLocation": "PVR Pimperi",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 290,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 291,
+    "city": null,
+    "cinemaLocation": "PVR Maison",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 292,
+    "city": null,
+    "cinemaLocation": "PVR Pune",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 293,
+    "city": null,
+    "cinemaLocation": "PVR Pune",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 294,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 295,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 296,
+    "city": null,
+    "cinemaLocation": "PVR Vega",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 297,
+    "city": null,
+    "cinemaLocation": "PVR Versova",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 298,
+    "city": null,
+    "cinemaLocation": "PVR JIO",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 299,
+    "city": null,
+    "cinemaLocation": "pvr Mumbai",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 300,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 301,
+    "city": null,
+    "cinemaLocation": "PVR Multipal",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 302,
+    "city": null,
+    "cinemaLocation": "PVR DC",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 303,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 304,
+    "city": null,
+    "cinemaLocation": "PVR RK Hyd",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 305,
+    "city": null,
+    "cinemaLocation": "PVR Palazzo Chennai",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 306,
+    "city": null,
+    "cinemaLocation": "PVR MGF",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 307,
+    "city": null,
+    "cinemaLocation": "PVR Elante",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 308,
+    "city": null,
+    "cinemaLocation": "PVR REX",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 309,
+    "city": null,
+    "cinemaLocation": "PVR Vervosa",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 310,
+    "city": null,
+    "cinemaLocation": "PVR Satyam",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 311,
+    "city": null,
+    "cinemaLocation": "PVR Juhu",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 312,
+    "city": null,
+    "cinemaLocation": "PVR ECR Chennai",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 313,
+    "city": null,
+    "cinemaLocation": "PVR Escape",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 314,
+    "city": null,
+    "cinemaLocation": "PVR City Centre Gurgaon",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 315,
+    "city": null,
+    "cinemaLocation": "PVR Selectcity City",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 318,
+    "city": null,
+    "cinemaLocation": "multipal",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 319,
+    "city": null,
+    "cinemaLocation": "multipal",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 320,
+    "city": null,
+    "cinemaLocation": "multipal",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 321,
+    "city": null,
+    "cinemaLocation": "Ambi Dc",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 322,
+    "city": null,
+    "cinemaLocation": "PVR Ambience",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 323,
+    "city": null,
+    "cinemaLocation": "Mumbai / Chennai",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 324,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 325,
+    "city": null,
+    "cinemaLocation": "PVR Banjahils Hyd",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 326,
+    "city": null,
+    "cinemaLocation": "PVR Satyam",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 327,
+    "city": null,
+    "cinemaLocation": "PVR Satyam",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 328,
+    "city": null,
+    "cinemaLocation": "PVR Logix",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 329,
+    "city": null,
+    "cinemaLocation": "PVR Acropolis",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 330,
+    "city": null,
+    "cinemaLocation": "Vaishnavi Bnglr",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 331,
+    "city": null,
+    "cinemaLocation": "PVR Acropolis",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 332,
+    "city": null,
+    "cinemaLocation": "PVR Escape",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 333,
+    "city": null,
+    "cinemaLocation": "PVR MGF",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 334,
+    "city": null,
+    "cinemaLocation": "PVR Regalia- Elements.",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 335,
+    "city": null,
+    "cinemaLocation": "PVR Forum",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 336,
+    "city": null,
+    "cinemaLocation": "DC VK",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 337,
+    "city": null,
+    "cinemaLocation": "PVR Vegas",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 338,
+    "city": null,
+    "cinemaLocation": "PVR Logix",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 339,
+    "city": null,
+    "cinemaLocation": "PVR Maison",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 340,
+    "city": null,
+    "cinemaLocation": "PVR Subash Nagar",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 341,
+    "city": null,
+    "cinemaLocation": "PVR MCB",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 342,
+    "city": null,
+    "cinemaLocation": "PVR Maison Mumbai",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 343,
+    "city": null,
+    "cinemaLocation": "PVR Juhu",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 344,
+    "city": null,
+    "cinemaLocation": "PVR Ambience",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 345,
+    "city": null,
+    "cinemaLocation": "PVR Satyam",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 346,
+    "city": null,
+    "cinemaLocation": "PVR Mumbai's",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 347,
+    "city": null,
+    "cinemaLocation": "PVR Juhu",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 348,
+    "city": null,
+    "cinemaLocation": "PVR selectcity",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 349,
+    "city": null,
+    "cinemaLocation": "PVR EDM",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 350,
+    "city": null,
+    "cinemaLocation": "PVR EDM",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 351,
+    "city": null,
+    "cinemaLocation": "PVR EDM",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 352,
+    "city": null,
+    "cinemaLocation": "PVR Juhu",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 353,
+    "city": null,
+    "cinemaLocation": "PVR Sangam",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 354,
+    "city": null,
+    "cinemaLocation": "PVR LP Mumbai",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 355,
+    "city": null,
+    "cinemaLocation": "PVR Satyam",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 356,
+    "city": null,
+    "cinemaLocation": "PVR Logix",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 357,
+    "city": null,
+    "cinemaLocation": "PVR Mumbai's",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Sep-2023",
+    "row": 23,
+    "city": null,
+    "cinemaLocation": "PVR Chanakya",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Sep-2023",
+    "row": 24,
+    "city": null,
+    "cinemaLocation": "PVR Mega Mall",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Sep-2023",
+    "row": 25,
+    "city": null,
+    "cinemaLocation": "PVR Gaur City",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Sep-2023",
+    "row": 26,
+    "city": null,
+    "cinemaLocation": "PVR VVIP",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Sep-2023",
+    "row": 27,
+    "city": null,
+    "cinemaLocation": "PVR EDM",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Sep-2023",
+    "row": 28,
+    "city": null,
+    "cinemaLocation": "PVR Bareilly",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Sep-2023",
+    "row": 29,
+    "city": null,
+    "cinemaLocation": "PVR Moradabad",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Sep-2023",
+    "row": 30,
+    "city": null,
+    "cinemaLocation": "PVR South X Kanpur",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Sep-2023",
+    "row": 31,
+    "city": null,
+    "cinemaLocation": "PVR United Lucknow",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Sep-2023",
+    "row": 32,
+    "city": null,
+    "cinemaLocation": "PVR Mahagun",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Sep-2023",
+    "row": 33,
+    "city": null,
+    "cinemaLocation": "PVR Malad",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Sep-2023",
+    "row": 34,
+    "city": null,
+    "cinemaLocation": "PVR Icon Versova",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Sep-2023",
+    "row": 35,
+    "city": null,
+    "cinemaLocation": "PVR Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Nov-2023",
+    "row": 56,
+    "city": "Multi Cty",
+    "cinemaLocation": "Multi PVR",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "May-2024",
+    "row": 10,
+    "city": "Ahmedabad",
+    "cinemaLocation": "RMZ Galleria Mal",
+    "originalRegion": null,
+    "derivedRegion": "Central"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 18,
+    "city": "Hyderabad",
+    "cinemaLocation": "PVR Express Avenue Mall",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 19,
+    "city": "Hyderabad",
+    "cinemaLocation": "PVR Express Avenue Mall",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 26,
+    "city": "Patna",
+    "cinemaLocation": "PVR Salt Lake City Centre",
+    "originalRegion": null,
+    "derivedRegion": "East"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 29,
+    "city": "Noida",
+    "cinemaLocation": "Market City Kurla",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 30,
+    "city": "Kolkata",
+    "cinemaLocation": "Infiniti Andheri",
+    "originalRegion": null,
+    "derivedRegion": "East"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 31,
+    "city": "Kolkata",
+    "cinemaLocation": "INOX City Centre",
+    "originalRegion": null,
+    "derivedRegion": "East"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 32,
+    "city": "Mumbai",
+    "cinemaLocation": "PVR Pavilion Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 33,
+    "city": "Patna",
+    "cinemaLocation": "PVR Pavilion Mall",
+    "originalRegion": null,
+    "derivedRegion": "East"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 34,
+    "city": "Ahmedabad",
+    "cinemaLocation": "PVR Acropolis",
+    "originalRegion": null,
+    "derivedRegion": "Central"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 38,
+    "city": "Vadodara",
+    "cinemaLocation": "INOX RELIANCE MEGA MALL - 1",
+    "originalRegion": null,
+    "derivedRegion": "Central"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 40,
+    "city": "Raipur",
+    "cinemaLocation": "CINEMAX CITY CENTRE MALL - RAIPUR",
+    "originalRegion": null,
+    "derivedRegion": "Central"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 41,
+    "city": "Gwalior",
+    "cinemaLocation": "Inox , Gwalior",
+    "originalRegion": null,
+    "derivedRegion": "Central"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 43,
+    "city": "Surat",
+    "cinemaLocation": "Inox - Reliance Mall",
+    "originalRegion": null,
+    "derivedRegion": "Central"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 44,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "May-2024",
+    "row": 45,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "May-2024",
+    "row": 46,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "May-2024",
+    "row": 47,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "May-2024",
+    "row": 48,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "May-2024",
+    "row": 49,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "May-2024",
+    "row": 50,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "May-2024",
+    "row": 51,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "May-2024",
+    "row": 57,
+    "city": "Bangalore",
+    "cinemaLocation": "PVR INOX CITY PULSE MALL",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 58,
+    "city": "Anand",
+    "cinemaLocation": "CINEMAX CITY CENTRE MALL - RAIPUR",
+    "originalRegion": null,
+    "derivedRegion": "Central"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 59,
+    "city": "Chhattisgarh",
+    "cinemaLocation": "INOX Citi Centre, RK Salai, Mylapore",
+    "originalRegion": null,
+    "derivedRegion": "East"
+  },
+  {
+    "sheet": "June-2024",
+    "row": 2,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "June-2024",
+    "row": 3,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "June-2024",
+    "row": 4,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "June-2024",
+    "row": 5,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "June-2024",
+    "row": 6,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "June-2024",
+    "row": 7,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "June-2024",
+    "row": 8,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "July-2024",
+    "row": 2,
+    "city": "Mumbai",
+    "cinemaLocation": "Lower Parel",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 3,
+    "city": "Gurgaon",
+    "cinemaLocation": "DC Ambience",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 4,
+    "city": "Chennai",
+    "cinemaLocation": "PVR VR",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 5,
+    "city": "Chennai",
+    "cinemaLocation": "PVR Escape",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 6,
+    "city": "Delhi",
+    "cinemaLocation": "Inox Jasola",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 7,
+    "city": "Noida",
+    "cinemaLocation": "PVR Mall of India",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 8,
+    "city": "Mumbai",
+    "cinemaLocation": "PVR Malad",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 9,
+    "city": "Bangalore",
+    "cinemaLocation": "PVR Forum",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 10,
+    "city": "Hyderabad",
+    "cinemaLocation": "PVR Nexus",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 11,
+    "city": "Hyderabad",
+    "cinemaLocation": "PVR Nexus",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 12,
+    "city": "Delhi",
+    "cinemaLocation": "PVR Sangam",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 13,
+    "city": "Delhi",
+    "cinemaLocation": "PVR Sangam",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 14,
+    "city": "Delhi",
+    "cinemaLocation": "PVR EDM",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 15,
+    "city": "Delhi",
+    "cinemaLocation": "PVR Sangam",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 16,
+    "city": "Chennai",
+    "cinemaLocation": "PVR Satyam",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 17,
+    "city": "Delhi",
+    "cinemaLocation": "INOX Paras Delhi",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 18,
+    "city": "Mumbai",
+    "cinemaLocation": "INOX R City Ghatkopar, Mumba",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 19,
+    "city": "Bangalore",
+    "cinemaLocation": "INOX Phoenix Mall of Asia, Bangalore",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 20,
+    "city": "Bangalore",
+    "cinemaLocation": "INOX Phoenix Mall of Asia, Bangalore",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 21,
+    "city": "Gurgaon",
+    "cinemaLocation": "INOX Gurgaon (Worldmark)",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 22,
+    "city": "Gurgaon",
+    "cinemaLocation": "INOX Gurgaon (Worldmark)",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 23,
+    "city": "Bangalore",
+    "cinemaLocation": "INOX Garuda mall, Magrath road",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 24,
+    "city": "Chennai",
+    "cinemaLocation": "PVR Satyam",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 25,
+    "city": "Lucknow",
+    "cinemaLocation": "PVR INOX PHOENIX PALASSIO MALL, Gomti Nagar",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 26,
+    "city": "Bangalore",
+    "cinemaLocation": "Global Mall, Mysore road",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 27,
+    "city": "Ludhiana",
+    "cinemaLocation": "PVR SILVER ARC, Ferozpur Road, Ludhiana,141001",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 28,
+    "city": "North Goa",
+    "cinemaLocation": "PVR INOX MALL DE GOA PORVORIM AUDI 4",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "July-2024",
+    "row": 29,
+    "city": "Mumbai",
+    "cinemaLocation": "PVR INOX RAGHULEELA MALL, KANDIVALI (W)",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 30,
+    "city": "Jaipur",
+    "cinemaLocation": "INOX Leisure Ltd., 3rd Floor, Sunny Trade Center",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 31,
+    "city": "Chennai",
+    "cinemaLocation": "PVR-ESCAPE WHITES ROAD EXPRESS AVENUE MALL",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 32,
+    "city": null,
+    "cinemaLocation": "Inox Kolhapur",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 33,
+    "city": null,
+    "cinemaLocation": "PVR Dombivali",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "July-2024",
+    "row": 34,
+    "city": "Pune",
+    "cinemaLocation": "Elpro City Square Mall, Chinchwad",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 35,
+    "city": "Punjab",
+    "cinemaLocation": "PVR Elante Chandighar",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 36,
+    "city": "Gurgaon",
+    "cinemaLocation": "PVR Ambience Gurgaon",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 37,
+    "city": "Chennai",
+    "cinemaLocation": "Nexus Vijaya Mall - Vadapalani",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 38,
+    "city": "Chennai",
+    "cinemaLocation": "Nexus Vijaya Mall - Vadapalani",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 39,
+    "city": "Chennai",
+    "cinemaLocation": "VR Mall Anna Nagar -",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 40,
+    "city": "Chennai",
+    "cinemaLocation": "VR Mall Anna Nagar -",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 41,
+    "city": "Chennai",
+    "cinemaLocation": "PVR S2 Thiruranmiyur",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 42,
+    "city": "Chennai",
+    "cinemaLocation": "PVR, Mall Road, Pondicherry",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 43,
+    "city": "Chennai",
+    "cinemaLocation": "PVR Grand Galada Pallavaram",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 44,
+    "city": "Chennai",
+    "cinemaLocation": "PVR Velachery",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 45,
+    "city": "Chennai",
+    "cinemaLocation": "PVR Vellore",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 46,
+    "city": "Chennai",
+    "cinemaLocation": "INOX Luxe, Phoenix Market City Velachery",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 5,
+    "city": null,
+    "cinemaLocation": "PVR INOX PHOENIX PALASSIO MALL, GOMTI NAGAR",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 11,
+    "city": "Delhi",
+    "cinemaLocation": "DC",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 12,
+    "city": "Guwahati",
+    "cinemaLocation": "INOX Leisure Ltd Guwahati",
+    "originalRegion": null,
+    "derivedRegion": "East"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 13,
+    "city": "Gurgaon",
+    "cinemaLocation": "Ambience mall",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 14,
+    "city": "Mysore",
+    "cinemaLocation": "PVR/INOX Mysore",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 15,
+    "city": "Chennai",
+    "cinemaLocation": "PVR-ESCAPE WHITES ROAD EXPRESS AVENUE MALL",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 16,
+    "city": "Thane",
+    "cinemaLocation": "INOX KORUM MALL (Booked)",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 17,
+    "city": "Hyderabad",
+    "cinemaLocation": "PVR INOX ASHOKA ONE MALL",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 18,
+    "city": "Ludhiana",
+    "cinemaLocation": "PVR SILVER ARC, Ferozpur Road, Ludhiana,141001",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 19,
+    "city": "Kolhapur",
+    "cinemaLocation": "Inox Reliance Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 20,
+    "city": "Chennai",
+    "cinemaLocation": "PVR Escape",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 21,
+    "city": "Chennai",
+    "cinemaLocation": "PVR Satyam",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 22,
+    "city": "Mumbai",
+    "cinemaLocation": "Ghatkopar – Inox rcity Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 23,
+    "city": "Mumbai",
+    "cinemaLocation": "Andheri West – PVR Infinity Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 24,
+    "city": "Mumbai",
+    "cinemaLocation": "Goregaon East – PVR Oberoi Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 25,
+    "city": "Mumbai",
+    "cinemaLocation": "Malad West – Cinemax Infinity",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 26,
+    "city": "Rajasthan",
+    "cinemaLocation": "INOX - City Square Mall, Panch Sheel Nagar",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 27,
+    "city": "Rajasthan",
+    "cinemaLocation": "INOX Multiplex",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 28,
+    "city": "Rajasthan",
+    "cinemaLocation": "PVR Ridhi Sidhi Mall,",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 29,
+    "city": "Ci",
+    "cinemaLocation": "Sapna Sngeeta Inox",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 30,
+    "city": null,
+    "cinemaLocation": "PVR Cinema, Lullu Mall",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 31,
+    "city": "Karnataka",
+    "cinemaLocation": "PVR, Dr Rajkumar Road Malleshwaram,",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 32,
+    "city": "Karnataka",
+    "cinemaLocation": "INOX Post Office Road",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 33,
+    "city": "Andhra Pradesh",
+    "cinemaLocation": "PVR Cinema - Phulong",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 34,
+    "city": "Maharashtra",
+    "cinemaLocation": "INOX - Gajananmaharaj Mandir Road",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 35,
+    "city": "Andhra Pradesh",
+    "cinemaLocation": "PVR The Cenima Naaz Center",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 36,
+    "city": "Mumbai",
+    "cinemaLocation": "Inox Metro Marine Lines",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 37,
+    "city": "Mumbai",
+    "cinemaLocation": "Ghatkopar – Inox rcity Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 38,
+    "city": "Mumbai",
+    "cinemaLocation": "Andheri West – PVR Infinity Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 39,
+    "city": "Mumbai",
+    "cinemaLocation": "Goregaon East – PVR Oberoi Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 40,
+    "city": "Mumbai",
+    "cinemaLocation": "Malad West – Cinemax Infinity",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 41,
+    "city": "Rajasthan",
+    "cinemaLocation": "INOX - City Square Mall, Panch Sheel Nagar",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 42,
+    "city": "Rajasthan",
+    "cinemaLocation": "INOX Multiplex",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 43,
+    "city": "Rajasthan",
+    "cinemaLocation": "PVR Ridhi Sidhi Mall,",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 44,
+    "city": "Ci",
+    "cinemaLocation": "Sapna Sngeeta Inox",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 45,
+    "city": null,
+    "cinemaLocation": "PVR Cinema, Lullu Mall",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 46,
+    "city": "Karnataka",
+    "cinemaLocation": "PVR, Dr Rajkumar Road Malleshwaram,",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 47,
+    "city": "Karnataka",
+    "cinemaLocation": "INOX Post Office Road",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 48,
+    "city": "Andhra Pradesh",
+    "cinemaLocation": "PVR Cinema - Phulong",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 49,
+    "city": "Maharashtra",
+    "cinemaLocation": "INOX - Gajananmaharaj Mandir Road",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 50,
+    "city": "Andhra Pradesh",
+    "cinemaLocation": "PVR The Cenima Naaz Center",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 51,
+    "city": "Mumbai",
+    "cinemaLocation": "Inox Metro Marine Lines",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 52,
+    "city": "Mumbai",
+    "cinemaLocation": "Ghatkopar – Inox rcity Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 53,
+    "city": "Mumbai",
+    "cinemaLocation": "Andheri West – PVR Infinity Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 54,
+    "city": "Mumbai",
+    "cinemaLocation": "Goregaon East – PVR Oberoi Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 55,
+    "city": "Mumbai",
+    "cinemaLocation": "Malad West – Cinemax Infinity",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 56,
+    "city": "Rajasthan",
+    "cinemaLocation": "INOX - City Square Mall, Panch Sheel Nagar",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 57,
+    "city": "Rajasthan",
+    "cinemaLocation": "INOX Multiplex",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 58,
+    "city": "Rajasthan",
+    "cinemaLocation": "PVR Ridhi Sidhi Mall,",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 59,
+    "city": "Ci",
+    "cinemaLocation": "Sapna Sngeeta Inox",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 60,
+    "city": null,
+    "cinemaLocation": "PVR Cinema, Lullu Mall",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 61,
+    "city": "Karnataka",
+    "cinemaLocation": "PVR, Dr Rajkumar Road Malleshwaram,",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 62,
+    "city": "Karnataka",
+    "cinemaLocation": "INOX Post Office Road",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 63,
+    "city": "Andhra Pradesh",
+    "cinemaLocation": "PVR Cinema - Phulong",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 64,
+    "city": "Maharashtra",
+    "cinemaLocation": "INOX - Gajananmaharaj Mandir Road",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 65,
+    "city": "Andhra Pradesh",
+    "cinemaLocation": "PVR The Cenima Naaz Center",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 66,
+    "city": "Mumbai",
+    "cinemaLocation": "Inox Metro Marine Lines",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 67,
+    "city": "Mumbai",
+    "cinemaLocation": "Ghatkopar – Inox rcity Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 68,
+    "city": "Mumbai",
+    "cinemaLocation": "Andheri West – PVR Infinity Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 69,
+    "city": "Mumbai",
+    "cinemaLocation": "Goregaon East – PVR Oberoi Mall",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 70,
+    "city": "Mumbai",
+    "cinemaLocation": "Malad West – Cinemax Infinity",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 71,
+    "city": "Rajasthan",
+    "cinemaLocation": "INOX - City Square Mall, Panch Sheel Nagar",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 72,
+    "city": "Rajasthan",
+    "cinemaLocation": "INOX Multiplex",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 73,
+    "city": "Rajasthan",
+    "cinemaLocation": "PVR Ridhi Sidhi Mall,",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 74,
+    "city": "Ci",
+    "cinemaLocation": "Sapna Sngeeta Inox",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 75,
+    "city": null,
+    "cinemaLocation": "PVR Cinema, Lullu Mall",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 76,
+    "city": "Karnataka",
+    "cinemaLocation": "PVR, Dr Rajkumar Road Malleshwaram,",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 77,
+    "city": "Karnataka",
+    "cinemaLocation": "INOX Post Office Road",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 78,
+    "city": "Andhra Pradesh",
+    "cinemaLocation": "PVR Cinema - Phulong",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 79,
+    "city": "Maharashtra",
+    "cinemaLocation": "INOX - Gajananmaharaj Mandir Road",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 80,
+    "city": "Andhra Pradesh",
+    "cinemaLocation": "PVR The Cenima Naaz Center",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 81,
+    "city": "Mumbai",
+    "cinemaLocation": "Inox Metro Marine Lines",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 29,
+    "city": "Own Content",
+    "cinemaLocation": "CINEMAX CENTRE MALL- RAIPUR",
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 34,
+    "city": "Rajkot",
+    "cinemaLocation": "Inox Reliance Mega Mall",
+    "originalRegion": null,
+    "derivedRegion": "Central"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 35,
+    "city": "Hyderabad",
+    "cinemaLocation": "GVK",
+    "originalRegion": null,
+    "derivedRegion": "South"
+  },
+  {
+    "sheet": "December - 2024",
+    "row": 7,
+    "city": "Ludhiana",
+    "cinemaLocation": "PVR - Pavilion Mall",
+    "originalRegion": null,
+    "derivedRegion": "North"
+  },
+  {
+    "sheet": "December - 2024",
+    "row": 23,
+    "city": "Patna",
+    "cinemaLocation": "PVR INOX - Ambuja",
+    "originalRegion": null,
+    "derivedRegion": "East"
+  },
+  {
+    "sheet": "April - 2025",
+    "row": 120,
+    "city": null,
+    "cinemaLocation": null,
+    "originalRegion": null,
+    "derivedRegion": null
+  },
+  {
+    "sheet": "Dec-2025",
+    "row": 316,
+    "city": null,
+    "cinemaLocation": "PVR PHOENIX MARKETCITY KURLA",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Dec-2025",
+    "row": 317,
+    "city": null,
+    "cinemaLocation": "PVR PHOENIX MARKETCITY KURLA",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Dec-2025",
+    "row": 318,
+    "city": null,
+    "cinemaLocation": "PVR PHOENIX MARKETCITY KURLA",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Dec-2025",
+    "row": 324,
+    "city": null,
+    "cinemaLocation": "PVR PHOENIX LOWER PAREL",
+    "originalRegion": null,
+    "derivedRegion": "West"
+  },
+  {
+    "sheet": "Dec-2025",
+    "row": 327,
+    "city": "Delhi",
+    "cinemaLocation": "PVR ECX CHANAKYA DELHI",
+    "originalRegion": "DELHI",
+    "derivedRegion": "North"
+  }
+]

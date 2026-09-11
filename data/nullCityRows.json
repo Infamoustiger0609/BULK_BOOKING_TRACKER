@@ -1,0 +1,162 @@
+[
+  {
+    "sheet": "July-2024",
+    "row": 32,
+    "clientName": "BANDHAN AMC",
+    "cinemaLocation": "Inox Kolhapur",
+    "region": "West",
+    "rawCityValue": "Maharastra"
+  },
+  {
+    "sheet": "July-2024",
+    "row": 33,
+    "clientName": "BANDHAN AMC",
+    "cinemaLocation": "PVR Dombivali",
+    "region": null,
+    "rawCityValue": "Maharastra"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 30,
+    "clientName": "Cinipolis",
+    "cinemaLocation": "PVR Cinema, Lullu Mall",
+    "region": null,
+    "rawCityValue": "KERALA"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 45,
+    "clientName": "Cinipolis",
+    "cinemaLocation": "PVR Cinema, Lullu Mall",
+    "region": null,
+    "rawCityValue": "KERALA"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 60,
+    "clientName": "Cinipolis",
+    "cinemaLocation": "PVR Cinema, Lullu Mall",
+    "region": null,
+    "rawCityValue": "KERALA"
+  },
+  {
+    "sheet": "Aug - 2024",
+    "row": 75,
+    "clientName": "Cinipolis",
+    "cinemaLocation": "PVR Cinema, Lullu Mall",
+    "region": null,
+    "rawCityValue": "KERALA"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 72,
+    "clientName": "GM Modular/Mahaveer productions",
+    "cinemaLocation": "INOX VR MALL - surat",
+    "region": "Central",
+    "rawCityValue": "Gujrat"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 84,
+    "clientName": "GM Modular/Mahaveer productions",
+    "cinemaLocation": "PVR rahul raj-Surat",
+    "region": "West",
+    "rawCityValue": "Gujrat"
+  },
+  {
+    "sheet": "Sep - 2024",
+    "row": 90,
+    "clientName": "GM Modular/Mahaveer productions",
+    "cinemaLocation": "Surat VR",
+    "region": "West",
+    "rawCityValue": "Gujrat"
+  },
+  {
+    "sheet": "April - 2025",
+    "row": 2,
+    "clientName": "Bipin",
+    "cinemaLocation": "PVR Crystal jamnagar",
+    "region": "Central",
+    "rawCityValue": "Gujrat"
+  },
+  {
+    "sheet": "June-2025",
+    "row": 90,
+    "clientName": "Bandhan Mutual fund",
+    "cinemaLocation": "PVR, City Center, Devendra Nagar, Raipur/ CINEMAX CITY CENTER RAIPUR",
+    "region": "Central",
+    "rawCityValue": "Chattisgarh"
+  },
+  {
+    "sheet": "June-2025",
+    "row": 94,
+    "clientName": "Bandhan Mutual fund",
+    "cinemaLocation": "PVR Superplex Forum Mall South Bengaluru",
+    "region": "South",
+    "rawCityValue": "karnatak"
+  },
+  {
+    "sheet": "Oct-2025",
+    "row": 5,
+    "clientName": "Hemant",
+    "cinemaLocation": "Phoenix Market City-Kurla",
+    "region": "West",
+    "rawCityValue": "Maharashta"
+  },
+  {
+    "sheet": "Oct-2025",
+    "row": 6,
+    "clientName": "Hemant",
+    "cinemaLocation": "PVR Icon Infinity",
+    "region": "West",
+    "rawCityValue": "Maharashta"
+  },
+  {
+    "sheet": "Oct-2025",
+    "row": 9,
+    "clientName": "Jinisha",
+    "cinemaLocation": "Maison, Jio World Centre, BKC Mumbai",
+    "region": "West",
+    "rawCityValue": "Maharashta"
+  },
+  {
+    "sheet": "Nov-2025",
+    "row": 34,
+    "clientName": "Anie & Harsh",
+    "cinemaLocation": "PVR Acropolic",
+    "region": "Central",
+    "rawCityValue": "Gujrat"
+  },
+  {
+    "sheet": "JUNE-2026",
+    "row": 11,
+    "clientName": "Neel",
+    "cinemaLocation": "PVR ACROPOLIC",
+    "region": "West",
+    "rawCityValue": "Gujrat"
+  },
+  {
+    "sheet": "JUNE-2026",
+    "row": 15,
+    "clientName": "Neel",
+    "cinemaLocation": "INOX PVS MALL",
+    "region": "North",
+    "rawCityValue": "UTTAR PARADESH"
+  },
+  {
+    "sheet": "JUNE-2026",
+    "row": 23,
+    "clientName": "Neel",
+    "cinemaLocation": "INOX PHOENIX PALASSIO MAL",
+    "region": "North",
+    "rawCityValue": "UTTAR PARADESH"
+  },
+  {
+    "sheet": "JUNE-2026",
+    "row": 25,
+    "clientName": "Neel",
+    "cinemaLocation": "CINEMAX CITY CENTER",
+    "region": "Central",
+    "rawCityValue": "CHATTISGARH"
+  }
+]

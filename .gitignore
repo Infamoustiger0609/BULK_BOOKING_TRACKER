@@ -3,8 +3,9 @@ dist/
 public/data/
 .DS_Store
 
-# Real business data — the source workbook and every ETL output. The app
-# code (etl.cjs, dashboard) is public; the actual bookings data is not.
-# Regenerate locally with your own copy of the workbook: node etl.cjs
+# Raw source workbook only — NOT data/, which now IS tracked (see below):
+# the deployed build (Vercel's prebuild "sync-data" script) reads
+# data/bookings.json directly, so it has to exist in the repo, not just
+# locally. Re-run node etl.cjs against your own copy of the workbook to
+# regenerate data/*.json, then commit the result.
 *.xlsx
-data/
