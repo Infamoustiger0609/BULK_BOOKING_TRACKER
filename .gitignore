@@ -1,0 +1,10 @@
+node_modules/
+dist/
+public/data/
+.DS_Store
+
+# Real business data — the source workbook and every ETL output. The app
+# code (etl.cjs, dashboard) is public; the actual bookings data is not.
+# Regenerate locally with your own copy of the workbook: node etl.cjs
+*.xlsx
+data/

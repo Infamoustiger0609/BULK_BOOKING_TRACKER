@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;}
+  ::-webkit-scrollbar{width:8px;height:8px;}
+  ::-webkit-scrollbar-thumb{background:rgba(30,30,44,0.25);border-radius:4px;}
+</style>
+</helmet>
+
+<sc-if value="{{ notReady }}" hint-placeholder-val="{{ true }}">
+  <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f6f8fb;color:#5a5a6e;font-family:Inter,ui-sans-serif,system-ui,sans-serif;font-size:13px;">Loading dashboard…</div>
+</sc-if>
+
+<sc-if value="{{ ready }}" hint-placeholder-val="{{ false }}">
+<div style="display:flex;min-height:100vh;background:#f6f8fb;font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:#1e1e2c;">
+
+  <aside style="width:{{ sidebarWidth }};flex-shrink:0;background:#141420;color:#f6f8fb;display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow:hidden;transition:width 150ms ease;">
+    <div style="padding:16px 16px 14px;border-bottom:1px solid rgba(246,248,251,0.1);display:flex;align-items:flex-start;justify-content:space-between;gap:6px;">
+      <sc-if value="{{ !sidebarCollapsed }}" hint-placeholder-val="{{ true }}">
+        <div style="min-width:0;">
+          <div style="display:inline-block;background:#e0b50f;color:#141420;font-size:10px;font-weight:800;letter-spacing:0.06em;padding:2px 6px;border-radius:4px;">PVR INOX</div>
+          <div style="margin-top:8px;font-family:Georgia,Cambria,'Times New Roman',serif;font-size:15px;font-weight:700;line-height:1.2;white-space:nowrap;">BulkBooking Dashboard</div>
+          <div style="margin-top:2px;font-size:10px;color:rgba(246,248,251,0.45);white-space:nowrap;">Client Intelligence &amp; Sales Analysis</div>
+        </div>
+      </sc-if>
+      <button type="button" onClick="{{ toggleSidebar }}" style="flex-shrink:0;border:1px solid rgba(246,248,251,0.15);background:rgba(246,248,251,0.06);color:#f6f8fb;border-radius:5px;width:20px;height:20px;font-size:11px;cursor:pointer;display:flex;align-items:center;justify-content:center;">{{ sidebarToggleIcon }}</button>
+    </div>
+
+    <nav style="padding:10px 10px;display:flex;flex-direction:column;gap:2px;">
+      <sc-for list="{{ navItems }}" as="nav" hint-placeholder-count="4">
+        <button type="button" onClick="{{ nav.onClick }}" title="{{ nav.label }}" style="text-align:left;border:none;border-radius:7px;padding:9px 10px;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;overflow:hidden;transition:background-color 150ms ease,color 150ms ease;background:{{ nav.bg }};color:{{ nav.fg }};" style-hover="background-color:rgba(246,248,251,0.08);color:#f6f8fb;">
+          <sc-if value="{{ sidebarCollapsed }}" hint-placeholder-val="{{ false }}">{{ nav.shortLabel }}</sc-if>
+          <sc-if value="{{ !sidebarCollapsed }}" hint-placeholder-val="{{ true }}">{{ nav.label }}</sc-if>
+        </button>
+      </sc-for>
+    </nav>
+
+    <sc-if value="{{ !sidebarCollapsed }}" hint-placeholder-val="{{ true }}">
+      <div style="margin-top:auto;padding:14px 16px;border-top:1px solid rgba(246,248,251,0.1);font-size:9px;line-height:1.5;color:rgba(246,248,251,0.4);white-space:nowrap;">
+        <div>{{ recordsLoadedLabel }}</div>
+        <div>{{ dataThroughLabel }}</div>
+      </div>
+    </sc-if>
+  </aside>
+
+  <div style="flex:1;min-width:0;display:flex;flex-direction:column;">
+
+    <div style="position:sticky;top:0;z-index:20;background:rgba(246,248,251,0.94);backdropFilter:blur(6px);border-bottom:1px solid rgba(30,30,44,0.08);padding:10px 24px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+      <h2 style="margin:0;font-family:Georgia,Cambria,'Times New Roman',serif;font-size:19px;font-weight:700;letter-spacing:-0.01em;">{{ pageTitle }}</h2>
+      <div style="margin-left:auto;display:flex;gap:8px;flex-wrap:wrap;">
+        <sc-for list="{{ globalFilterDefs }}" as="f" hint-placeholder-count="3">
+          <div style="position:relative;">
+            <button type="button" onClick="{{ f.toggleOpen }}" style="display:flex;align-items:center;gap:6px;border-radius:6px;border:1px solid rgba(30,30,44,0.15);background:rgba(255,255,255,0.75);padding:6px 10px;font-size:11px;font-weight:500;color:#1e1e2c;cursor:pointer;">
+              <span style="font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#5a5a6e;">{{ f.label }}</span>
+              <span style="font-weight:600;">{{ f.summary }}</span>
+              <span style="color:#5a5a6e;">▾</span>
+            </button>
+            <sc-if value="{{ f.isOpen }}" hint-placeholder-val="{{ false }}">
+              <div onClick="{{ stopClick }}" style="position:absolute;right:0;top:calc(100% + 4px);z-index:30;min-width:210px;max-height:280px;overflow-y:auto;padding:4px;border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 4px 16px rgba(30,30,44,0.18);">
+                <label style="display:flex;align-items:center;gap:8px;border-radius:6px;padding:8px;font-size:11px;font-weight:700;color:#3b8ff3;cursor:pointer;">
+                  <input type="checkbox" checked="{{ f.allChecked }}" onChange="{{ f.toggleAll }}" />
+                  <span>Select all</span>
+                </label>
+                <div style="margin:4px 0;border-top:1px solid rgba(30,30,44,0.1);"></div>
+                <sc-for list="{{ f.options }}" as="opt" hint-placeholder-count="4">
+                  <label style="display:flex;align-items:center;gap:8px;border-radius:6px;padding:6px 8px;font-size:11px;color:#1e1e2c;cursor:pointer;">
+                    <input type="checkbox" checked="{{ opt.checked }}" onChange="{{ opt.onToggle }}" />
+                    <span>{{ opt.label }}</span>
+                  </label>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <sc-if value="{{ anyDropdownOpen }}" hint-placeholder-val="{{ false }}">
+      <div onClick="{{ closeDropdowns }}" style="position:fixed;inset:0;z-index:25;"></div>
+    </sc-if>
+
+    <div style="padding:18px 24px 32px;display:flex;flex-direction:column;gap:14px;max-width:1560px;">
+
+      <sc-if value="{{ isSummary }}" hint-placeholder-val="{{ true }}">
+        <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;">
+          <sc-for list="{{ summaryKpis }}" as="k" hint-placeholder-count="5">
+            <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);padding:12px 14px;min-width:0;">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#5a5a6e;">{{ k.label }}</div>
+              <div style="margin-top:4px;font-family:Georgia,Cambria,'Times New Roman',serif;font-size:24px;font-weight:700;letter-spacing:-0.01em;line-height:1;color:{{ k.colorHex }};">{{ k.value }}</div>
+              <sc-if value="{{ k.hasDelta }}" hint-placeholder-val="{{ false }}">
+                <div style="margin-top:4px;display:inline-flex;align-items:center;gap:3px;border-radius:999px;padding:2px 6px;font-size:10px;font-weight:700;background:rgba(30,30,44,0.05);color:{{ k.delta.colorHex }};">
+                  <span>{{ k.delta.arrow }}</span><span>{{ k.delta.text }}</span>
+                </div>
+              </sc-if>
+              <sc-if value="{{ k.hasSubLine }}" hint-placeholder-val="{{ false }}">
+                <div style="margin-top:4px;font-size:11px;color:#5a5a6e;">{{ k.subLine }}</div>
+              </sc-if>
+              <sc-if value="{{ k.hasSpark }}" hint-placeholder-val="{{ false }}">
+                <svg viewBox="0 0 {{ k.spark.w }} {{ k.spark.h }}" width="76" height="28" style="margin-top:6px;display:block;">
+                  <path d="{{ k.spark.area }}" fill="{{ k.colorHex }}" fillOpacity="0.15"></path>
+                  <path d="{{ k.spark.path }}" fill="none" stroke="{{ k.colorHex }}" strokeWidth="1.5"></path>
+                </svg>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+          <div style="padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">Revenue Trend</div>
+          <div style="padding:12px 14px 4px;">
+            <sc-if value="{{ hasRevenueChart }}" hint-placeholder-val="{{ true }}">
+              <div style="position:relative;height:210px;">
+                <svg viewBox="0 0 {{ revenueChart.w }} {{ revenueChart.h }}" width="100%" height="100%" preserveAspectRatio="none" style="position:absolute;inset:0;">
+                  <sc-for list="{{ revenueChart.gridlines }}" as="g" hint-placeholder-count="3">
+                    <line x1="{{ revenueChart.padL }}" x2="{{ revenueChart.w }}" y1="{{ g.y }}" y2="{{ g.y }}" stroke="#1e1e2c" strokeOpacity="0.08"></line>
+                  </sc-for>
+                  <path d="{{ revenueChart.areaD }}" fill="{{ revenueChart.colorHex }}" fillOpacity="0.12"></path>
+                  <path d="{{ revenueChart.pathD }}" fill="none" stroke="{{ revenueChart.colorHex }}" strokeWidth="2"></path>
+                  <sc-for list="{{ revenueChart.points }}" as="p" hint-placeholder-count="6">
+                    <circle cx="{{ p.x }}" cy="{{ p.y }}" r="3" fill="#ffffff" stroke="{{ revenueChart.colorHex }}" strokeWidth="1.5"><title>{{ p.tooltip }}</title></circle>
+                  </sc-for>
+                </svg>
+                <sc-for list="{{ revenueChart.gridlines }}" as="g" hint-placeholder-count="3">
+                  <div style="position:absolute;left:2px;top:{{ g.yPct }}%;transform:translateY(-50%);font-size:11px;color:#5a5a6e;white-space:nowrap;">{{ g.label }}</div>
+                </sc-for>
+                <sc-for list="{{ revenueChart.xlabels }}" as="xl" hint-placeholder-count="3">
+                  <div style="position:absolute;left:{{ xl.xPct }}%;bottom:2px;transform:translateX(-50%);font-size:11px;color:#5a5a6e;white-space:nowrap;">{{ xl.label }}</div>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;">
+          <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+            <div style="padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">SPH Trend</div>
+            <div style="padding:12px 14px 4px;">
+              <sc-if value="{{ hasSphChart }}" hint-placeholder-val="{{ true }}">
+                <div style="position:relative;height:180px;">
+                  <svg viewBox="0 0 {{ sphChart.w }} {{ sphChart.h }}" width="100%" height="100%" preserveAspectRatio="none" style="position:absolute;inset:0;">
+                    <sc-for list="{{ sphChart.gridlines }}" as="g" hint-placeholder-count="3">
+                      <line x1="{{ sphChart.padL }}" x2="{{ sphChart.w }}" y1="{{ g.y }}" y2="{{ g.y }}" stroke="#1e1e2c" strokeOpacity="0.08"></line>
+                    </sc-for>
+                    <path d="{{ sphChart.pathD }}" fill="none" stroke="{{ sphChart.colorHex }}" strokeWidth="2"></path>
+                    <sc-for list="{{ sphChart.points }}" as="p" hint-placeholder-count="6">
+                      <circle cx="{{ p.x }}" cy="{{ p.y }}" r="3" fill="#ffffff" stroke="{{ sphChart.colorHex }}" strokeWidth="1.5"><title>{{ p.tooltip }}</title></circle>
+                    </sc-for>
+                  </svg>
+                  <sc-for list="{{ sphChart.gridlines }}" as="g" hint-placeholder-count="3">
+                    <div style="position:absolute;left:2px;top:{{ g.yPct }}%;transform:translateY(-50%);font-size:11px;color:#5a5a6e;white-space:nowrap;">{{ g.label }}</div>
+                  </sc-for>
+                  <sc-for list="{{ sphChart.xlabels }}" as="xl" hint-placeholder-count="3">
+                    <div style="position:absolute;left:{{ xl.xPct }}%;bottom:2px;transform:translateX(-50%);font-size:11px;color:#5a5a6e;white-space:nowrap;">{{ xl.label }}</div>
+                  </sc-for>
+                </div>
+              </sc-if>
+            </div>
+          </div>
+          <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+            <div style="padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">ATV Trend</div>
+            <div style="padding:12px 14px 4px;">
+              <sc-if value="{{ hasAtvChart }}" hint-placeholder-val="{{ true }}">
+                <div style="position:relative;height:180px;">
+                  <svg viewBox="0 0 {{ atvChart.w }} {{ atvChart.h }}" width="100%" height="100%" preserveAspectRatio="none" style="position:absolute;inset:0;">
+                    <sc-for list="{{ atvChart.gridlines }}" as="g" hint-placeholder-count="3">
+                      <line x1="{{ atvChart.padL }}" x2="{{ atvChart.w }}" y1="{{ g.y }}" y2="{{ g.y }}" stroke="#1e1e2c" strokeOpacity="0.08"></line>
+                    </sc-for>
+                    <path d="{{ atvChart.pathD }}" fill="none" stroke="{{ atvChart.colorHex }}" strokeWidth="2"></path>
+                    <sc-for list="{{ atvChart.points }}" as="p" hint-placeholder-count="6">
+                      <circle cx="{{ p.x }}" cy="{{ p.y }}" r="3" fill="#ffffff" stroke="{{ atvChart.colorHex }}" strokeWidth="1.5"><title>{{ p.tooltip }}</title></circle>
+                    </sc-for>
+                  </svg>
+                  <sc-for list="{{ atvChart.gridlines }}" as="g" hint-placeholder-count="3">
+                    <div style="position:absolute;left:2px;top:{{ g.yPct }}%;transform:translateY(-50%);font-size:11px;color:#5a5a6e;white-space:nowrap;">{{ g.label }}</div>
+                  </sc-for>
+                  <sc-for list="{{ atvChart.xlabels }}" as="xl" hint-placeholder-count="3">
+                    <div style="position:absolute;left:{{ xl.xPct }}%;bottom:2px;transform:translateX(-50%);font-size:11px;color:#5a5a6e;white-space:nowrap;">{{ xl.label }}</div>
+                  </sc-for>
+                </div>
+              </sc-if>
+            </div>
+          </div>
+        </div>
+
+        <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+          <div style="padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">{{ breakdownTitle }}</div>
+          <div style="padding:14px;">
+            <sc-if value="{{ hasBreakdownChart }}" hint-placeholder-val="{{ true }}">
+              <div style="position:relative;height:250px;">
+                <svg viewBox="0 0 {{ breakdownChart.w }} {{ breakdownChart.h }}" width="100%" height="100%" preserveAspectRatio="none" style="position:absolute;inset:0;">
+                  <sc-for list="{{ breakdownChart.gridlines }}" as="g" hint-placeholder-count="3">
+                    <line x1="{{ breakdownChart.padL }}" x2="{{ breakdownChart.w }}" y1="{{ g.y }}" y2="{{ g.y }}" stroke="#1e1e2c" strokeOpacity="0.08"></line>
+                  </sc-for>
+                  <sc-for list="{{ breakdownChart.bars }}" as="b" hint-placeholder-count="8">
+                    <rect x="{{ b.x }}" y="{{ b.y }}" width="{{ b.width }}" height="{{ b.height }}" fill="{{ b.color }}" rx="3"><title>{{ b.tooltip }}</title></rect>
+                  </sc-for>
+                </svg>
+                <sc-for list="{{ breakdownChart.gridlines }}" as="g" hint-placeholder-count="3">
+                  <div style="position:absolute;left:2px;top:{{ g.yPct }}%;transform:translateY(-50%);font-size:11px;color:#5a5a6e;white-space:nowrap;">{{ g.label }}</div>
+                </sc-for>
+                <sc-for list="{{ breakdownChart.bars }}" as="b" hint-placeholder-count="8">
+                  <div style="position:absolute;left:{{ b.labelXPct }}%;top:{{ b.valueYPct }}%;transform:translate(-50%,-100%);font-size:10.5px;color:#1e1e2c;white-space:nowrap;">{{ b.valueLabel }}</div>
+                  <div style="position:absolute;left:{{ b.labelXPct }}%;bottom:2px;transform:translateX(-50%);font-size:10.5px;color:#5a5a6e;white-space:nowrap;">{{ b.label }}</div>
+                </sc-for>
+              </div>
+            </sc-if>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isLeaderboard }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <sc-for list="{{ leaderboardLocalFilters }}" as="f" hint-placeholder-count="2">
+            <div style="position:relative;">
+              <button type="button" onClick="{{ f.toggleOpen }}" style="display:flex;align-items:center;gap:6px;border-radius:6px;border:1px solid rgba(30,30,44,0.15);background:rgba(255,255,255,0.75);padding:6px 10px;font-size:11px;font-weight:500;color:#1e1e2c;cursor:pointer;">
+                <span style="font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#5a5a6e;">{{ f.label }}</span>
+                <span style="font-weight:600;">{{ f.summary }}</span>
+                <span style="color:#5a5a6e;">▾</span>
+              </button>
+              <sc-if value="{{ f.isOpen }}" hint-placeholder-val="{{ false }}">
+                <div onClick="{{ stopClick }}" style="position:absolute;left:0;top:calc(100% + 4px);z-index:30;min-width:210px;max-height:280px;overflow-y:auto;padding:4px;border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 4px 16px rgba(30,30,44,0.18);">
+                  <label style="display:flex;align-items:center;gap:8px;border-radius:6px;padding:8px;font-size:11px;font-weight:700;color:#3b8ff3;cursor:pointer;">
+                    <input type="checkbox" checked="{{ f.allChecked }}" onChange="{{ f.toggleAll }}" />
+                    <span>Select all</span>
+                  </label>
+                  <div style="margin:4px 0;border-top:1px solid rgba(30,30,44,0.1);"></div>
+                  <sc-for list="{{ f.options }}" as="opt" hint-placeholder-count="4">
+                    <label style="display:flex;align-items:center;gap:8px;border-radius:6px;padding:6px 8px;font-size:11px;color:#1e1e2c;cursor:pointer;">
+                      <input type="checkbox" checked="{{ opt.checked }}" onChange="{{ opt.onToggle }}" />
+                      <span>{{ opt.label }}</span>
+                    </label>
+                  </sc-for>
+                </div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;">
+          <sc-for list="{{ leaderboardKpis }}" as="k" hint-placeholder-count="4">
+            <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);padding:12px 14px;min-width:0;">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#5a5a6e;">{{ k.label }}</div>
+              <div style="margin-top:4px;font-family:Georgia,Cambria,'Times New Roman',serif;font-size:24px;font-weight:700;letter-spacing:-0.01em;line-height:1;color:{{ k.colorHex }};">{{ k.value }}</div>
+              <sc-if value="{{ k.hasSubLine }}" hint-placeholder-val="{{ false }}">
+                <div style="margin-top:4px;font-size:11px;color:#5a5a6e;">{{ k.subLine }}</div>
+              </sc-if>
+              <sc-if value="{{ k.hasSpark }}" hint-placeholder-val="{{ false }}">
+                <svg viewBox="0 0 {{ k.spark.w }} {{ k.spark.h }}" width="76" height="28" style="margin-top:6px;display:block;">
+                  <path d="{{ k.spark.area }}" fill="{{ k.colorHex }}" fillOpacity="0.15"></path>
+                  <path d="{{ k.spark.path }}" fill="none" stroke="{{ k.colorHex }}" strokeWidth="1.5"></path>
+                </svg>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);flex-wrap:wrap;">
+            <span style="font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">{{ leaderboardCaption }}</span>
+            <div style="display:flex;align-items:center;gap:8px;">
+              <div style="display:flex;gap:2px;">
+                <sc-for list="{{ sortOptions }}" as="so" hint-placeholder-count="3">
+                  <button type="button" onClick="{{ so.onClick }}" style="border:none;border-radius:5px;padding:5px 8px;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;cursor:pointer;background:{{ so.bg }};color:{{ so.fg }};">{{ so.label }}</button>
+                </sc-for>
+              </div>
+              <button type="button" onClick="{{ exportLeaderboardCsv }}" style="border:1px solid rgba(30,30,44,0.15);background:#ffffff;border-radius:5px;padding:5px 9px;font-size:10px;font-weight:600;color:#1e1e2c;cursor:pointer;">Export CSV</button>
+            </div>
+          </div>
+          <div style="max-height:480px;overflow-y:auto;">
+            <table style="width:100%;border-collapse:collapse;font-size:12px;">
+              <thead style="position:sticky;top:0;z-index:1;background:#ffffff;">
+                <tr style="text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:0.06em;color:#5a5a6e;border-bottom:1px solid rgba(30,30,44,0.1);">
+                  <th style="padding:8px 14px;font-weight:700;">#</th>
+                  <th style="padding:8px 8px;font-weight:700;">Client</th>
+                  <th style="padding:8px 8px;font-weight:700;text-align:right;">Revenue</th>
+                  <th style="padding:8px 8px;font-weight:700;text-align:right;">Tickets</th>
+                  <th style="padding:8px 8px;font-weight:700;text-align:right;">Bookings</th>
+                  <th style="padding:8px 8px;font-weight:700;text-align:right;">Avg Ticket Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <sc-for list="{{ clientRows }}" as="row" hint-placeholder-count="10">
+                  <tr onClick="{{ row.onClick }}" style="cursor:pointer;border-bottom:1px solid rgba(30,30,44,0.05);transition:background-color 150ms ease;" style-hover="background-color:#eaeef4;">
+                    <td style="padding:7px 14px;font-family:Georgia,Cambria,serif;font-weight:700;color:#5a5a6e;">{{ row.rank }}</td>
+                    <td style="padding:7px 8px;">
+                      <div style="font-weight:600;color:#1e1e2c;">{{ row.displayName }}</div>
+                      <span style="display:inline-block;border-radius:999px;background:rgba(30,30,44,0.08);padding:1px 7px;font-size:9.5px;font-weight:500;color:#5a5a6e;margin-top:2px;">{{ row.badgeText }}</span>
+                    </td>
+                    <td style="padding:7px 8px;text-align:right;">
+                      <div style="font-family:Georgia,Cambria,serif;font-weight:700;color:#f29f67;">{{ row.revenueLabel }}</div>
+                      <div style="font-size:9.5px;color:#5a5a6e;">{{ row.shareLabel }} of total</div>
+                      <div style="margin-top:3px;margin-left:auto;width:80px;height:5px;border-radius:3px;background:rgba(30,30,44,0.08);overflow:hidden;">
+                        <div style="height:100%;border-radius:3px;background:#f29f67;width:{{ row.barPct }}%;"></div>
+                      </div>
+                    </td>
+                    <td style="padding:7px 8px;text-align:right;font-weight:600;color:#3b8ff3;">{{ row.ticketsLabel }}</td>
+                    <td style="padding:7px 8px;text-align:right;color:#1e1e2c;">{{ row.bookingsLabel }}</td>
+                    <td style="padding:7px 8px;text-align:right;color:#5a5a6e;">{{ row.avgTicketLabel }}</td>
+                  </tr>
+                </sc-for>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isAffinity }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+          <div>
+            <p style="margin:0;font-size:11px;color:#5a5a6e;max-width:520px;">Clients with 3+ bookings where one value accounts for 65%+ of their bookings — find who to approach when a similar movie releases.</p>
+          </div>
+          <div style="display:flex;gap:2px;border-radius:8px;border:1px solid rgba(30,30,44,0.15);background:rgba(255,255,255,0.7);padding:2px;">
+            <sc-for list="{{ dimensionOptions }}" as="dim" hint-placeholder-count="3">
+              <button type="button" onClick="{{ dim.onClick }}" style="border:none;border-radius:6px;padding:6px 10px;font-size:11px;font-weight:600;cursor:pointer;background:{{ dim.bg }};color:{{ dim.fg }};">{{ dim.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+
+        <div style="position:relative;max-width:360px;">
+          <input type="text" value="{{ affinitySearchInputValue }}" onChange="{{ onSearchChange }}" placeholder="{{ affinitySearchPlaceholder }}" style="width:100%;box-sizing:border-box;border-radius:6px;border:1px solid rgba(30,30,44,0.15);background:rgba(255,255,255,0.85);padding:7px 30px 7px 10px;font-size:12px;color:#1e1e2c;" />
+          <sc-if value="{{ hasAffinitySelection }}" hint-placeholder-val="{{ false }}">
+            <button type="button" onClick="{{ clearAffinitySelection }}" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);border:none;background:transparent;font-size:10px;font-weight:700;color:#d9362c;cursor:pointer;">Clear</button>
+          </sc-if>
+          <sc-if value="{{ showSearchDropdown }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;left:0;top:calc(100% + 4px);z-index:20;width:100%;max-height:220px;overflow-y:auto;padding:4px;border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 4px 16px rgba(30,30,44,0.16);">
+              <sc-if value="{{ hasSearchMatches }}" hint-placeholder-val="{{ true }}">
+                <sc-for list="{{ searchMatches }}" as="m" hint-placeholder-count="4">
+                  <button type="button" onClick="{{ m.onClick }}" style="display:flex;width:100%;align-items:center;justify-content:space-between;border:none;background:transparent;border-radius:6px;padding:8px 8px;font-size:11px;color:#1e1e2c;cursor:pointer;text-align:left;" style-hover="background-color:#eaeef4;">
+                    <span>{{ m.value }}</span><span style="color:#5a5a6e;">{{ m.countLabel }}</span>
+                  </button>
+                </sc-for>
+              </sc-if>
+              <sc-if value="{{ !hasSearchMatches }}" hint-placeholder-val="{{ false }}">
+                <div style="padding:10px 8px;font-size:11px;color:#5a5a6e;">No matching values.</div>
+              </sc-if>
+            </div>
+          </sc-if>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;">
+          <sc-for list="{{ affinityKpis }}" as="k" hint-placeholder-count="4">
+            <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);padding:12px 14px;min-width:0;">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#5a5a6e;">{{ k.label }}</div>
+              <div style="margin-top:4px;font-family:Georgia,Cambria,'Times New Roman',serif;font-size:22px;font-weight:700;letter-spacing:-0.01em;line-height:1.1;color:{{ k.colorHex }};">{{ k.value }}</div>
+              <sc-if value="{{ k.hasSubLine }}" hint-placeholder-val="{{ false }}">
+                <div style="margin-top:4px;font-size:11px;color:#5a5a6e;">{{ k.subLine }}</div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+          <div style="padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">{{ affinityListTitle }} · ranked by revenue</div>
+          <sc-if value="{{ hasLoyaltyRows }}" hint-placeholder-val="{{ true }}">
+            <div>
+              <sc-for list="{{ loyaltyRows }}" as="row" hint-placeholder-count="8">
+                <div onClick="{{ row.onClick }}" style="display:grid;grid-template-columns:1fr 2fr auto;align-items:center;gap:12px;padding:8px 14px;cursor:pointer;border-bottom:1px solid rgba(30,30,44,0.05);transition:background-color 150ms ease;" style-hover="background-color:#eaeef4;">
+                  <div>
+                    <div style="font-weight:600;color:#1e1e2c;font-size:12px;">{{ row.displayName }}</div>
+                    <span style="display:inline-block;border-radius:999px;background:rgba(30,30,44,0.08);padding:1px 7px;font-size:9.5px;font-weight:500;color:#5a5a6e;margin-top:2px;">{{ row.badgeText }}</span>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:8px;">
+                    <div style="width:110px;flex-shrink:0;font-size:11px;color:#1e1e2c;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="{{ row.barLabel }}">{{ row.barLabel }}</div>
+                    <div style="flex:1;height:8px;border-radius:4px;background:rgba(30,30,44,0.08);overflow:hidden;box-shadow:inset 0 0 0 1px rgba(224,181,15,0.5);">
+                      <div style="height:100%;border-radius:4px;background:#3b8ff3;width:{{ row.barPct }}%;"></div>
+                    </div>
+                    <div style="width:70px;flex-shrink:0;text-align:right;font-size:11px;color:#5a5a6e;">{{ row.barCountLabel }}</div>
+                  </div>
+                  <div style="text-align:right;">
+                    <div style="font-family:Georgia,Cambria,serif;font-weight:700;color:#f29f67;">{{ row.revenueLabel }}</div>
+                    <div style="font-size:9.5px;color:#5a5a6e;">{{ row.bookingsLabel }}</div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+          <sc-if value="{{ !hasLoyaltyRows }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:24px;text-align:center;font-size:12px;color:#5a5a6e;">No clients meet the loyalty threshold for this selection.</div>
+          </sc-if>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isDormant }}" hint-placeholder-val="{{ false }}">
+        <p style="margin:0;font-size:11px;color:#5a5a6e;max-width:640px;">2+ historical bookings, last booking 6+ months before {{ referenceDateLabel }} (the latest activity in this dataset) — a win-back prospecting list, ranked by revenue at stake.</p>
+
+        <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;">
+          <sc-for list="{{ dormantKpis }}" as="k" hint-placeholder-count="4">
+            <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);padding:12px 14px;min-width:0;">
+              <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#5a5a6e;">{{ k.label }}</div>
+              <div style="margin-top:4px;font-family:Georgia,Cambria,'Times New Roman',serif;font-size:22px;font-weight:700;letter-spacing:-0.01em;line-height:1.1;color:{{ k.colorHex }};">{{ k.value }}</div>
+              <sc-if value="{{ k.hasSubLine }}" hint-placeholder-val="{{ false }}">
+                <div style="margin-top:4px;font-size:11px;color:#5a5a6e;">{{ k.subLine }}</div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);">
+            <span style="font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">Win-back list · sorted by lifetime revenue</span>
+            <button type="button" onClick="{{ exportDormantCsv }}" style="border:1px solid rgba(30,30,44,0.15);background:#ffffff;border-radius:5px;padding:5px 9px;font-size:10px;font-weight:600;color:#1e1e2c;cursor:pointer;">Export CSV</button>
+          </div>
+          <sc-if value="{{ hasDormantRows }}" hint-placeholder-val="{{ true }}">
+            <table style="width:100%;border-collapse:collapse;font-size:12px;">
+              <thead>
+                <tr style="text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:0.06em;color:#5a5a6e;border-bottom:1px solid rgba(30,30,44,0.1);">
+                  <th style="padding:8px 14px;font-weight:700;">Client</th>
+                  <th style="padding:8px 8px;font-weight:700;">Status</th>
+                  <th style="padding:8px 8px;font-weight:700;">Last Booking</th>
+                  <th style="padding:8px 8px;font-weight:700;text-align:right;">Bookings</th>
+                  <th style="padding:8px 14px;font-weight:700;text-align:right;">Lifetime Revenue</th>
+                </tr>
+              </thead>
+              <tbody>
+                <sc-for list="{{ dormantRows }}" as="row" hint-placeholder-count="8">
+                  <tr onClick="{{ row.onClick }}" style="cursor:pointer;border-bottom:1px solid rgba(30,30,44,0.05);transition:background-color 150ms ease;" style-hover="background-color:#eaeef4;">
+                    <td style="padding:7px 14px;">
+                      <div style="font-weight:600;color:#1e1e2c;">{{ row.displayName }}</div>
+                      <span style="display:inline-block;border-radius:999px;background:rgba(30,30,44,0.08);padding:1px 7px;font-size:9.5px;font-weight:500;color:#5a5a6e;margin-top:2px;">{{ row.badgeText }}</span>
+                    </td>
+                    <td style="padding:7px 8px;">
+                      <span style="display:inline-block;border-radius:999px;background:#fbdad7;padding:2px 8px;font-size:9.5px;font-weight:700;color:#d9362c;">{{ row.statusLabel }}</span>
+                    </td>
+                    <td style="padding:7px 8px;color:#5a5a6e;">{{ row.lastBookingLabel }}</td>
+                    <td style="padding:7px 8px;text-align:right;color:#1e1e2c;">{{ row.bookingsLabel }}</td>
+                    <td style="padding:7px 14px;text-align:right;font-family:Georgia,Cambria,serif;font-weight:700;color:#f29f67;">{{ row.revenueLabel }}</td>
+                  </tr>
+                </sc-for>
+              </tbody>
+            </table>
+          </sc-if>
+          <sc-if value="{{ !hasDormantRows }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:24px;text-align:center;font-size:12px;color:#5a5a6e;">No clients currently meet the dormant threshold.</div>
+          </sc-if>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ isDetail }}" hint-placeholder-val="{{ false }}">
+        <button type="button" onClick="{{ detailBackOnClick }}" style="align-self:flex-start;border:none;background:transparent;font-size:11px;font-weight:700;color:#3b8ff3;cursor:pointer;padding:0;">← Back to {{ detailBackLabel }}</button>
+
+        <sc-if value="{{ detailFound }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;align-items:center;gap:8px;">
+            <h3 style="margin:0;font-family:Georgia,Cambria,serif;font-size:22px;font-weight:700;">{{ detail.clientName }}</h3>
+            <span style="display:inline-block;border-radius:999px;background:rgba(30,30,44,0.08);padding:2px 9px;font-size:11px;font-weight:500;color:#5a5a6e;">{{ detail.clientBadgeText }}</span>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;">
+            <sc-for list="{{ detail.detailKpis }}" as="k" hint-placeholder-count="4">
+              <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);padding:12px 14px;min-width:0;">
+                <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#5a5a6e;">{{ k.label }}</div>
+                <div style="margin-top:4px;font-family:Georgia,Cambria,'Times New Roman',serif;font-size:24px;font-weight:700;letter-spacing:-0.01em;line-height:1;color:{{ k.colorHex }};">{{ k.value }}</div>
+                <sc-if value="{{ k.hasSpark }}" hint-placeholder-val="{{ false }}">
+                  <svg viewBox="0 0 {{ k.spark.w }} {{ k.spark.h }}" width="76" height="28" style="margin-top:6px;display:block;">
+                    <path d="{{ k.spark.area }}" fill="{{ k.colorHex }}" fillOpacity="0.15"></path>
+                    <path d="{{ k.spark.path }}" fill="none" stroke="{{ k.colorHex }}" strokeWidth="1.5"></path>
+                  </svg>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;">
+            <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+              <div style="padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">Monthly Revenue</div>
+              <div style="padding:12px 14px 4px;">
+                <sc-if value="{{ detail.hasRevenueBarChart }}" hint-placeholder-val="{{ true }}">
+                  <div style="position:relative;height:190px;">
+                    <svg viewBox="0 0 {{ detail.revenueBarChart.w }} {{ detail.revenueBarChart.h }}" width="100%" height="100%" preserveAspectRatio="none" style="position:absolute;inset:0;">
+                      <sc-for list="{{ detail.revenueBarChart.gridlines }}" as="g" hint-placeholder-count="3">
+                        <line x1="{{ detail.revenueBarChart.padL }}" x2="{{ detail.revenueBarChart.w }}" y1="{{ g.y }}" y2="{{ g.y }}" stroke="#1e1e2c" strokeOpacity="0.08"></line>
+                      </sc-for>
+                      <sc-for list="{{ detail.revenueBarChart.bars }}" as="b" hint-placeholder-count="6">
+                        <rect x="{{ b.x }}" y="{{ b.y }}" width="{{ b.width }}" height="{{ b.height }}" fill="{{ b.color }}" rx="2"><title>{{ b.tooltip }}</title></rect>
+                      </sc-for>
+                    </svg>
+                    <sc-for list="{{ detail.revenueBarChart.gridlines }}" as="g" hint-placeholder-count="3">
+                      <div style="position:absolute;left:2px;top:{{ g.yPct }}%;transform:translateY(-50%);font-size:10.5px;color:#5a5a6e;white-space:nowrap;">{{ g.label }}</div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+              </div>
+            </div>
+            <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+              <div style="padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">Monthly Booking Count</div>
+              <div style="padding:12px 14px 4px;">
+                <sc-if value="{{ detail.hasBookingsLineChart }}" hint-placeholder-val="{{ true }}">
+                  <div style="position:relative;height:190px;">
+                    <svg viewBox="0 0 {{ detail.bookingsLineChart.w }} {{ detail.bookingsLineChart.h }}" width="100%" height="100%" preserveAspectRatio="none" style="position:absolute;inset:0;">
+                      <sc-for list="{{ detail.bookingsLineChart.gridlines }}" as="g" hint-placeholder-count="3">
+                        <line x1="{{ detail.bookingsLineChart.padL }}" x2="{{ detail.bookingsLineChart.w }}" y1="{{ g.y }}" y2="{{ g.y }}" stroke="#1e1e2c" strokeOpacity="0.08"></line>
+                      </sc-for>
+                      <path d="{{ detail.bookingsLineChart.pathD }}" fill="none" stroke="{{ detail.bookingsLineChart.colorHex }}" strokeWidth="2"></path>
+                      <sc-for list="{{ detail.bookingsLineChart.points }}" as="p" hint-placeholder-count="6">
+                        <circle cx="{{ p.x }}" cy="{{ p.y }}" r="3" fill="#ffffff" stroke="{{ detail.bookingsLineChart.colorHex }}" strokeWidth="1.5"><title>{{ p.tooltip }}</title></circle>
+                      </sc-for>
+                    </svg>
+                    <sc-for list="{{ detail.bookingsLineChart.gridlines }}" as="g" hint-placeholder-count="3">
+                      <div style="position:absolute;left:2px;top:{{ g.yPct }}%;transform:translateY(-50%);font-size:10.5px;color:#5a5a6e;white-space:nowrap;">{{ g.label }}</div>
+                    </sc-for>
+                  </div>
+                </sc-if>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;">
+            <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+              <div style="padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">Booking Type Mix</div>
+              <div style="padding:14px;">
+                <div style="display:flex;height:10px;width:100%;gap:2px;">
+                  <sc-for list="{{ detail.bookingTypeSegments }}" as="s" hint-placeholder-count="3">
+                    <div style="height:100%;border-radius:4px;background:{{ s.color }};width:{{ s.barPct }}%;"></div>
+                  </sc-for>
+                </div>
+                <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:10px;">
+                  <sc-for list="{{ detail.bookingTypeSegments }}" as="s2" hint-placeholder-count="3">
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10.5px;">
+                      <span style="width:7px;height:7px;border-radius:50%;background:{{ s2.color }};display:inline-block;"></span>
+                      <span style="font-weight:600;color:#1e1e2c;">{{ s2.label }}</span>
+                      <span style="color:#5a5a6e;">{{ s2.pctLabel }}</span>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+            <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+              <div style="padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">Region Breakdown</div>
+              <div style="padding:14px;">
+                <div style="display:flex;height:10px;width:100%;gap:2px;">
+                  <sc-for list="{{ detail.regionSegments }}" as="s" hint-placeholder-count="3">
+                    <div style="height:100%;border-radius:4px;background:{{ s.color }};width:{{ s.barPct }}%;"></div>
+                  </sc-for>
+                </div>
+                <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:10px;">
+                  <sc-for list="{{ detail.regionSegments }}" as="s2" hint-placeholder-count="3">
+                    <div style="display:flex;align-items:center;gap:5px;font-size:10.5px;">
+                      <span style="width:7px;height:7px;border-radius:50%;background:{{ s2.color }};display:inline-block;"></span>
+                      <span style="font-weight:600;color:#1e1e2c;">{{ s2.label }}</span>
+                      <span style="color:#5a5a6e;">{{ s2.pctLabel }}</span>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+            <div style="padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">City Breakdown (top 8 by bookings)</div>
+            <div style="padding:14px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;">
+              <sc-for list="{{ detail.cityRows }}" as="row" hint-placeholder-count="8">
+                <div style="display:flex;align-items:center;gap:8px;padding:4px 0;">
+                  <div style="width:110px;flex-shrink:0;font-size:11px;color:#1e1e2c;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="{{ row.label }}">{{ row.label }}</div>
+                  <div style="flex:1;height:8px;border-radius:4px;background:rgba(30,30,44,0.08);overflow:hidden;">
+                    <div style="height:100%;border-radius:4px;background:{{ row.color }};width:{{ row.barPct }}%;"></div>
+                  </div>
+                  <div style="width:70px;flex-shrink:0;text-align:right;font-size:11px;color:#5a5a6e;">{{ row.pctLabel }}</div>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;">
+            <sc-for list="{{ detail.affinitySections }}" as="sec" hint-placeholder-count="3">
+              <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+                <div style="padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">{{ sec.title }}</div>
+                <div style="padding:14px;">
+                  <div style="display:flex;height:10px;width:100%;gap:2px;">
+                    <sc-for list="{{ sec.segments }}" as="s" hint-placeholder-count="3">
+                      <div style="height:100%;border-radius:4px;background:{{ s.color }};width:{{ s.barPct }}%;"></div>
+                    </sc-for>
+                  </div>
+                  <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px;">
+                    <sc-for list="{{ sec.segments }}" as="s2" hint-placeholder-count="3">
+                      <div style="display:flex;align-items:center;gap:4px;font-size:10px;">
+                        <span style="width:6px;height:6px;border-radius:50%;background:{{ s2.color }};display:inline-block;"></span>
+                        <span style="font-weight:600;color:#1e1e2c;">{{ s2.label }}</span>
+                        <span style="color:#5a5a6e;">{{ s2.pctLabel }}</span>
+                      </div>
+                    </sc-for>
+                  </div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+
+          <div style="border-radius:10px;border:1px solid rgba(30,30,44,0.08);background:linear-gradient(180deg,#ffffff 0%,#eaeef4 100%);box-shadow:0 1px 2px rgba(30,30,44,0.05),0 4px 12px rgba(30,30,44,0.06);">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 14px;border-bottom:1px solid rgba(30,30,44,0.08);">
+              <span style="font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5a5a6e;">{{ detail.bookingsTitle }}</span>
+              <button type="button" onClick="{{ detail.exportBookingsCsv }}" style="border:1px solid rgba(30,30,44,0.15);background:#ffffff;border-radius:5px;padding:5px 9px;font-size:10px;font-weight:600;color:#1e1e2c;cursor:pointer;">Export CSV</button>
+            </div>
+            <div style="max-height:380px;overflow-y:auto;">
+              <table style="width:100%;border-collapse:collapse;font-size:12px;">
+                <thead style="position:sticky;top:0;background:#ffffff;">
+                  <tr style="text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:0.06em;color:#5a5a6e;border-bottom:1px solid rgba(30,30,44,0.1);">
+                    <th style="padding:7px 14px;font-weight:700;">Date</th>
+                    <th style="padding:7px 8px;font-weight:700;">Movie</th>
+                    <th style="padding:7px 8px;font-weight:700;">Cinema</th>
+                    <th style="padding:7px 8px;font-weight:700;">City</th>
+                    <th style="padding:7px 8px;font-weight:700;text-align:right;">Tickets</th>
+                    <th style="padding:7px 14px;font-weight:700;text-align:right;">Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <sc-for list="{{ detail.bookingRows }}" as="r" hint-placeholder-count="8">
+                    <tr style="border-bottom:1px solid rgba(30,30,44,0.05);">
+                      <td style="padding:6px 14px;color:#5a5a6e;">{{ r.dateLabel }}</td>
+                      <td style="padding:6px 8px;color:#1e1e2c;">{{ r.movie }}</td>
+                      <td style="padding:6px 8px;color:#5a5a6e;">{{ r.cinema }}</td>
+                      <td style="padding:6px 8px;color:#5a5a6e;">{{ r.city }}</td>
+                      <td style="padding:6px 8px;text-align:right;color:#3b8ff3;">{{ r.ticketsLabel }}</td>
+                      <td style="padding:6px 14px;text-align:right;font-weight:600;color:#f29f67;">{{ r.amountLabel }}</td>
+                    </tr>
+                  </sc-for>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ !detailFound }}" hint-placeholder-val="{{ false }}">
+          <div style="padding:40px;text-align:center;color:#5a5a6e;font-size:12px;">Client not found.</div>
+        </sc-if>
+      </sc-if>
+
+    </div>
+  </div>
+</div>
+</sc-if>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const GOLD = '#f29f67', TEAL = '#3b8ff3', JADE = '#34b1aa', HILITE = '#e0b50f', INK = '#1e1e2c', CORAL = '#d9362c', GREEN = '#3f8a5b';
+const ROTATION = [GOLD, TEAL, JADE, HILITE];
+const DIMENSIONS = [
+  { key: 'movieIndustry', label: 'Movie Industry' },
+  { key: 'movieLanguage', label: 'Movie Language' },
+  { key: 'movieCategory', label: 'Movie Category' },
+];
+const ORIGIN_LABELS = { leaderboard: 'Client Leaderboard', affinity: 'Genre Affinity', dormant: 'Dormant Clients' };
+
+class Component extends DCLogic {
+  state = {
+    ready: false,
+    page: 'summary',
+    fy: [], month: [], region: [],
+    openFilterKey: null,
+    clientType: [], clientCategory: [],
+    sortKey: 'totalRevenue',
+    affinityDimension: 'movieIndustry',
+    affinitySearch: '',
+    affinitySelectedValue: null,
+    selectedClientKey: null,
+    detailOrigin: 'leaderboard',
+    sidebarCollapsed: false,
+  };
+
+  toggleSidebar() { this.setState((s) => ({ sidebarCollapsed: !s.sidebarCollapsed })); }
+
+  componentDidMount() {
+    import('./bookings-data.js').then((mod) => {
+      this.data = mod;
+      const records = mod.getRecords();
+      const fyOptions = mod.getFyOptions();
+      const monthOptions = mod.getMonthOptions(records).map((o) => o.value);
+      const regionOptions = mod.getFilterOptions(records, 'region').map((o) => o.value);
+      const clientType = mod.getFilterOptions(records, 'clientType').map((o) => o.value);
+      const clientCategory = mod.getFilterOptions(records, 'clientCategory').map((o) => o.value);
+      this.setState({ ready: true, fy: fyOptions.slice(), month: monthOptions, region: regionOptions, clientType, clientCategory });
+    });
+  }
+
+  stopClick = (e) => e.stopPropagation();
+  toggleOpenFilter(key) { this.setState((s) => ({ openFilterKey: s.openFilterKey === key ? null : key })); }
+  closeDropdowns() { this.setState({ openFilterKey: null }); }
+  toggleFilterOption(key, value) {
+    const cur = this.state[key];
+    const next = cur.includes(value) ? cur.filter((v) => v !== value) : [...cur, value];
+    this.updateFilterAll(key, next);
+  }
+  updateFilterAll(key, next) {
+    if (key === 'fy') { this.setFy(next); return; }
+    this.setState({ [key]: next });
+  }
+  setFy(nextFy) {
+    const recs = this.data.getRecords();
+    const scoped = nextFy.length ? recs.filter((r) => nextFy.includes(r.fy)) : recs;
+    const newMonth = this.data.getMonthOptions(scoped).map((o) => o.value);
+    this.setState({ fy: nextFy, month: newMonth });
+  }
+  goToDetail(key, origin) { this.setState({ page: 'detail', selectedClientKey: key, detailOrigin: origin }); }
+
+  buildFilterDef(key, label, optionsRaw, selectedArr) {
+    const options = optionsRaw.map((o) => ({
+      value: o.value, label: o.label, checked: selectedArr.includes(o.value),
+      onToggle: () => this.toggleFilterOption(key, o.value),
+    }));
+    const allChecked = options.length > 0 && selectedArr.length === options.length;
+    const noneChecked = selectedArr.length === 0;
+    const summary = allChecked ? 'All' : noneChecked ? 'None' : selectedArr.length === 1
+      ? ((options.find((o) => o.value === selectedArr[0]) || {}).label || selectedArr[0])
+      : `${selectedArr.length} selected`;
+    return {
+      key, label, options, allChecked, summary,
+      isOpen: this.state.openFilterKey === key,
+      toggleOpen: () => this.toggleOpenFilter(key),
+      toggleAll: () => this.updateFilterAll(key, allChecked ? [] : optionsRaw.map((o) => o.value)),
+    };
+  }
+
+  periodLabel(fy, fyOptions) {
+    return fy.length === fyOptions.length ? 'All time' : fy.length ? fy.join(', ') : 'No period selected';
+  }
+
+  sparkline(values) {
+    if (!values || values.filter((v) => v != null).length < 2) return null;
+    const w = 76, h = 28, pad = 3;
+    const vals = values.map((v) => v || 0);
+    const max = Math.max(...vals, 0), min = Math.min(...vals, 0);
+    const range = (max - min) || 1;
+    const stepX = vals.length > 1 ? (w - 2 * pad) / (vals.length - 1) : 0;
+    const pts = vals.map((v, i) => ({ x: pad + i * stepX, y: pad + (1 - (v - min) / range) * (h - 2 * pad) }));
+    const path = 'M' + pts.map((p) => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' L');
+    const area = path + ` L${pts[pts.length - 1].x.toFixed(1)},${h - pad} L${pts[0].x.toFixed(1)},${h - pad} Z`;
+    return { path, area, w, h };
+  }
+
+  kpiItem(label, value, colorHex, delta, subLine, sparkValues) {
+    const spark = this.sparkline(sparkValues);
+    let deltaObj = null;
+    if (delta != null) {
+      const pct = delta * 100;
+      deltaObj = { text: `${pct >= 0 ? '+' : ''}${pct.toFixed(1)}%`, colorHex: pct >= 0 ? GREEN : CORAL, arrow: pct >= 0 ? '▲' : '▼' };
+    }
+    return { label, value, colorHex, delta: deltaObj, hasDelta: !!deltaObj, subLine, hasSubLine: !!subLine, spark, hasSpark: !!spark };
+  }
+
+  lineChart(data, key, { colorHex, fmt, w = 1000, h = 220 }) {
+    if (!data || !data.length) return null;
+    const padL = 58, padR = 20, padT = 20, padB = 30;
+    const innerW = w - padL - padR, innerH = h - padT - padB;
+    const values = data.map((x) => x[key] || 0);
+    const max = Math.max(...values, 1);
+    const stepX = data.length > 1 ? innerW / (data.length - 1) : 0;
+    const points = data.map((x, i) => {
+      const val = x[key] || 0;
+      const px = padL + i * stepX;
+      const py = padT + innerH - (val / max) * innerH;
+      return { x: px.toFixed(1), y: py.toFixed(1), value: val, label: x.label, tooltip: `${x.label}: ${fmt(val)}` };
+    });
+    const pathD = 'M' + points.map((p) => `${p.x},${p.y}`).join(' L');
+    const areaD = pathD + ` L${points[points.length - 1].x},${(padT + innerH).toFixed(1)} L${points[0].x},${(padT + innerH).toFixed(1)} Z`;
+    const gridlines = [0, 0.5, 1].map((f) => { const y = padT + innerH * (1 - f); return { y: y.toFixed(1), yPct: ((y / h) * 100).toFixed(2), label: fmt(max * f) }; });
+    const n = data.length;
+    const xIdxs = n <= 1 ? [0] : n === 2 ? [0, 1] : [0, Math.floor((n - 1) / 2), n - 1];
+    const xlabels = xIdxs.map((i) => ({ x: points[i].x, xPct: ((+points[i].x / w) * 100).toFixed(2), label: points[i].label }));
+    return { w, h, pathD, areaD, points, gridlines, xlabels, colorHex, padL };
+  }
+
+  barChart(data, key, { colors, fmt, w = 1000, h = 260 }) {
+    if (!data || !data.length) return null;
+    const padL = 58, padR = 20, padT = 28, padB = 34;
+    const innerW = w - padL - padR, innerH = h - padT - padB;
+    const n = data.length;
+    const gap = n > 1 ? Math.min(24, (innerW / n) * 0.3) : 0;
+    const barW = (innerW - gap * (n - 1)) / n;
+    const values = data.map((x) => x[key] || 0);
+    const max = Math.max(...values, 1);
+    const bars = data.map((x, i) => {
+      const val = x[key] || 0;
+      const bh = (val / max) * innerH;
+      const x0 = padL + i * (barW + gap);
+      const barY = padT + innerH - bh;
+      const labelX = x0 + barW / 2;
+      return {
+        x: x0.toFixed(1), y: barY.toFixed(1), width: barW.toFixed(1), height: Math.max(bh, 1).toFixed(1),
+        color: colors[i % colors.length], label: x.value || x.label, valueLabel: fmt(val),
+        labelX: labelX.toFixed(1), labelXPct: ((labelX / w) * 100).toFixed(2), valueYPct: ((barY / h) * 100).toFixed(2),
+        tooltip: `${x.value || x.label}: ${fmt(val)}`,
+      };
+    });
+    const gridlines = [0, 0.5, 1].map((f) => { const y = padT + innerH * (1 - f); return { y: y.toFixed(1), yPct: ((y / h) * 100).toFixed(2), label: fmt(max * f) }; });
+    return { w, h, bars, gridlines, padL };
+  }
+
+  segmentsFor(items) {
+    const top = items.slice(0, 3), rest = items.slice(3);
+    const restPct = rest.reduce((s, i) => s + i.pct, 0), restCount = rest.reduce((s, i) => s + i.count, 0);
+    const segs = restPct > 0 ? [...top, { value: 'Other', pct: restPct, count: restCount }] : top;
+    return segs.map((s, i) => ({
+      label: s.value, pct: s.pct, count: s.count, barPct: Math.max(s.pct * 100, 1.5),
+      color: ROTATION[i % ROTATION.length], pctLabel: `${(s.pct * 100).toFixed(0)}% · ${s.count}`,
+    }));
+  }
+
+  renderVals() {
+    if (!this.state.ready) return { ready: false, notReady: true };
+    const d = this.data;
+    const records = d.getRecords();
+    const referenceDate = d.getReferenceDate();
+    const { fy, month, region, page } = this.state;
+
+    const fyOptions = d.getFyOptions();
+    const fyOptionsObjs = fyOptions.map((v) => ({ value: v, label: v }));
+    const fyScoped = fy.length ? records.filter((r) => fy.includes(r.fy)) : records;
+    const monthOptionsRaw = d.getMonthOptions(fyScoped);
+    const regionOptionsRaw = d.getFilterOptions(records, 'region');
+
+    const globalFilteredRecords = d.applyFilters(records, { fy, month, region });
+    const globalFilterDefs = [
+      this.buildFilterDef('fy', 'FY', fyOptionsObjs, fy),
+      this.buildFilterDef('month', 'Month', monthOptionsRaw, month),
+      this.buildFilterDef('region', 'Region', regionOptionsRaw, region),
+    ];
+    const anyDropdownOpen = !!this.state.openFilterKey;
+
+    const navItems = [
+      { key: 'summary', label: 'Summary' },
+      { key: 'leaderboard', label: 'Client Leaderboard' },
+      { key: 'affinity', label: 'Genre Affinity' },
+      { key: 'dormant', label: 'Dormant Clients' },
+    ].map((n) => ({ ...n, active: page === n.key, onClick: () => this.setState({ page: n.key }), bg: page === n.key ? TEAL : 'transparent', fg: page === n.key ? '#f6f8fb' : 'rgba(246,248,251,0.62)', shortLabel: n.label[0] }));
+
+    // ---- Summary ----
+    const currentMetrics = d.aggregateMetrics(globalFilteredRecords);
+    let priorMetrics = null;
+    if (fy.length === 1) {
+      const idx = fyOptions.indexOf(fy[0]);
+      if (idx > 0) {
+        const priorRecords = d.applyFilters(records, { fy: [fyOptions[idx - 1]], region });
+        if (priorRecords.length) priorMetrics = d.aggregateMetrics(priorRecords);
+      }
+    }
+    const deltas = {
+      revenue: d.computeDelta(currentMetrics.totalRevenue, priorMetrics?.totalRevenue),
+      clients: d.computeDelta(currentMetrics.clientCount, priorMetrics?.clientCount),
+      tickets: d.computeDelta(currentMetrics.totalTickets, priorMetrics?.totalTickets),
+      sph: d.computeDelta(currentMetrics.sph, priorMetrics?.sph),
+      atv: d.computeDelta(currentMetrics.atv, priorMetrics?.atv),
+    };
+    const granularity = fy.length === 1 ? 'month' : 'fy';
+    const timeSeries = d.computeTimeSeries(globalFilteredRecords, granularity);
+    const summaryKpis = [
+      this.kpiItem('Revenue', d.formatCurrency(currentMetrics.totalRevenue), GOLD, deltas.revenue, null, timeSeries.map((t) => t.totalRevenue)),
+      this.kpiItem('Clients', d.formatNumber(currentMetrics.clientCount), JADE, deltas.clients, null, timeSeries.map((t) => t.clientCount)),
+      this.kpiItem('Total Tickets', d.formatNumber(currentMetrics.totalTickets), TEAL, deltas.tickets, null, timeSeries.map((t) => t.totalTickets)),
+      this.kpiItem('SPH', d.formatCurrency(currentMetrics.sph), TEAL, deltas.sph, 'Spend per head', timeSeries.map((t) => t.sph)),
+      this.kpiItem('Avg Ticket Value', d.formatCurrency(currentMetrics.atv), GOLD, deltas.atv, null, timeSeries.map((t) => t.atv)),
+    ];
+    const revenueChart = this.lineChart(timeSeries, 'totalRevenue', { colorHex: GOLD, fmt: d.formatCurrencyCompact });
+    const sphChart = this.lineChart(timeSeries, 'sph', { colorHex: TEAL, fmt: d.formatCurrencyCompact, h: 180 });
+    const atvChart = this.lineChart(timeSeries, 'atv', { colorHex: GOLD, fmt: d.formatCurrencyCompact, h: 180 });
+    const regionRestricted = region.length > 0 && region.length !== regionOptionsRaw.length;
+    const breakdownData = d.computeRevenueByField(globalFilteredRecords, regionRestricted ? 'city' : 'region', regionRestricted ? 15 : 10);
+    const breakdownTitle = regionRestricted ? `City-wise Revenue (within selected region${region.length > 1 ? 's' : ''})` : 'Region-wise Revenue';
+    const breakdownChart = this.barChart(breakdownData, 'revenue', { colors: ROTATION, fmt: d.formatCurrencyCompact });
+
+    // ---- Leaderboard ----
+    const clientTypeOptionsRaw = d.getFilterOptions(records, 'clientType');
+    const clientCategoryOptionsRaw = d.getFilterOptions(records, 'clientCategory');
+    const { clientType, clientCategory, sortKey } = this.state;
+    const lbFilteredRecords = d.applyFilters(globalFilteredRecords, { clientType, clientCategory });
+    const clientIndex = d.buildClientIndex(lbFilteredRecords);
+    const sortedClients = [...clientIndex.list].sort((a, b) => b[sortKey] - a[sortKey]);
+    const topN = 10;
+    const topRevenue = sortedClients.slice(0, topN).reduce((s, c) => s + c.totalRevenue, 0);
+    const topShare = clientIndex.totalRevenue > 0 ? topRevenue / clientIndex.totalRevenue : null;
+    const maxClientRevenue = sortedClients.reduce((m, c) => Math.max(m, c.totalRevenue), 0);
+    const lbSeries = d.computeTimeSeries(lbFilteredRecords, granularity);
+    const periodLbl = this.periodLabel(fy, fyOptions);
+    const leaderboardKpis = [
+      this.kpiItem('Total Revenue', d.formatCurrency(clientIndex.totalRevenue), GOLD, null, periodLbl, lbSeries.map((t) => t.totalRevenue)),
+      this.kpiItem('Total Tickets', d.formatNumber(clientIndex.totalTickets), TEAL, null, periodLbl, lbSeries.map((t) => t.totalTickets)),
+      this.kpiItem('Active Clients', d.formatNumber(sortedClients.length), JADE, null, periodLbl, lbSeries.map((t) => t.clientCount)),
+      this.kpiItem(`Top ${topN} Concentration`, d.formatPercent(topShare, 1), HILITE, null, 'of total revenue in view', null),
+    ];
+    const leaderboardLocalFilters = [
+      this.buildFilterDef('clientType', 'Client Type', clientTypeOptionsRaw, clientType),
+      this.buildFilterDef('clientCategory', 'Client Category', clientCategoryOptionsRaw, clientCategory),
+    ];
+    const sortDefs = [{ key: 'totalRevenue', label: 'Revenue' }, { key: 'totalTickets', label: 'Tickets' }, { key: 'bookingCount', label: 'Bookings' }];
+    const sortOptions = sortDefs.map((o) => ({
+      ...o, onClick: () => this.setState({ sortKey: o.key }),
+      bg: sortKey === o.key ? INK : 'transparent', fg: sortKey === o.key ? '#f6f8fb' : '#5a5a6e',
+    }));
+    const sortLabel = (sortDefs.find((o) => o.key === sortKey) || {}).label || '';
+    const leaderboardCaption = `All ${d.formatNumber(sortedClients.length)} clients by ${sortLabel.toLowerCase()}`;
+    const clientRows = sortedClients.map((c, i) => {
+      const share = clientIndex.totalRevenue > 0 ? c.totalRevenue / clientIndex.totalRevenue : null;
+      const barPct = maxClientRevenue > 0 ? Math.round((c.totalRevenue / maxClientRevenue) * 100) : 0;
+      return {
+        rank: i + 1, key: c.key, displayName: c.displayName, badgeText: c.clientType || c.clientCategory,
+        revenueLabel: d.formatCurrency(c.totalRevenue), shareLabel: d.formatPercent(share, 1), barPct,
+        ticketsLabel: d.formatNumber(c.totalTickets), bookingsLabel: d.formatNumber(c.bookingCount), avgTicketLabel: d.formatCurrency(c.avgTicketPrice),
+        onClick: () => this.goToDetail(c.key, 'leaderboard'),
+      };
+    });
+    const exportLeaderboardCsv = () => d.downloadCsv('client-leaderboard.csv', d.toCsv(sortedClients, [
+      { label: 'Client', value: 'displayName' }, { label: 'Type', value: 'clientType' }, { label: 'Category', value: 'clientCategory' },
+      { label: 'Revenue', value: 'totalRevenue' }, { label: 'Tickets', value: 'totalTickets' }, { label: 'Bookings', value: 'bookingCount' }, { label: 'Avg Ticket Price', value: 'avgTicketPrice' },
+    ]));
+
+    // ---- Affinity ----
+    const { affinityDimension, affinitySearch, affinitySelectedValue } = this.state;
+    const globalClientIndex = d.buildClientIndex(globalFilteredRecords);
+    const allLoyalties = d.computeClientAffinities(globalClientIndex.list, { minBookings: 3, threshold: 0.65 });
+    const dimensionLoyalties = allLoyalties.filter((l) => l.dimension === affinityDimension);
+    const valueCountsMap = new Map();
+    for (const l of dimensionLoyalties) valueCountsMap.set(l.value, (valueCountsMap.get(l.value) || 0) + 1);
+    const valueCounts = [...valueCountsMap.entries()].sort((a, b) => b[1] - a[1]);
+    const searchQ = affinitySearch.trim().toLowerCase();
+    const searchMatches = (searchQ ? valueCounts.filter(([v]) => v.toLowerCase().includes(searchQ)) : valueCounts)
+      .map(([value, count]) => ({ value, count, countLabel: `${count} client${count === 1 ? '' : 's'}`, onClick: () => this.setState({ affinitySelectedValue: value, affinitySearch: '' }) }));
+    const visibleLoyalties = (affinitySelectedValue ? dimensionLoyalties.filter((l) => l.value === affinitySelectedValue) : dimensionLoyalties).slice().sort((a, b) => b.totalRevenue - a.totalRevenue);
+    const totalRevenueRepresented = visibleLoyalties.reduce((s, l) => s + l.totalRevenue, 0);
+    const dimensionOptions = DIMENSIONS.map((dd) => ({
+      ...dd, onClick: () => this.setState({ affinityDimension: dd.key, affinitySelectedValue: null, affinitySearch: '' }),
+      bg: affinityDimension === dd.key ? INK : 'transparent', fg: affinityDimension === dd.key ? '#f6f8fb' : '#5a5a6e',
+    }));
+    const activeDimLabel = (DIMENSIONS.find((x) => x.key === affinityDimension) || {}).label || '';
+    const showSearchDropdown = !affinitySelectedValue && searchQ.length > 0;
+    const affinityKpis = [
+      this.kpiItem('Loyal Clients', d.formatNumber(visibleLoyalties.length), JADE, null, null, null),
+      this.kpiItem('Revenue Represented', d.formatCurrency(totalRevenueRepresented), GOLD, null, null, null),
+      this.kpiItem('Distinct Values', d.formatNumber(valueCounts.length), INK, null, null, null),
+      this.kpiItem('Filter', affinitySelectedValue || 'All values', INK, null, activeDimLabel, null),
+    ];
+    const loyaltyRows = visibleLoyalties.map((l) => ({
+      key: `${l.clientKey}-${l.dimension}`, displayName: l.displayName, badgeText: l.clientCategory,
+      barLabel: l.value, barPct: Math.round(l.pct * 100), barCountLabel: `${(l.pct * 100).toFixed(0)}% (${l.matchCount})`,
+      revenueLabel: d.formatCurrency(l.totalRevenue), bookingsLabel: `${l.bookingCount} bookings total`,
+      onClick: () => this.goToDetail(l.clientKey, 'affinity'),
+    }));
+    const affinityListTitle = affinitySelectedValue ? `Loyal to "${affinitySelectedValue}"` : 'All loyal clients';
+
+    // ---- Dormant ----
+    const dormantClients = d.computeDormantClients(globalClientIndex.list, referenceDate, { monthsThreshold: 6, minBookings: 2 });
+    const atRiskRevenue = dormantClients.reduce((s, c) => s + c.totalRevenue, 0);
+    const avgMonths = dormantClients.length ? dormantClients.reduce((s, c) => s + c.monthsSince, 0) / dormantClients.length : null;
+    const dormantKpis = [
+      this.kpiItem('Dormant Clients', d.formatNumber(dormantClients.length), CORAL, null, null, null),
+      this.kpiItem('Revenue at Stake', d.formatCurrency(atRiskRevenue), GOLD, null, 'Lifetime revenue, now dormant', null),
+      this.kpiItem('Avg Months Dormant', avgMonths != null ? avgMonths.toFixed(1) : '—', INK, null, null, null),
+      this.kpiItem('Reference Date', d.formatDate(referenceDate), INK, null, 'Latest activity in dataset', null),
+    ];
+    const dormantRows = dormantClients.map((c) => ({
+      key: c.key, displayName: c.displayName, badgeText: c.clientType || c.clientCategory,
+      statusLabel: `DORMANT · ${c.monthsSince}mo`, lastBookingLabel: d.formatDate(c.lastBookingDate),
+      bookingsLabel: d.formatNumber(c.bookingCount), revenueLabel: d.formatCurrency(c.totalRevenue),
+      onClick: () => this.goToDetail(c.key, 'dormant'),
+    }));
+    const exportDormantCsv = () => d.downloadCsv('dormant-clients.csv', d.toCsv(dormantClients, [
+      { label: 'Client', value: 'displayName' }, { label: 'Category', value: 'clientCategory' }, { label: 'Months Dormant', value: 'monthsSince' },
+      { label: 'Last Booking', value: 'lastBookingDate' }, { label: 'Bookings', value: 'bookingCount' }, { label: 'Lifetime Revenue', value: 'totalRevenue' },
+    ]));
+
+    // ---- Detail ----
+    const fullClientIndex = d.buildClientIndex(records);
+    const { selectedClientKey, detailOrigin } = this.state;
+    const client = selectedClientKey ? fullClientIndex.byKey.get(selectedClientKey) : null;
+    const detailBackLabel = ORIGIN_LABELS[detailOrigin] || 'Client Leaderboard';
+    const detailBackOnClick = () => this.setState({ page: detailOrigin || 'leaderboard', selectedClientKey: null });
+    let detail = { found: false };
+    if (client) {
+      const monthlyTrend = d.computeMonthlyTrend(client.records);
+      const detailKpis = [
+        this.kpiItem('Lifetime Revenue', d.formatCurrency(client.totalRevenue), GOLD, null, null, monthlyTrend.map((m) => m.revenue)),
+        this.kpiItem('Lifetime Tickets', d.formatNumber(client.totalTickets), TEAL, null, null, null),
+        this.kpiItem('Booking Count', d.formatNumber(client.bookingCount), JADE, null, null, monthlyTrend.map((m) => m.bookingCount)),
+        this.kpiItem('Avg Ticket Price', d.formatCurrency(client.avgTicketPrice), GOLD, null, null, null),
+      ];
+      const revenueBarChart = this.barChart(monthlyTrend.map((m) => ({ value: m.label, revenue: m.revenue })), 'revenue', { colors: [GOLD], fmt: d.formatCurrencyCompact, h: 190 });
+      const bookingsLineChart = this.lineChart(monthlyTrend.map((m) => ({ label: m.label, bookingCount: m.bookingCount })), 'bookingCount', { colorHex: JADE, fmt: d.formatNumber, h: 190 });
+      const bookingTypeDist = d.computeDistribution(client.records, 'bookingType');
+      const regionDist = d.computeDistribution(client.records, 'region');
+      const cityDist = d.computeDistribution(client.records, 'city');
+      const cityRows = cityDist.items.slice(0, 8).map((it, i) => ({ label: it.value, count: it.count, pct: it.pct, barPct: Math.round(it.pct * 100), color: ROTATION[i % ROTATION.length], pctLabel: `${(it.pct * 100).toFixed(0)}% (${it.count})` }));
+      const affinitySections = DIMENSIONS.map((dd) => ({ title: dd.label, segments: this.segmentsFor(d.computeDistribution(client.records, dd.key).items) }));
+      const chronological = [...client.records].sort((a, b) => new Date(b.dateOfScreening) - new Date(a.dateOfScreening));
+      const bookingRows = chronological.map((r) => ({ dateLabel: d.formatDate(r.dateOfScreening), movie: r.movieName, cinema: r.cinemaLocation, city: r.city, ticketsLabel: d.formatNumber(r.tickets), amountLabel: d.formatCurrency(r.totalAmount) }));
+      const exportBookingsCsv = () => d.downloadCsv(`${client.displayName.replace(/\s+/g, '-')}-bookings.csv`, d.toCsv(chronological, [
+        { label: 'Date', value: 'dateOfScreening' }, { label: 'Movie', value: 'movieName' }, { label: 'Cinema', value: 'cinemaLocation' }, { label: 'City', value: 'city' }, { label: 'Tickets', value: 'tickets' }, { label: 'Amount', value: 'totalAmount' },
+      ]));
+      detail = {
+        found: true, clientName: client.displayName, clientBadgeText: client.clientType || client.clientCategory,
+        detailKpis, revenueBarChart, hasRevenueBarChart: !!revenueBarChart, bookingsLineChart, hasBookingsLineChart: !!bookingsLineChart,
+        bookingTypeSegments: this.segmentsFor(bookingTypeDist.items), regionSegments: this.segmentsFor(regionDist.items),
+        cityRows, affinitySections, bookingsTitle: `All Bookings (${bookingRows.length})`, bookingRows, exportBookingsCsv,
+      };
+    }
+
+    return {
+      ready: true, notReady: false,
+      recordsLoadedLabel: `${d.formatNumber(records.length)} bookings loaded`,
+      dataThroughLabel: `Data through ${d.formatMonthYear(referenceDate)}`,
+      referenceDateLabel: d.formatDate(referenceDate),
+      navItems, globalFilterDefs, anyDropdownOpen, closeDropdowns: () => this.closeDropdowns(), stopClick: this.stopClick,
+      sidebarCollapsed: this.state.sidebarCollapsed, sidebarWidth: this.state.sidebarCollapsed ? '60px' : '224px',
+      toggleSidebar: () => this.toggleSidebar(), sidebarToggleIcon: this.state.sidebarCollapsed ? '»' : '«',
+      pageTitle: page === 'detail' ? (client ? client.displayName : 'Client') : { summary: 'Summary', leaderboard: 'Client Leaderboard', affinity: 'Genre Affinity', dormant: 'Dormant Clients' }[page],
+      isSummary: page === 'summary', isLeaderboard: page === 'leaderboard', isAffinity: page === 'affinity', isDormant: page === 'dormant', isDetail: page === 'detail',
+
+      summaryKpis, revenueChart, hasRevenueChart: !!revenueChart, sphChart, hasSphChart: !!sphChart, atvChart, hasAtvChart: !!atvChart,
+      breakdownTitle, breakdownChart, hasBreakdownChart: !!breakdownChart,
+
+      leaderboardLocalFilters, leaderboardKpis, sortOptions, leaderboardCaption, clientRows, exportLeaderboardCsv,
+
+      dimensionOptions, affinitySearchInputValue: affinitySelectedValue || affinitySearch,
+      affinitySearchPlaceholder: `Search a ${activeDimLabel.toLowerCase()}… e.g. "Hollywood"`,
+      onSearchChange: (e) => this.setState({ affinitySelectedValue: null, affinitySearch: e.target.value }),
+      hasAffinitySelection: !!affinitySelectedValue, clearAffinitySelection: () => this.setState({ affinitySelectedValue: null, affinitySearch: '' }),
+      showSearchDropdown, searchMatches, hasSearchMatches: searchMatches.length > 0,
+      affinityKpis, affinityListTitle, loyaltyRows, hasLoyaltyRows: loyaltyRows.length > 0,
+
+      dormantKpis, dormantRows, hasDormantRows: dormantRows.length > 0, exportDormantCsv,
+
+      detailBackLabel, detailBackOnClick, detailFound: !!client, detail,
+    };
+  }
+}
+
+</script>
+</body>
+</html>

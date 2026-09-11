@@ -1,0 +1,46 @@
+1. Unresolved region gaps — 155 rows
+data/regionDerivations.json has 418 total city→region derivations; 155 still resolve to null region because both city and cinemaLocation were too ambiguous/unrecognized to map. Heavily concentrated:
+
+116 of 155 in "Year 2022 data" — that sheet used a now-defunct "TLC" region code for many rows with no city recorded, and the cinemaLocation values are inconsistent/misspelled cinema names (e.g. "SCW", "Ambi GGN", "Multipal Cities", "Maison & Ambience") that don't match any known city.
+Remainder scattered across Sep-2023 (3), Nov-2023 (1), May-2024 (8), June-2024 (7), July-2024 (2), Aug-2024 (16 — mostly "PVR Vervosa", unrecognized), Sep-2024 (1), April-2025 (1).
+Fix requires manually looking up which city each unrecognized cinemaLocation (e.g. "PVR Vervosa", "PVR Multipal", "Sapna Sngeeta Inox", "PVR Cinema - Phulong", "PVR The Cenima Naaz Center") actually belongs to — the data itself doesn't carry that information anywhere else in the workbook.
+2. Null city (state name leaked into city field) — 20 rows
+data/nullCityRows.json — full list, each with cinemaLocation as a hint for you to fill in the real city:
+
+3× "BANDHAN AMC"/Hemant/Jinisha rows with Maharastra/Maharashta → cities are Kolhapur, Dombivali, Mumbai (BKC), Kurla, Icon Infinity mall — inferable from cinemaLocation.
+4× "Cinipolis" rows, KERALA, cinema "Lullu Mall" (likely Kochi).
+7× Gujrat rows (GM Modular, Bipin, Anie & Harsh, Neel) — cinemas in Surat (×3) and Jamnagar (×1) and Acropolis Mall (×2, ambiguous — Acropolis exists in both Ahmedabad and Rajkot, needs manual confirmation).
+2× Chattisgarh/CHATTISGARH — Raipur (City Center) is inferable; one more "CINEMAX CITY CENTER" is ambiguous.
+1× karnatak — PVR Superplex Forum Mall South Bengaluru → Bangalore.
+2× UTTAR PARADESH — "INOX PVS MALL" and "INOX PHOENIX PALASSIO MAL" — needs manual city lookup (Phoenix Palassio is in Lucknow).
+3. Remaining flagged city values — 21 distinct / 274 rows
+data/flaggedValues.json → city key. These fall into two buckets:
+
+Likely genuine typos still worth curating (closest canonical match shown, but none were auto-merged — distances ≥1 stayed conservative on purpose):
+
+Vishakhapatanam (×1) → almost certainly Visakhapatnam (a different misspelling than the "Vishakhapatnam" I already fixed last round — this one slipped through)
+Bhillai (×1) → Bhilai
+Velacherry (×1) → Velachery
+SATNA (×1) → likely a real distinct city (Satna, MP) rather than a typo of Patna — needs your judgment
+YAMUNANAGAR (×1) → Yamuna Nagar (just a spacing variant)
+BHIWADI (×1) → likely genuine city (Bhiwadi, Rajasthan), not a typo of Bhiwandi — needs your judgment
+Malegaon (×1) → could be genuine (Malegaon, Maharashtra) or a typo — ambiguous, needs your judgment
+Wakad (×1) → genuine locality (Pune suburb), probably fine as-is
+High-volume — likely legitimate distinct cities/localities that just haven't been reviewed, NOT typos (large counts make it clear these are real, recurring places, but they still show up flagged because the ETL is deliberately conservative and never auto-merges without a curated entry):
+
+Jaipur ×75, Nagpur ×34, Udaipur ×32, Cyberabad ×26 (Hyderabad's twin-city business district — arguably should stay distinct or map to Hyderabad, your call), Kanpur ×24, GOREGAON ×23, NASHIK ×16, KANDIVALI EAST ×15, NALASOPARA ×8, Lower Parel ×7, Mangalore ×4, South Delhi ×1
+These are flagged only because they don't exactly case-match an existing canonical entry yet (e.g. NASHIK vs Nasik, GOREGAON vs Gurgaon-adjacent-but-not-the-same-city) — they need a decision from you, not a typo fix: should NASHIK→Nasik, KANDIVALI EAST stay distinct from Kandivali West, etc. I intentionally did not guess on any of these.
+
+4. Flagged bookingType — 5 distinct / 11 rows
+data/flaggedValues.json → bookingType key: Web Lead (×3), School Booking (×2), Birthday (×2), Event (×2), Physical Gift Cards (×2). These read as legitimate, distinct booking types rather than typos of "Bulk Booking" — not really a data gap, just worth knowing they exist as their own categories if you want them merged into an "Other" bucket or kept separate.
+
+5. Unparseable / dropped rows — 124 total
+data/dataIssues.json:
+
+month: 119 rows — concentrated in 3 sheets where Excel autofill corrupted the month serials: Sep-2024 (53 rows), March-2026 (51 rows), July-2025 (15 rows). The ETL used each sheet's dominant month as a fallback, so these rows have a plausible month but the original per-row value was discarded — worth spot-checking a few against the source file if precision matters.
+totalAmount: 1 row — "Year 2022 data" row 178, raw value was literally "-" (non-numeric), so totalAmount is null for that row.
+clientType: 1 row — "February - 2025" row 70, client name "PVR Kuamr pacfic" duplicated the cinema location across every identity column; the whole row was dropped as corrupted (not in bookings.json at all).
+dateOfScreening: 3 rows — Dec-2025 rows 947/948 have dates resolving exactly 12 months ahead of the booking month (likely a typed year error), and April-2026 row 33 has the literal string "Dhurendhar 2" (a movie title) in the date field, unparseable.
+6. Known gaps not yet formalized into any report
+movieCategory field: 1,525 rows have the literal string "na"/"NA"/"Na" (1186 + 330 + 9) instead of being treated as a proper null. Not normalized in the ETL at all yet — if you want these excluded from movie-category breakdowns, they need explicit null-coercion.
+Client name normalization: normalizeClientKey only trims/lowercases/collapses whitespace — it does no typo correction, unlike city/movieIndustry/movieLanguage. Across the dataset there are 613 distinct client keys; if any of those are actually the same client with a misspelled name (the way "PVR Kuamr pacfic" was clearly corrupted), they're currently being counted as separate clients in the Leaderboard/Dormant views rather than merged. This was never audited the way city/industry/language were — if it matters for accuracy, it'd need the same edit-distance-review treatment.

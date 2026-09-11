@@ -1,0 +1,26 @@
+{
+  "name": "bb-tracker-dashboard",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "sync-data": "node scripts/syncData.js",
+    "predev": "npm run sync-data",
+    "prebuild": "npm run sync-data",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.3",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "tailwindcss": "^4.3.3",
+    "vite": "^7.3.6"
+  }
+}
