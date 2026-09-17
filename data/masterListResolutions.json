@@ -1,0 +1,4072 @@
+{
+  "resolutions": [
+    {
+      "sheet": "Year 2022 data",
+      "row": 2,
+      "clientName": "Apollo Hospitals Enterprise Limited",
+      "originalCinemaLocation": "PVR RK Cineplex",
+      "matchedCinemaName": null,
+      "derivedCity": "Vijayawada",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 3,
+      "clientName": "Apollo Hospitals Enterprise Limited",
+      "originalCinemaLocation": "PVR Manisquare",
+      "matchedCinemaName": null,
+      "derivedCity": "Kolkata",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 4,
+      "clientName": "DX GLOBAL",
+      "originalCinemaLocation": "PVR City Centre GGN",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 5,
+      "clientName": "Arka Educational and Cultural Trust",
+      "originalCinemaLocation": "PVR Vegacity Blr",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 6,
+      "clientName": "Apollo Hospitals Enterprise Limited",
+      "originalCinemaLocation": "PVR Motera Ahmedabad",
+      "matchedCinemaName": "PVR MOTERA AHMEDABAD",
+      "derivedCity": "Ahmedabad",
+      "method": "exact",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 8,
+      "clientName": "Apollo Hospitals Enterprise Limited",
+      "originalCinemaLocation": "PVR Vega City",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 9,
+      "clientName": "Apollo Hospitals Enterprise Limited",
+      "originalCinemaLocation": "PVR Vega City",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 12,
+      "clientName": "Apollo Hospitals Enterprise Limited",
+      "originalCinemaLocation": "PVR Hi - Tech Hyderabad",
+      "matchedCinemaName": "INOX ASHOKA ONE MALL (Hyderabad)",
+      "derivedCity": "Hyderabad",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 13,
+      "clientName": "Apollo Hospitals Enterprise Limited",
+      "originalCinemaLocation": "PVR Selectcity",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 15,
+      "clientName": "Lankasri India Pvt. Ltd.",
+      "originalCinemaLocation": "PVR VR MALL",
+      "matchedCinemaName": null,
+      "derivedCity": "Surat",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 16,
+      "clientName": "Yogesh Rottery Club Chennai",
+      "originalCinemaLocation": "PVR Sathyam",
+      "matchedCinemaName": "SATHYAM (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 17,
+      "clientName": "MOHAMED RAFEEK SHAHUL HAMEED (Moj App)",
+      "originalCinemaLocation": "PVR Palazzo",
+      "matchedCinemaName": "PALAZZO (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 18,
+      "clientName": "Mr. Suresh",
+      "originalCinemaLocation": "PVR Spectrum",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 19,
+      "clientName": "Lankasri India Pvt. Ltd.",
+      "originalCinemaLocation": "PVR Spectrum",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 20,
+      "clientName": "Drumsticks Productions",
+      "originalCinemaLocation": "PVR VR MALL",
+      "matchedCinemaName": null,
+      "derivedCity": "Surat",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 21,
+      "clientName": "Adani Enterprises Limited",
+      "originalCinemaLocation": "PVR Acropolis",
+      "matchedCinemaName": null,
+      "derivedCity": "Ahmedabad",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 22,
+      "clientName": "Mr. Ankit Jain",
+      "originalCinemaLocation": "PVR Logix",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 25,
+      "clientName": "MERINO INDUSTRIES LIMITED",
+      "originalCinemaLocation": "PVR Pacific Subash Nagar",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 27,
+      "clientName": "Manipal Hospitals",
+      "originalCinemaLocation": "PVR Regalia",
+      "matchedCinemaName": null,
+      "derivedCity": "Cuttack",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 28,
+      "clientName": "DHUVARAGA STUDIOS",
+      "originalCinemaLocation": "PVR Sathyam",
+      "matchedCinemaName": "SATHYAM (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 31,
+      "clientName": "GreatWhite Global Pvt Ltd.",
+      "originalCinemaLocation": "PVR RK Cineplex",
+      "matchedCinemaName": null,
+      "derivedCity": "Vijayawada",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 32,
+      "clientName": "Khushi Advertising",
+      "originalCinemaLocation": "PVR VR Mall Bangalore",
+      "matchedCinemaName": "INOX BROOKE FIELD MALL (Bangalore)",
+      "derivedCity": "Bangalore",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 33,
+      "clientName": "Taboola India Private Limited",
+      "originalCinemaLocation": "PVR Ambience",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 34,
+      "clientName": "Pine Labs",
+      "originalCinemaLocation": "PVR EDM",
+      "matchedCinemaName": "PVR EDM GHAZIABAD",
+      "derivedCity": "Ghaziabad",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 35,
+      "clientName": "KAPOOR ADVERTISING",
+      "originalCinemaLocation": "PVR Mani Square",
+      "matchedCinemaName": "PVR MANI SQUARE KOLKATA",
+      "derivedCity": "Kolkata",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 36,
+      "clientName": "DLF Limited",
+      "originalCinemaLocation": "PVR Ambience",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 37,
+      "clientName": "DLF Limited",
+      "originalCinemaLocation": "PVR Ambience",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 38,
+      "clientName": "BIGTREE ENTERTAINMENT PVT LIMITED",
+      "originalCinemaLocation": "PVR Eva Mall",
+      "matchedCinemaName": "PVR EVA MALL VADODRA (Vadodara)",
+      "derivedCity": "Vadodara",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 39,
+      "clientName": "BISLERI INTERNATIONAL PVT LTD",
+      "originalCinemaLocation": "SPI Satyam",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 40,
+      "clientName": "NDTV",
+      "originalCinemaLocation": "PVR Priya",
+      "matchedCinemaName": "PVR PRIYA (New Delhi)",
+      "derivedCity": "New Delhi",
+      "method": "exact",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 41,
+      "clientName": "Arvind Fashion Pvt Ltd",
+      "originalCinemaLocation": "PVR Forum Kormangala",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 45,
+      "clientName": "Tata Realty And Infrastructure Limited",
+      "originalCinemaLocation": "PVR SPI ESCAPE CHENNAI",
+      "matchedCinemaName": "ESCAPE (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 47,
+      "clientName": "Tata Realty And Infrastructure Limited",
+      "originalCinemaLocation": "PVR Ambience Gurgaon",
+      "matchedCinemaName": "INOX AIPL JOY STREET MALL (Gurgaon)",
+      "derivedCity": "Gurgaon",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 49,
+      "clientName": "JP Morgan",
+      "originalCinemaLocation": "PVR Ambience Gurgaon",
+      "matchedCinemaName": "INOX AIPL JOY STREET MALL (Gurgaon)",
+      "derivedCity": "Gurgaon",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 50,
+      "clientName": "JP Morgan",
+      "originalCinemaLocation": "SCW",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 51,
+      "clientName": "Titan",
+      "originalCinemaLocation": "PVR Dehradun",
+      "matchedCinemaName": "PVR Centrio Dehradun",
+      "derivedCity": "Dehradun",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 53,
+      "clientName": "Techment",
+      "originalCinemaLocation": "Banglore",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 54,
+      "clientName": "BMS",
+      "originalCinemaLocation": "Lereve, Oberoi, Orion",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 55,
+      "clientName": "Rajasthan Club",
+      "originalCinemaLocation": "Chanakya",
+      "matchedCinemaName": "PVR ECX CHANAKYAPURI DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 60,
+      "clientName": "DLF Motinagar",
+      "originalCinemaLocation": "Subhashnagar",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 61,
+      "clientName": "Bain & Company",
+      "originalCinemaLocation": "Ambi GGN",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 62,
+      "clientName": "BMS",
+      "originalCinemaLocation": "Marketcity Pune",
+      "matchedCinemaName": "Director’s Cut KOPA Mall, Pune",
+      "derivedCity": "Pune",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 64,
+      "clientName": "DLF Gurgaon",
+      "originalCinemaLocation": "Ambi GGN",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 65,
+      "clientName": "TATA Tele Services",
+      "originalCinemaLocation": "SCW Gold",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 66,
+      "clientName": "Mayura Mathur",
+      "originalCinemaLocation": "Promenade",
+      "matchedCinemaName": "PVR PROMENADE VASANT KUNJ DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 67,
+      "clientName": "Nestle",
+      "originalCinemaLocation": "DCGGN",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 68,
+      "clientName": "Intractive",
+      "originalCinemaLocation": "Vaishnavi Bnglr",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 69,
+      "clientName": "Times Group",
+      "originalCinemaLocation": "Market City Bnglr",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 70,
+      "clientName": "DLF",
+      "originalCinemaLocation": "Star Mall GGN",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 71,
+      "clientName": "Super Cassetes",
+      "originalCinemaLocation": "Andheri City Mall",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 75,
+      "clientName": "EQX Analystics",
+      "originalCinemaLocation": "MGF",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 76,
+      "clientName": "DLF Motinagar",
+      "originalCinemaLocation": "Subhashnagar",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 77,
+      "clientName": "AG DAV School",
+      "originalCinemaLocation": "Delhi",
+      "matchedCinemaName": "PVR 3C'S DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 79,
+      "clientName": "Chennai Rotary Club",
+      "originalCinemaLocation": "SPI Sathyam",
+      "matchedCinemaName": "SATHYAM (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 80,
+      "clientName": "BMS",
+      "originalCinemaLocation": "Oberoi",
+      "matchedCinemaName": "PVR ICON OBEROI GOREGAON (E) MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 81,
+      "clientName": "LeMeredian",
+      "originalCinemaLocation": "MGF",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 82,
+      "clientName": "Jannock Films LLP",
+      "originalCinemaLocation": "Juhu",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 83,
+      "clientName": "TATA Tele Service",
+      "originalCinemaLocation": "Delhi",
+      "matchedCinemaName": "PVR 3C'S DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 84,
+      "clientName": "Ms Kalyani",
+      "originalCinemaLocation": "Delhi",
+      "matchedCinemaName": "PVR 3C'S DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 85,
+      "clientName": "Ms Kalyani",
+      "originalCinemaLocation": "Dehradun",
+      "matchedCinemaName": "PVR Centrio Dehradun",
+      "derivedCity": "Dehradun",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 86,
+      "clientName": "AG DAV School",
+      "originalCinemaLocation": "Delhi",
+      "matchedCinemaName": "PVR 3C'S DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 87,
+      "clientName": "Ms Sareen (Teachers)",
+      "originalCinemaLocation": "Vegas",
+      "matchedCinemaName": "PVR VEGAS DWARKA (New Delhi)",
+      "derivedCity": "New Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 91,
+      "clientName": "AG DAV School",
+      "originalCinemaLocation": "Shalimar Bagh",
+      "matchedCinemaName": "PVR SHALIMAR BAGH DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 92,
+      "clientName": "Sachdeva Global",
+      "originalCinemaLocation": "Vegas",
+      "matchedCinemaName": "PVR VEGAS DWARKA (New Delhi)",
+      "derivedCity": "New Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 93,
+      "clientName": "Salwan",
+      "originalCinemaLocation": "Plaza/Rivoli",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 95,
+      "clientName": "Tata Tele",
+      "originalCinemaLocation": "Logix",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 96,
+      "clientName": "Swar Manjari",
+      "originalCinemaLocation": "SCW",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 97,
+      "clientName": "DLF Chandigarh",
+      "originalCinemaLocation": "Elante",
+      "matchedCinemaName": "PVR ELANTE CHANDIGARH",
+      "derivedCity": "Chandigarh",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 98,
+      "clientName": "Divya",
+      "originalCinemaLocation": "Lower Parel",
+      "matchedCinemaName": "PVR ICON PHOENIX LOWER PAREL MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 99,
+      "clientName": "Devesh",
+      "originalCinemaLocation": "Chanakya",
+      "matchedCinemaName": "PVR ECX CHANAKYAPURI DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 100,
+      "clientName": "Yogesh (Rotary Club)",
+      "originalCinemaLocation": "Chennai",
+      "matchedCinemaName": "INOX CITI CENTRE CHENNAI",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 101,
+      "clientName": "IDFC Bank Chennai",
+      "originalCinemaLocation": "Chennai",
+      "matchedCinemaName": "INOX CITI CENTRE CHENNAI",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 102,
+      "clientName": "Bisleri",
+      "originalCinemaLocation": "Chennai",
+      "matchedCinemaName": "INOX CITI CENTRE CHENNAI",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 103,
+      "clientName": "JW Merriot",
+      "originalCinemaLocation": "Banglore",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 104,
+      "clientName": "Le-Meridian",
+      "originalCinemaLocation": "MGF",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 105,
+      "clientName": "Mr. Rajesh",
+      "originalCinemaLocation": "Banglore",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 106,
+      "clientName": "MAX PUBLICITY & COMMUNICATION PRIVATE LIMITED",
+      "originalCinemaLocation": "EDM/Shalimar / Ludhiana",
+      "matchedCinemaName": null,
+      "derivedCity": "Ghaziabad",
+      "method": "first-of-list",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 107,
+      "clientName": "Bisleri",
+      "originalCinemaLocation": "Hyderabad",
+      "matchedCinemaName": "PVR ATRIUM MALL HYDERABAD",
+      "derivedCity": "Hyderabad",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 108,
+      "clientName": "HT Media",
+      "originalCinemaLocation": "Star Mall",
+      "matchedCinemaName": "INOX STAR MALL, MADHYAMGRAM (Kolkata)",
+      "derivedCity": "Kolkata",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 109,
+      "clientName": "Business Integrity Services Private Limited",
+      "originalCinemaLocation": "Chennai",
+      "matchedCinemaName": "INOX CITI CENTRE CHENNAI",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 110,
+      "clientName": "GD SALVAN PUBLIC SCHOOL",
+      "originalCinemaLocation": "naraina",
+      "matchedCinemaName": "PVR NARAINA DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 111,
+      "clientName": "Meta Academy",
+      "originalCinemaLocation": "Chennai",
+      "matchedCinemaName": "INOX CITI CENTRE CHENNAI",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 112,
+      "clientName": "Tata Tele",
+      "originalCinemaLocation": "Logix",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 113,
+      "clientName": "Bacardi",
+      "originalCinemaLocation": "MGF",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 114,
+      "clientName": "meenakshisundaram.m",
+      "originalCinemaLocation": "Chennai",
+      "matchedCinemaName": "INOX CITI CENTRE CHENNAI",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 117,
+      "clientName": "BMS",
+      "originalCinemaLocation": "PVR Juhu",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 118,
+      "clientName": "Go Live Marcom Private Limited",
+      "originalCinemaLocation": "PVR Pondi",
+      "matchedCinemaName": null,
+      "derivedCity": "Puducherry",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 119,
+      "clientName": "SP PUBLIC SCHOOL",
+      "originalCinemaLocation": "PVR Star Mall",
+      "matchedCinemaName": null,
+      "derivedCity": "Kolkata",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 121,
+      "clientName": "L&T",
+      "originalCinemaLocation": "PVR Galada",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 122,
+      "clientName": "Tablets (India) Ltd",
+      "originalCinemaLocation": "PVR Satyam",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 123,
+      "clientName": "Stroam Communications",
+      "originalCinemaLocation": "multipal cinemas in pune",
+      "matchedCinemaName": "Director’s Cut KOPA Mall, Pune",
+      "derivedCity": "Pune",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 125,
+      "clientName": "CAMLIN FINE SCIENCES LIMITED",
+      "originalCinemaLocation": "Kurla",
+      "matchedCinemaName": "PVR JIO WORLD DRIVE- BANDRA KURLA COMPLEX (Mumbai)",
+      "derivedCity": "Mumbai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 126,
+      "clientName": "BCG",
+      "originalCinemaLocation": "Ambi/ Maison/ Forum / VR Chennai",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 127,
+      "clientName": "Super Cassettes Industries Pvt. Ltd",
+      "originalCinemaLocation": "PVR Subash Nagar",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 128,
+      "clientName": "Super Cassettes Industries Pvt. Ltd",
+      "originalCinemaLocation": "PVR Plaza",
+      "matchedCinemaName": "PVR PLAZA DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 129,
+      "clientName": "Super Cassettes Industries Pvt. Ltd",
+      "originalCinemaLocation": "PVR Elante",
+      "matchedCinemaName": "PVR ELANTE CHANDIGARH",
+      "derivedCity": "Chandigarh",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 130,
+      "clientName": "Stroam Communications",
+      "originalCinemaLocation": "PVR Pavallion Pune",
+      "matchedCinemaName": "Director’s Cut KOPA Mall, Pune",
+      "derivedCity": "Pune",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 131,
+      "clientName": "PWC",
+      "originalCinemaLocation": "PVR MGF",
+      "matchedCinemaName": "PVR MGF GURGAON",
+      "derivedCity": "Gurgaon",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 132,
+      "clientName": "Madras Royal Club",
+      "originalCinemaLocation": "PVR Ampa",
+      "matchedCinemaName": "PVR AMPA CHENNAI",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 133,
+      "clientName": "Super Cassettes Industries Pvt. Ltd",
+      "originalCinemaLocation": "PVR Juhu",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 134,
+      "clientName": "TOI Schools Booking",
+      "originalCinemaLocation": "PVR City Center GGN",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 137,
+      "clientName": "Strong Communications",
+      "originalCinemaLocation": "PVR Pune",
+      "matchedCinemaName": "Director’s Cut KOPA Mall, Pune",
+      "derivedCity": "Pune",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 138,
+      "clientName": "TVF",
+      "originalCinemaLocation": "PVR Ambi",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 140,
+      "clientName": "TVF",
+      "originalCinemaLocation": "PVR Citi Andheri",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 141,
+      "clientName": "TVF",
+      "originalCinemaLocation": "PVR Citi Andheri",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 142,
+      "clientName": "RBL",
+      "originalCinemaLocation": "PVR, Acropolis-",
+      "matchedCinemaName": null,
+      "derivedCity": "Ahmedabad",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 143,
+      "clientName": "RBL",
+      "originalCinemaLocation": "PVR EVA Mall Vadodara",
+      "matchedCinemaName": "PVR EVA MALL VADODRA (Vadodara)",
+      "derivedCity": "Vadodara",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 144,
+      "clientName": "RBL",
+      "originalCinemaLocation": "PVR EMPRESS NAGPUR",
+      "matchedCinemaName": "INOX JASWANT TULI (Nagpur)",
+      "derivedCity": "Nagpur",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 145,
+      "clientName": "RBL",
+      "originalCinemaLocation": "PVR, Forum Mall, Koramangala",
+      "matchedCinemaName": "PVR FORUM MALL KORAMANGALA (Bengaluru)",
+      "derivedCity": "Bengaluru",
+      "method": "exact",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 146,
+      "clientName": "BCG ( Food)",
+      "originalCinemaLocation": "PVR Ambi/ Forum / Maison",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "first-of-list",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 147,
+      "clientName": "Asianet Star Communications Pvt Ltd,",
+      "originalCinemaLocation": "Multipal Cities",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 148,
+      "clientName": "Khushi Advertising",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 149,
+      "clientName": "Manthan (Tks)",
+      "originalCinemaLocation": "PVR Chanakya",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 150,
+      "clientName": "Manthan (Food)",
+      "originalCinemaLocation": "PVR Chanakya",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 151,
+      "clientName": "BMS",
+      "originalCinemaLocation": "PVR Juhu",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 152,
+      "clientName": "Mr Yogesh Rajastan Club Chennai",
+      "originalCinemaLocation": "PVR Satyam",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 153,
+      "clientName": "Ryan international School Gurgaon",
+      "originalCinemaLocation": "PVR MGF",
+      "matchedCinemaName": "PVR MGF GURGAON",
+      "derivedCity": "Gurgaon",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 154,
+      "clientName": "Ryan international School Gurgaon",
+      "originalCinemaLocation": "PVR City Gurgaon",
+      "matchedCinemaName": "INOX AIPL JOY STREET MALL (Gurgaon)",
+      "derivedCity": "Gurgaon",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 155,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR Acropolis",
+      "matchedCinemaName": null,
+      "derivedCity": "Ahmedabad",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 156,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR Market City Kurla",
+      "matchedCinemaName": "PVR MARKET CITY KURLA MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 157,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR PAVALLION (PUNE)",
+      "matchedCinemaName": "Director’s Cut KOPA Mall, Pune",
+      "derivedCity": "Pune",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 158,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 159,
+      "clientName": "Rajasthan Club",
+      "originalCinemaLocation": "PVR Chanakya",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 160,
+      "clientName": "The Shri Ram School Gurgaon",
+      "originalCinemaLocation": "PVR City Gurgaon",
+      "matchedCinemaName": "INOX AIPL JOY STREET MALL (Gurgaon)",
+      "derivedCity": "Gurgaon",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 161,
+      "clientName": "GM Modular",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 162,
+      "clientName": "GM Moduler",
+      "originalCinemaLocation": "PVR City Andheri",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 163,
+      "clientName": "Just Dial",
+      "originalCinemaLocation": "PVR EDM",
+      "matchedCinemaName": "PVR EDM GHAZIABAD",
+      "derivedCity": "Ghaziabad",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 164,
+      "clientName": "GM Modular",
+      "originalCinemaLocation": "PVR City Andheri",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 165,
+      "clientName": "GM Modular",
+      "originalCinemaLocation": "PVR Infinity Malad",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 166,
+      "clientName": "GM Modular",
+      "originalCinemaLocation": "PVR Juhu",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 167,
+      "clientName": "GM Modular",
+      "originalCinemaLocation": "PVR Elante",
+      "matchedCinemaName": "PVR ELANTE CHANDIGARH",
+      "derivedCity": "Chandigarh",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 168,
+      "clientName": "RBL",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 169,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 170,
+      "clientName": "GM Modular",
+      "originalCinemaLocation": "PVR Oberoi Goregaon",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 171,
+      "clientName": "TATA TELE",
+      "originalCinemaLocation": "Logix",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 174,
+      "clientName": "PANORAMA STUDIO",
+      "originalCinemaLocation": "Multipal Cities",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 175,
+      "clientName": "GM Modular",
+      "originalCinemaLocation": "PVR Juhu",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 176,
+      "clientName": "AUDI Mathura Road",
+      "originalCinemaLocation": "PVR Logix",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 177,
+      "clientName": "AUDI Mathura Road",
+      "originalCinemaLocation": "PVR Logix",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 178,
+      "clientName": "FERVENT COMMUNICATION PRIVATE LIMITED",
+      "originalCinemaLocation": "PVR Logix / MGF / Forum / Market City Kurla",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "first-of-list",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 179,
+      "clientName": "Mr Yogesh Rajasthan Club Chennai",
+      "originalCinemaLocation": "PVR Satyam",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 180,
+      "clientName": "TATA TELE",
+      "originalCinemaLocation": "Logix",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 181,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR MGF",
+      "matchedCinemaName": "PVR MGF GURGAON",
+      "derivedCity": "Gurgaon",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 182,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR Indore",
+      "matchedCinemaName": "INOX C-21 MALL (Indore)",
+      "derivedCity": "Indore",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 185,
+      "clientName": "DREAMS WORK",
+      "originalCinemaLocation": "PVR Lucknow / Kanpur",
+      "matchedCinemaName": "INOX CROWN MALL, FAIZABAD ROAD (Lucknow)",
+      "derivedCity": "Lucknow",
+      "method": "first-of-list",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 186,
+      "clientName": "KARE VOYAGE",
+      "originalCinemaLocation": "pvr Pomanade",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 188,
+      "clientName": "FERVENT COMMUNICATION",
+      "originalCinemaLocation": "JIO",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 189,
+      "clientName": "EDELWISE",
+      "originalCinemaLocation": "PVR Mumbai",
+      "matchedCinemaName": "CINEMAX INFINITI MALAD MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 190,
+      "clientName": "Rajastan Club Mumbai",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 191,
+      "clientName": "Global Event",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 192,
+      "clientName": "TVF",
+      "originalCinemaLocation": "Multipal Place",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 193,
+      "clientName": "KOTAK BANK",
+      "originalCinemaLocation": "Juhu",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 195,
+      "clientName": "T&T Motors",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 196,
+      "clientName": "IDFC BANK",
+      "originalCinemaLocation": "Hyderabad",
+      "matchedCinemaName": "PVR ATRIUM MALL HYDERABAD",
+      "derivedCity": "Hyderabad",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 197,
+      "clientName": "IDFC BANK",
+      "originalCinemaLocation": "Multipal Place",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 198,
+      "clientName": "Khushi Advertising",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 199,
+      "clientName": "copper Communications LLP",
+      "originalCinemaLocation": "Vegas Dwarka",
+      "matchedCinemaName": "PVR VEGAS DWARKA (New Delhi)",
+      "derivedCity": "New Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 200,
+      "clientName": "GLOBAL WHITEFIELD SCHOOL",
+      "originalCinemaLocation": "MCB",
+      "matchedCinemaName": null,
+      "derivedCity": "Bhubaneswar",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 201,
+      "clientName": "SILVER ARROW AUTOMOBILES PRIVATE LIMITED",
+      "originalCinemaLocation": "PVR Select gold",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 202,
+      "clientName": "Ratnadeep Retail P LTD",
+      "originalCinemaLocation": "Next Galleria Panjagutta",
+      "matchedCinemaName": null,
+      "derivedCity": "Hyderabad",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 203,
+      "clientName": "Fervent Communication",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 204,
+      "clientName": "EO",
+      "originalCinemaLocation": "Promanade",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 205,
+      "clientName": "MR. YOGESH RAJASTAN CLIUB CHENNAI",
+      "originalCinemaLocation": "Escape",
+      "matchedCinemaName": "ESCAPE (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "exact",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 206,
+      "clientName": "TEACHMINT TECHNOLOGIES PRIVATE LIMITED",
+      "originalCinemaLocation": "Soul Sprit",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 207,
+      "clientName": "T&T Motors",
+      "originalCinemaLocation": "Select/ Ambi",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 208,
+      "clientName": "IDFC BANK",
+      "originalCinemaLocation": "Mkt City Kurla",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 209,
+      "clientName": "DLF Chandighar",
+      "originalCinemaLocation": "PVR City Centre Chandighar",
+      "matchedCinemaName": null,
+      "derivedCity": "Chandigarh",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 210,
+      "clientName": "INTERACTIVE TELEVISION",
+      "originalCinemaLocation": "PVR Ambience",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 211,
+      "clientName": "PROTIVITI CONSULTING PVT LTD",
+      "originalCinemaLocation": "PVR MGF",
+      "matchedCinemaName": "PVR MGF GURGAON",
+      "derivedCity": "Gurgaon",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 212,
+      "clientName": "Times Group",
+      "originalCinemaLocation": "PVR MCB",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 213,
+      "clientName": "TATA TEL",
+      "originalCinemaLocation": "PVR Plaza",
+      "matchedCinemaName": "PVR PLAZA DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 214,
+      "clientName": "TATA TEL",
+      "originalCinemaLocation": "PVR PLAZA",
+      "matchedCinemaName": "PVR PLAZA DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 215,
+      "clientName": "ANBC events",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 216,
+      "clientName": "PIXELATED EGG DIGITAL VENTURES (OPC) PRIVATE LIMITED",
+      "originalCinemaLocation": "PVR City Mall Andheri Mumbai",
+      "matchedCinemaName": "CINEMAX INFINITI MALAD MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 217,
+      "clientName": "Ms Richa (Birthday Boooking)",
+      "originalCinemaLocation": "PVR Logix Noida",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "exact",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 218,
+      "clientName": "SAMSUNG",
+      "originalCinemaLocation": "PVR Mega Mall",
+      "matchedCinemaName": "PVR MEGA MALL GURGAON",
+      "derivedCity": "Gurgaon",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 219,
+      "clientName": "Pidilite",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 220,
+      "clientName": "PHONEPE",
+      "originalCinemaLocation": "PVR Koramnagla, Bangalore",
+      "matchedCinemaName": "INOX BROOKE FIELD MALL (Bangalore)",
+      "derivedCity": "Bangalore",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 221,
+      "clientName": "RK Academy",
+      "originalCinemaLocation": "Phoenix United Lucknow",
+      "matchedCinemaName": "INOX CROWN MALL, FAIZABAD ROAD (Lucknow)",
+      "derivedCity": "Lucknow",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 222,
+      "clientName": "Ms. Nancy (Birthday Booking)",
+      "originalCinemaLocation": "Logix Noida",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 226,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "Kurla",
+      "matchedCinemaName": "PVR JIO WORLD DRIVE- BANDRA KURLA COMPLEX (Mumbai)",
+      "derivedCity": "Mumbai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 227,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "Coimbatore",
+      "matchedCinemaName": "INOX PROZONE MALL COIMBATORE",
+      "derivedCity": "Coimbatore",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 228,
+      "clientName": "Meta Acadamy",
+      "originalCinemaLocation": "Palazzo",
+      "matchedCinemaName": "PALAZZO (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "exact",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 229,
+      "clientName": "BISLERI INTERNATIONAL PVT LTD",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 230,
+      "clientName": "Apolo Hospital",
+      "originalCinemaLocation": "Palazzo / VR",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 231,
+      "clientName": "Telelooms Media",
+      "originalCinemaLocation": "Coimbatore",
+      "matchedCinemaName": "INOX PROZONE MALL COIMBATORE",
+      "derivedCity": "Coimbatore",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 232,
+      "clientName": "Ankur Media",
+      "originalCinemaLocation": "Galada",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 233,
+      "clientName": "Sheenlac",
+      "originalCinemaLocation": "S2 Perambur",
+      "matchedCinemaName": "S2 PERAMBUR (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "exact",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 235,
+      "clientName": "Yogesh Rotarry Club",
+      "originalCinemaLocation": "PVR Escape",
+      "matchedCinemaName": "ESCAPE (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 236,
+      "clientName": "Apollo Hospitals",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 237,
+      "clientName": "Magic Brick",
+      "originalCinemaLocation": "PVR Cinemas Chennai",
+      "matchedCinemaName": "ESCAPE (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 238,
+      "clientName": "Pidilite",
+      "originalCinemaLocation": "PVR Cinemas Chennai",
+      "matchedCinemaName": "ESCAPE (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 239,
+      "clientName": "Kotak",
+      "originalCinemaLocation": "PVR BKC",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 240,
+      "clientName": "JAIN INTERNATIONAL TRADE ORGANISATION.",
+      "originalCinemaLocation": "PVR Escape",
+      "matchedCinemaName": "ESCAPE (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 241,
+      "clientName": "Wings Brand Activations Pvt Ltd",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 242,
+      "clientName": "Tata tele",
+      "originalCinemaLocation": "PVR Logix",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 243,
+      "clientName": "Tata tele",
+      "originalCinemaLocation": "PVR Plaza",
+      "matchedCinemaName": "PVR PLAZA DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 244,
+      "clientName": "Tata tele",
+      "originalCinemaLocation": "PVR MGF",
+      "matchedCinemaName": "PVR MGF GURGAON",
+      "derivedCity": "Gurgaon",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 245,
+      "clientName": "BMS",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 246,
+      "clientName": "Radio Mirchi",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 247,
+      "clientName": "ROUNDTABLE 44",
+      "originalCinemaLocation": "PVR Forum Bangalore",
+      "matchedCinemaName": "INOX BROOKE FIELD MALL (Bangalore)",
+      "derivedCity": "Bangalore",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 248,
+      "clientName": "SUPER CASSETTES INDUSTRIES PVT LTD",
+      "originalCinemaLocation": "PVR Maison",
+      "matchedCinemaName": "PVR MAISON, JIO WORLD DRIVE- BANDRA KURLA COMPLEX (Mumbai)",
+      "derivedCity": "Mumbai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 249,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR Vega Bangalore",
+      "matchedCinemaName": "INOX BROOKE FIELD MALL (Bangalore)",
+      "derivedCity": "Bangalore",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 250,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 255,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR Lower parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 256,
+      "clientName": "Lankasri India Pvt. Ltd.",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 257,
+      "clientName": "Times Group",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 258,
+      "clientName": "Khushi Advertising",
+      "originalCinemaLocation": "PVR Ambience",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 259,
+      "clientName": "GMR",
+      "originalCinemaLocation": "PVR Rivoli",
+      "matchedCinemaName": "PVR RIVOLI DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 260,
+      "clientName": "Times Internet",
+      "originalCinemaLocation": "PVR Logix",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 261,
+      "clientName": "JAIN AMAR CLOTHING PRIVATE LIMITED",
+      "originalCinemaLocation": "PVR Ludhiana",
+      "matchedCinemaName": "PVR BHARTI LUDHIANA",
+      "derivedCity": "Ludhiana",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 262,
+      "clientName": "Stroam Communications",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 263,
+      "clientName": "Kotak",
+      "originalCinemaLocation": "PVR BKC",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 264,
+      "clientName": "Yogesh Rotary Club Chennai",
+      "originalCinemaLocation": "PVR Escape",
+      "matchedCinemaName": "ESCAPE (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 266,
+      "clientName": "Mr. Khalid",
+      "originalCinemaLocation": "PVR Juhu",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 267,
+      "clientName": "Rotery Club",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 268,
+      "clientName": "SUPER CASSETTES INDUSTRIES PVT LTD",
+      "originalCinemaLocation": "PVR Vegas",
+      "matchedCinemaName": "PVR VEGAS DWARKA (New Delhi)",
+      "derivedCity": "New Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 269,
+      "clientName": "Ms.Deepshika",
+      "originalCinemaLocation": "PVR Phoenix Mumbai",
+      "matchedCinemaName": "CINEMAX INFINITI MALAD MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 270,
+      "clientName": "Mr.Rohan",
+      "originalCinemaLocation": "PVR Phoenix Mumbai",
+      "matchedCinemaName": "CINEMAX INFINITI MALAD MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 271,
+      "clientName": "LOREAL",
+      "originalCinemaLocation": "PVR Mcpune",
+      "matchedCinemaName": null,
+      "derivedCity": "Pune",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 272,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR Plaza",
+      "matchedCinemaName": "PVR PLAZA DELHI",
+      "derivedCity": "Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 273,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR Malad",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 274,
+      "clientName": "RBL",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 277,
+      "clientName": "PIDILITE",
+      "originalCinemaLocation": "Chennai",
+      "matchedCinemaName": "INOX CITI CENTRE CHENNAI",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 278,
+      "clientName": "BMS",
+      "originalCinemaLocation": "Juhu",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 279,
+      "clientName": "Apollo Hospitals Enterprise Limited",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 280,
+      "clientName": "Drumsticks Productions",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 281,
+      "clientName": "Global Events",
+      "originalCinemaLocation": "Ghatkopar",
+      "matchedCinemaName": "INOX RCITY MALL, GHATKOPAR (Mumbai)",
+      "derivedCity": "Mumbai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 282,
+      "clientName": "BIG Tree Entertainment",
+      "originalCinemaLocation": "Lower parel",
+      "matchedCinemaName": "PVR ICON PHOENIX LOWER PAREL MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 283,
+      "clientName": "IDFC BANk",
+      "originalCinemaLocation": "Malad",
+      "matchedCinemaName": "CINEMAX INFINITI MALAD MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 284,
+      "clientName": "GreatWhite Global Pvt Ltd.",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 288,
+      "clientName": "Tata Realty And Infrastructure Limited",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 289,
+      "clientName": "JSR Productions Pvt. Ltd",
+      "originalCinemaLocation": "PVR Pimperi",
+      "matchedCinemaName": null,
+      "derivedCity": "Pune",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 290,
+      "clientName": "Times Group",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 291,
+      "clientName": "MX Player",
+      "originalCinemaLocation": "PVR Maison",
+      "matchedCinemaName": "PVR MAISON, JIO WORLD DRIVE- BANDRA KURLA COMPLEX (Mumbai)",
+      "derivedCity": "Mumbai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 292,
+      "clientName": "Elite celebration",
+      "originalCinemaLocation": "PVR Pune",
+      "matchedCinemaName": "Director’s Cut KOPA Mall, Pune",
+      "derivedCity": "Pune",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 293,
+      "clientName": "Elite celebration",
+      "originalCinemaLocation": "PVR Pune",
+      "matchedCinemaName": "Director’s Cut KOPA Mall, Pune",
+      "derivedCity": "Pune",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 294,
+      "clientName": "Devesh",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 295,
+      "clientName": "MAX PUBLICITY & COMMUNICATION PRIVATE LIMITED",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 297,
+      "clientName": "IDFC BANk",
+      "originalCinemaLocation": "PVR Versova",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 298,
+      "clientName": "IDFC BANk",
+      "originalCinemaLocation": "PVR JIO",
+      "matchedCinemaName": "PVR JIO WORLD DRIVE- BANDRA KURLA COMPLEX (Mumbai)",
+      "derivedCity": "Mumbai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 299,
+      "clientName": "IDFC BANk",
+      "originalCinemaLocation": "pvr Mumbai",
+      "matchedCinemaName": "CINEMAX INFINITI MALAD MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 300,
+      "clientName": "Team Event Communication",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 302,
+      "clientName": "IDFC BANk",
+      "originalCinemaLocation": "PVR DC",
+      "matchedCinemaName": "PVR DC Mall Of India Noida",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 303,
+      "clientName": "Interactive Television",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 304,
+      "clientName": "Disney",
+      "originalCinemaLocation": "PVR RK Hyd",
+      "matchedCinemaName": null,
+      "derivedCity": "Hyderabad",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 305,
+      "clientName": "Disney",
+      "originalCinemaLocation": "PVR Palazzo Chennai",
+      "matchedCinemaName": "PALAZZO (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 306,
+      "clientName": "TATA Tele Services",
+      "originalCinemaLocation": "PVR MGF",
+      "matchedCinemaName": "PVR MGF GURGAON",
+      "derivedCity": "Gurgaon",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 307,
+      "clientName": "IDFC BANk",
+      "originalCinemaLocation": "PVR Elante",
+      "matchedCinemaName": "PVR ELANTE CHANDIGARH",
+      "derivedCity": "Chandigarh",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 308,
+      "clientName": "IDFC BANk",
+      "originalCinemaLocation": "PVR REX",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 309,
+      "clientName": "AKZO NOBEL INDIA LIMITED",
+      "originalCinemaLocation": "PVR Vervosa",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 310,
+      "clientName": "Yogesh Rottary Club",
+      "originalCinemaLocation": "PVR Satyam",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 311,
+      "clientName": "Shoeb Shaikh",
+      "originalCinemaLocation": "PVR Juhu",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 312,
+      "clientName": "Udhay (B`day Booking)",
+      "originalCinemaLocation": "PVR ECR Chennai",
+      "matchedCinemaName": "PVR ECR CHENNAI",
+      "derivedCity": "Chennai",
+      "method": "exact",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 313,
+      "clientName": "SAAS Club",
+      "originalCinemaLocation": "PVR Escape",
+      "matchedCinemaName": "ESCAPE (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 314,
+      "clientName": "BMS",
+      "originalCinemaLocation": "PVR City Centre Gurgaon",
+      "matchedCinemaName": "PVR CITY CENTRE GURGAON",
+      "derivedCity": "Gurgaon",
+      "method": "exact",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 315,
+      "clientName": "BMS",
+      "originalCinemaLocation": "PVR Selectcity City",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 321,
+      "clientName": "Dryshyapal",
+      "originalCinemaLocation": "Ambi Dc",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 322,
+      "clientName": "The Leela Hotel",
+      "originalCinemaLocation": "PVR Ambience",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 324,
+      "clientName": "Marsil Exports",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 325,
+      "clientName": "Pidilite",
+      "originalCinemaLocation": "PVR Banjahils Hyd",
+      "matchedCinemaName": null,
+      "derivedCity": "Hyderabad",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 326,
+      "clientName": "Mr Vinodh",
+      "originalCinemaLocation": "PVR Satyam",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 327,
+      "clientName": "Yogesh Rotarry Club Chennai",
+      "originalCinemaLocation": "PVR Satyam",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 328,
+      "clientName": "Tata tele",
+      "originalCinemaLocation": "PVR Logix",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 329,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR Acropolis",
+      "matchedCinemaName": null,
+      "derivedCity": "Ahmedabad",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 330,
+      "clientName": "Interactive",
+      "originalCinemaLocation": "Vaishnavi Bnglr",
+      "matchedCinemaName": null,
+      "derivedCity": "Bengaluru",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 331,
+      "clientName": "Adani Group Ahmedabad",
+      "originalCinemaLocation": "PVR Acropolis",
+      "matchedCinemaName": null,
+      "derivedCity": "Ahmedabad",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 332,
+      "clientName": "Rotary Club Chennai",
+      "originalCinemaLocation": "PVR Escape",
+      "matchedCinemaName": "ESCAPE (Chennai)",
+      "derivedCity": "Chennai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 333,
+      "clientName": "EQX ANALYTICS PRIVATE LIMITED",
+      "originalCinemaLocation": "PVR MGF",
+      "matchedCinemaName": "PVR MGF GURGAON",
+      "derivedCity": "Gurgaon",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 334,
+      "clientName": "IDFC Bank",
+      "originalCinemaLocation": "PVR Regalia- Elements.",
+      "matchedCinemaName": null,
+      "derivedCity": "Bhubaneswar",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 336,
+      "clientName": "Ayesha Chenoy",
+      "originalCinemaLocation": "DC VK",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 337,
+      "clientName": "Arushi Handa",
+      "originalCinemaLocation": "PVR Vegas",
+      "matchedCinemaName": "PVR VEGAS DWARKA (New Delhi)",
+      "derivedCity": "New Delhi",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 338,
+      "clientName": "Vandana Telecom",
+      "originalCinemaLocation": "PVR Logix",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 339,
+      "clientName": "Pranay Bhargav",
+      "originalCinemaLocation": "PVR Maison",
+      "matchedCinemaName": "PVR MAISON, JIO WORLD DRIVE- BANDRA KURLA COMPLEX (Mumbai)",
+      "derivedCity": "Mumbai",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 340,
+      "clientName": "BMS",
+      "originalCinemaLocation": "PVR Subash Nagar",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 341,
+      "clientName": "Times Group",
+      "originalCinemaLocation": "PVR MCB",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 342,
+      "clientName": "BCG",
+      "originalCinemaLocation": "PVR Maison Mumbai",
+      "matchedCinemaName": "CINEMAX INFINITI MALAD MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 343,
+      "clientName": "Anand Pandit Motion Pictures LLP",
+      "originalCinemaLocation": "PVR Juhu",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 344,
+      "clientName": "BCG",
+      "originalCinemaLocation": "PVR Ambience",
+      "matchedCinemaName": null,
+      "derivedCity": "Gurgaon",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 345,
+      "clientName": "Mr.Puneet",
+      "originalCinemaLocation": "PVR Satyam",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 346,
+      "clientName": "PANAROMA STUDIO",
+      "originalCinemaLocation": "PVR Mumbai's",
+      "matchedCinemaName": "CINEMAX INFINITI MALAD MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 347,
+      "clientName": "Sri Lakshmi Venkateswara Cinemas LLP",
+      "originalCinemaLocation": "PVR Juhu",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 348,
+      "clientName": "Sri Lakshmi Venkateswara Cinemas LLP",
+      "originalCinemaLocation": "PVR selectcity",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 349,
+      "clientName": "Pidilite Ind ltd",
+      "originalCinemaLocation": "PVR EDM",
+      "matchedCinemaName": "PVR EDM GHAZIABAD",
+      "derivedCity": "Ghaziabad",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 350,
+      "clientName": "Pidilite Ind ltd",
+      "originalCinemaLocation": "PVR EDM",
+      "matchedCinemaName": "PVR EDM GHAZIABAD",
+      "derivedCity": "Ghaziabad",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 351,
+      "clientName": "Pidilite Ind ltd",
+      "originalCinemaLocation": "PVR EDM",
+      "matchedCinemaName": "PVR EDM GHAZIABAD",
+      "derivedCity": "Ghaziabad",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 352,
+      "clientName": "BMS",
+      "originalCinemaLocation": "PVR Juhu",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 354,
+      "clientName": "Angle Ma Lp Seniors",
+      "originalCinemaLocation": "PVR LP Mumbai",
+      "matchedCinemaName": "CINEMAX INFINITI MALAD MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 355,
+      "clientName": "Rotarry Club Chennai",
+      "originalCinemaLocation": "PVR Satyam",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 356,
+      "clientName": "SUN RISE LEARNING",
+      "originalCinemaLocation": "PVR Logix",
+      "matchedCinemaName": "PVR LOGIX NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Year 2022 data",
+      "row": 357,
+      "clientName": "PANAROMA STUDIO",
+      "originalCinemaLocation": "PVR Mumbai's",
+      "matchedCinemaName": "CINEMAX INFINITI MALAD MUMBAI",
+      "derivedCity": "Mumbai",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Sep-2023",
+      "row": 23,
+      "clientName": "RBL Bank",
+      "originalCinemaLocation": "PVR Chanakya",
+      "matchedCinemaName": null,
+      "derivedCity": "Delhi",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Sep-2023",
+      "row": 24,
+      "clientName": "RBL Bank",
+      "originalCinemaLocation": "PVR Mega Mall",
+      "matchedCinemaName": "PVR MEGA MALL GURGAON",
+      "derivedCity": "Gurgaon",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Sep-2023",
+      "row": 25,
+      "clientName": "RBL Bank",
+      "originalCinemaLocation": "PVR Gaur City",
+      "matchedCinemaName": "PVR GAUR CITY NOIDA",
+      "derivedCity": "Noida",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Sep-2023",
+      "row": 26,
+      "clientName": "RBL Bank",
+      "originalCinemaLocation": "PVR VVIP",
+      "matchedCinemaName": "PVR VVIP GHAZIABAD",
+      "derivedCity": "Ghaziabad",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Sep-2023",
+      "row": 27,
+      "clientName": "RBL Bank",
+      "originalCinemaLocation": "PVR EDM",
+      "matchedCinemaName": "PVR EDM GHAZIABAD",
+      "derivedCity": "Ghaziabad",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Sep-2023",
+      "row": 28,
+      "clientName": "JK Lakshmi",
+      "originalCinemaLocation": "PVR Bareilly",
+      "matchedCinemaName": "PVR PHOENIX UNITED BAREILLY",
+      "derivedCity": "Bareilly",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Sep-2023",
+      "row": 29,
+      "clientName": "JK Lakshmi",
+      "originalCinemaLocation": "PVR Moradabad",
+      "matchedCinemaName": "PVR PARSVNATH MORADABAD",
+      "derivedCity": "Moradabad",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Sep-2023",
+      "row": 30,
+      "clientName": "JK Lakshmi",
+      "originalCinemaLocation": "PVR South X Kanpur",
+      "matchedCinemaName": "CINEMAX SOUTH X KANPUR",
+      "derivedCity": "Kanpur",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Sep-2023",
+      "row": 31,
+      "clientName": "JK Lakshmi",
+      "originalCinemaLocation": "PVR United Lucknow",
+      "matchedCinemaName": "INOX CROWN MALL, FAIZABAD ROAD (Lucknow)",
+      "derivedCity": "Lucknow",
+      "method": "city-token",
+      "previousCity": null
+    },
+    {
+      "sheet": "Sep-2023",
+      "row": 32,
+      "clientName": "JK Lakshmi",
+      "originalCinemaLocation": "PVR Mahagun",
+      "matchedCinemaName": "PVR MAHAGUN GHAZIABAD",
+      "derivedCity": "Ghaziabad",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Sep-2023",
+      "row": 33,
+      "clientName": "IDBI",
+      "originalCinemaLocation": "PVR Malad",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Sep-2023",
+      "row": 34,
+      "clientName": "IDBI",
+      "originalCinemaLocation": "PVR Icon Versova",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Sep-2023",
+      "row": 35,
+      "clientName": "IDBI",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "May-2024",
+      "row": 59,
+      "clientName": "Bandhan Amc",
+      "originalCinemaLocation": "INOX Citi Centre, RK Salai, Mylapore",
+      "matchedCinemaName": null,
+      "derivedCity": "Chennai",
+      "method": "confirmed-override",
+      "previousCity": "CHHATTISGARH"
+    },
+    {
+      "sheet": "June-2024",
+      "row": 11,
+      "clientName": "Bandhan Amc",
+      "originalCinemaLocation": "KHANDESH CENTRAL MALL",
+      "matchedCinemaName": null,
+      "derivedCity": "Bhilai",
+      "method": "confirmed-override",
+      "previousCity": "CHHATTISGARH"
+    },
+    {
+      "sheet": "July-2024",
+      "row": 35,
+      "clientName": "Khushi Advertising",
+      "originalCinemaLocation": "PVR Elante Chandighar",
+      "matchedCinemaName": "PVR ELANTE CHANDIGARH",
+      "derivedCity": "Chandigarh",
+      "method": "fuzzy",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 5,
+      "clientName": "RBL",
+      "originalCinemaLocation": "PVR INOX PHOENIX PALASSIO MALL, GOMTI NAGAR",
+      "matchedCinemaName": "INOX PHOENIX PALASSIO MALL, GOMTI NAGAR (Lucknow)",
+      "derivedCity": "Lucknow",
+      "method": "substring",
+      "previousCity": null
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 26,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX - City Square Mall, Panch Sheel Nagar",
+      "matchedCinemaName": "INOX CITY SQUARE MALL (Ajmer)",
+      "derivedCity": "Ajmer",
+      "method": "substring",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 27,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX Multiplex",
+      "matchedCinemaName": null,
+      "derivedCity": "Jodhpur",
+      "method": "confirmed-override",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 28,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR Ridhi Sidhi Mall,",
+      "matchedCinemaName": null,
+      "derivedCity": "Jodhpur",
+      "method": "confirmed-override",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 31,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR, Dr Rajkumar Road Malleshwaram,",
+      "matchedCinemaName": null,
+      "derivedCity": "Bangalore",
+      "method": "confirmed-override",
+      "previousCity": "KARNATAKA"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 32,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX Post Office Road",
+      "matchedCinemaName": null,
+      "derivedCity": "Belgaum",
+      "method": "confirmed-override",
+      "previousCity": "KARNATAKA"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 33,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR Cinema - Phulong",
+      "matchedCinemaName": null,
+      "derivedCity": "Nizamabad",
+      "method": "confirmed-override",
+      "previousCity": "ANDHRA PRADESH"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 34,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX - Gajananmaharaj Mandir Road",
+      "matchedCinemaName": null,
+      "derivedCity": "Aurangabad",
+      "method": "confirmed-override",
+      "previousCity": "MAHARASHTRA"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 35,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR The Cenima Naaz Center",
+      "matchedCinemaName": null,
+      "derivedCity": "Machilipatnam",
+      "method": "confirmed-override",
+      "previousCity": "ANDHRA PRADESH"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 41,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX - City Square Mall, Panch Sheel Nagar",
+      "matchedCinemaName": "INOX CITY SQUARE MALL (Ajmer)",
+      "derivedCity": "Ajmer",
+      "method": "substring",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 42,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX Multiplex",
+      "matchedCinemaName": null,
+      "derivedCity": "Jodhpur",
+      "method": "confirmed-override",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 43,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR Ridhi Sidhi Mall,",
+      "matchedCinemaName": null,
+      "derivedCity": "Jodhpur",
+      "method": "confirmed-override",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 46,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR, Dr Rajkumar Road Malleshwaram,",
+      "matchedCinemaName": null,
+      "derivedCity": "Bangalore",
+      "method": "confirmed-override",
+      "previousCity": "KARNATAKA"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 47,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX Post Office Road",
+      "matchedCinemaName": null,
+      "derivedCity": "Belgaum",
+      "method": "confirmed-override",
+      "previousCity": "KARNATAKA"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 48,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR Cinema - Phulong",
+      "matchedCinemaName": null,
+      "derivedCity": "Nizamabad",
+      "method": "confirmed-override",
+      "previousCity": "ANDHRA PRADESH"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 49,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX - Gajananmaharaj Mandir Road",
+      "matchedCinemaName": null,
+      "derivedCity": "Aurangabad",
+      "method": "confirmed-override",
+      "previousCity": "MAHARASHTRA"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 50,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR The Cenima Naaz Center",
+      "matchedCinemaName": null,
+      "derivedCity": "Machilipatnam",
+      "method": "confirmed-override",
+      "previousCity": "ANDHRA PRADESH"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 56,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX - City Square Mall, Panch Sheel Nagar",
+      "matchedCinemaName": "INOX CITY SQUARE MALL (Ajmer)",
+      "derivedCity": "Ajmer",
+      "method": "substring",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 57,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX Multiplex",
+      "matchedCinemaName": null,
+      "derivedCity": "Jodhpur",
+      "method": "confirmed-override",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 58,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR Ridhi Sidhi Mall,",
+      "matchedCinemaName": null,
+      "derivedCity": "Jodhpur",
+      "method": "confirmed-override",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 61,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR, Dr Rajkumar Road Malleshwaram,",
+      "matchedCinemaName": null,
+      "derivedCity": "Bangalore",
+      "method": "confirmed-override",
+      "previousCity": "KARNATAKA"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 62,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX Post Office Road",
+      "matchedCinemaName": null,
+      "derivedCity": "Belgaum",
+      "method": "confirmed-override",
+      "previousCity": "KARNATAKA"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 63,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR Cinema - Phulong",
+      "matchedCinemaName": null,
+      "derivedCity": "Nizamabad",
+      "method": "confirmed-override",
+      "previousCity": "ANDHRA PRADESH"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 64,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX - Gajananmaharaj Mandir Road",
+      "matchedCinemaName": null,
+      "derivedCity": "Aurangabad",
+      "method": "confirmed-override",
+      "previousCity": "MAHARASHTRA"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 65,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR The Cenima Naaz Center",
+      "matchedCinemaName": null,
+      "derivedCity": "Machilipatnam",
+      "method": "confirmed-override",
+      "previousCity": "ANDHRA PRADESH"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 71,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX - City Square Mall, Panch Sheel Nagar",
+      "matchedCinemaName": "INOX CITY SQUARE MALL (Ajmer)",
+      "derivedCity": "Ajmer",
+      "method": "substring",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 72,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX Multiplex",
+      "matchedCinemaName": null,
+      "derivedCity": "Jodhpur",
+      "method": "confirmed-override",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 73,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR Ridhi Sidhi Mall,",
+      "matchedCinemaName": null,
+      "derivedCity": "Jodhpur",
+      "method": "confirmed-override",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 76,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR, Dr Rajkumar Road Malleshwaram,",
+      "matchedCinemaName": null,
+      "derivedCity": "Bangalore",
+      "method": "confirmed-override",
+      "previousCity": "KARNATAKA"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 77,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX Post Office Road",
+      "matchedCinemaName": null,
+      "derivedCity": "Belgaum",
+      "method": "confirmed-override",
+      "previousCity": "KARNATAKA"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 78,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR Cinema - Phulong",
+      "matchedCinemaName": null,
+      "derivedCity": "Nizamabad",
+      "method": "confirmed-override",
+      "previousCity": "ANDHRA PRADESH"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 79,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "INOX - Gajananmaharaj Mandir Road",
+      "matchedCinemaName": null,
+      "derivedCity": "Aurangabad",
+      "method": "confirmed-override",
+      "previousCity": "MAHARASHTRA"
+    },
+    {
+      "sheet": "Aug - 2024",
+      "row": 80,
+      "clientName": "Cinipolis",
+      "originalCinemaLocation": "PVR The Cenima Naaz Center",
+      "matchedCinemaName": null,
+      "derivedCity": "Machilipatnam",
+      "method": "confirmed-override",
+      "previousCity": "ANDHRA PRADESH"
+    },
+    {
+      "sheet": "Sep - 2024",
+      "row": 69,
+      "clientName": "GM Modular/Mahaveer productions",
+      "originalCinemaLocation": "PVR MBD JALANDHER",
+      "matchedCinemaName": "PVR MBD JALANDHER (Jalandhar)",
+      "derivedCity": "Jalandhar",
+      "method": "exact",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "Sep - 2024",
+      "row": 99,
+      "clientName": "GM Modular/Mahaveer productions",
+      "originalCinemaLocation": "Jaipur Sunny Trade Center",
+      "matchedCinemaName": "INOX ELEMENTS MALL (Jaipur)",
+      "derivedCity": "Jaipur",
+      "method": "city-token",
+      "previousCity": "Rajasthan"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 89,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Khanna",
+      "matchedCinemaName": "PVR THE CELEBRATION MALL KHANNA",
+      "derivedCity": "Khanna",
+      "method": "city-token",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 90,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Khanna",
+      "matchedCinemaName": "PVR THE CELEBRATION MALL KHANNA",
+      "derivedCity": "Khanna",
+      "method": "city-token",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 91,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Khanna",
+      "matchedCinemaName": "PVR THE CELEBRATION MALL KHANNA",
+      "derivedCity": "Khanna",
+      "method": "city-token",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 92,
+      "clientName": "Zee",
+      "originalCinemaLocation": "Pvr centra",
+      "matchedCinemaName": "PVR CENTRA CHANDIGARH",
+      "derivedCity": "Chandigarh",
+      "method": "substring",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 93,
+      "clientName": "Zee",
+      "originalCinemaLocation": "Pvr centra",
+      "matchedCinemaName": "PVR CENTRA CHANDIGARH",
+      "derivedCity": "Chandigarh",
+      "method": "substring",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 94,
+      "clientName": "Zee",
+      "originalCinemaLocation": "Pvr centra",
+      "matchedCinemaName": "PVR CENTRA CHANDIGARH",
+      "derivedCity": "Chandigarh",
+      "method": "substring",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 95,
+      "clientName": "Zee",
+      "originalCinemaLocation": "Pvr centra",
+      "matchedCinemaName": "PVR CENTRA CHANDIGARH",
+      "derivedCity": "Chandigarh",
+      "method": "substring",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 96,
+      "clientName": "Zee",
+      "originalCinemaLocation": "pvr city center",
+      "matchedCinemaName": null,
+      "derivedCity": "Chandigarh",
+      "method": "confirmed-override",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 97,
+      "clientName": "Zee",
+      "originalCinemaLocation": "pvr city center",
+      "matchedCinemaName": null,
+      "derivedCity": "Chandigarh",
+      "method": "confirmed-override",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 98,
+      "clientName": "Zee",
+      "originalCinemaLocation": "pvr city center",
+      "matchedCinemaName": null,
+      "derivedCity": "Chandigarh",
+      "method": "confirmed-override",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 99,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR CRYSTAL PALM, jaipur",
+      "matchedCinemaName": "INOX ELEMENTS MALL (Jaipur)",
+      "derivedCity": "Jaipur",
+      "method": "city-token",
+      "previousCity": "Rajasthan"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 100,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR CRYSTAL PALM, jaipur",
+      "matchedCinemaName": "INOX ELEMENTS MALL (Jaipur)",
+      "derivedCity": "Jaipur",
+      "method": "city-token",
+      "previousCity": "Rajasthan"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 101,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR CRYSTAL PALM, jaipur",
+      "matchedCinemaName": "INOX ELEMENTS MALL (Jaipur)",
+      "derivedCity": "Jaipur",
+      "method": "city-token",
+      "previousCity": "Rajasthan"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 102,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Mall of Jaipur",
+      "matchedCinemaName": "PVR MALL OF JAIPUR",
+      "derivedCity": "Jaipur",
+      "method": "exact",
+      "previousCity": "Rajasthan"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 103,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Mall of Jaipur",
+      "matchedCinemaName": "PVR MALL OF JAIPUR",
+      "derivedCity": "Jaipur",
+      "method": "exact",
+      "previousCity": "Rajasthan"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 104,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Mall of Jaipur",
+      "matchedCinemaName": "PVR MALL OF JAIPUR",
+      "derivedCity": "Jaipur",
+      "method": "exact",
+      "previousCity": "Rajasthan"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 105,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Mall of Jaipur",
+      "matchedCinemaName": "PVR MALL OF JAIPUR",
+      "derivedCity": "Jaipur",
+      "method": "exact",
+      "previousCity": "Rajasthan"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 106,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "maharashtra"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 107,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "maharashtra"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 108,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "maharashtra"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 109,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Lower Parel",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "maharashtra"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 112,
+      "clientName": "Zee",
+      "originalCinemaLocation": "Mall of Millenium – Wakad",
+      "matchedCinemaName": null,
+      "derivedCity": "Pune",
+      "method": "confirmed-override",
+      "previousCity": "maharashtra"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 113,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Inorbit Malad",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "maharashtra"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 114,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Inorbit Malad",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "maharashtra"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 115,
+      "clientName": "Zee",
+      "originalCinemaLocation": "PVR Inorbit Malad",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "maharashtra"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 124,
+      "clientName": "Zee",
+      "originalCinemaLocation": "Amritsar - Suraj Chand Tara",
+      "matchedCinemaName": "INOX TRILIUM MALL (Amritsar)",
+      "derivedCity": "Amritsar",
+      "method": "city-token",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 125,
+      "clientName": "Zee",
+      "originalCinemaLocation": "Amritsar - Suraj Chand Tara",
+      "matchedCinemaName": "INOX TRILIUM MALL (Amritsar)",
+      "derivedCity": "Amritsar",
+      "method": "city-token",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 126,
+      "clientName": "Zee",
+      "originalCinemaLocation": "Amritsar - Suraj Chand Tara",
+      "matchedCinemaName": "INOX TRILIUM MALL (Amritsar)",
+      "derivedCity": "Amritsar",
+      "method": "city-token",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "January - 2025",
+      "row": 127,
+      "clientName": "Bandhan",
+      "originalCinemaLocation": "PVR Inox Khanna-The Celebration Bazaar Mall, 141401",
+      "matchedCinemaName": "PVR THE CELEBRATION MALL KHANNA",
+      "derivedCity": "Khanna",
+      "method": "city-token",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "February - 2025",
+      "row": 107,
+      "clientName": "Rahul & mehul",
+      "originalCinemaLocation": "PVR Cinemall, Kota",
+      "matchedCinemaName": "PVR CINEMALL KOTA",
+      "derivedCity": "Kota",
+      "method": "exact",
+      "previousCity": "Rajasthan"
+    },
+    {
+      "sheet": "February - 2025",
+      "row": 108,
+      "clientName": "Rahul & mehul",
+      "originalCinemaLocation": "PVR Celebration, Udaipur",
+      "matchedCinemaName": "PVR CELEBRATION UDAIPUR",
+      "derivedCity": "Udaipur",
+      "method": "exact",
+      "previousCity": "Rajasthan"
+    },
+    {
+      "sheet": "April - 2025",
+      "row": 44,
+      "clientName": "Suyog & Bal",
+      "originalCinemaLocation": "Mohali CP67 Mall",
+      "matchedCinemaName": "PVR INOX CP67 Mohali",
+      "derivedCity": "Mohali",
+      "method": "city-token",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "April - 2025",
+      "row": 45,
+      "clientName": "Suyog & Bal",
+      "originalCinemaLocation": "Mohali CP67 Mall",
+      "matchedCinemaName": "PVR INOX CP67 Mohali",
+      "derivedCity": "Mohali",
+      "method": "city-token",
+      "previousCity": "Punjab"
+    },
+    {
+      "sheet": "June-2025",
+      "row": 91,
+      "clientName": "Bandhan Mutual fund",
+      "originalCinemaLocation": "PVR-INOX Urban Square mall sukher ,Udaipur",
+      "matchedCinemaName": "INOX LAKE CITY MALL (Udaipur)",
+      "derivedCity": "Udaipur",
+      "method": "city-token",
+      "previousCity": "Rajasthan"
+    },
+    {
+      "sheet": "June-2025",
+      "row": 101,
+      "clientName": "Deepika T&T Motors",
+      "originalCinemaLocation": "Inox GT Central",
+      "matchedCinemaName": "INOX GT CENTRAL, MALVIYA NAGAR (Jaipur)",
+      "derivedCity": "Jaipur",
+      "method": "substring",
+      "previousCity": "Rajasthan"
+    },
+    {
+      "sheet": "Oct-2025",
+      "row": 6,
+      "clientName": "Hemant",
+      "originalCinemaLocation": "PVR Icon Infinity",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "Maharashta"
+    },
+    {
+      "sheet": "Dec-2025",
+      "row": 316,
+      "clientName": "Kalpesh",
+      "originalCinemaLocation": "PVR PHOENIX MARKETCITY KURLA",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Dec-2025",
+      "row": 317,
+      "clientName": "Kalpesh",
+      "originalCinemaLocation": "PVR PHOENIX MARKETCITY KURLA",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Dec-2025",
+      "row": 318,
+      "clientName": "Kalpesh",
+      "originalCinemaLocation": "PVR PHOENIX MARKETCITY KURLA",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Dec-2025",
+      "row": 324,
+      "clientName": "Kalpesh",
+      "originalCinemaLocation": "PVR PHOENIX LOWER PAREL",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": null
+    },
+    {
+      "sheet": "Dec-2025",
+      "row": 895,
+      "clientName": "Bal",
+      "originalCinemaLocation": "PVR PHOENIX MARKETCITY KURLA",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "MAHARASHTRA"
+    },
+    {
+      "sheet": "Dec-2025",
+      "row": 896,
+      "clientName": "Bal",
+      "originalCinemaLocation": "PVR CAPITAL MALL NALLASOPARA",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "MAHARASHTRA"
+    },
+    {
+      "sheet": "Dec-2025",
+      "row": 897,
+      "clientName": "Bal",
+      "originalCinemaLocation": "PVR CAPITAL MALL NALLASOPARA",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "MAHARASHTRA"
+    },
+    {
+      "sheet": "Dec-2025",
+      "row": 927,
+      "clientName": "Bal",
+      "originalCinemaLocation": "PVR DIRECTORS CUT REX BANGALORE",
+      "matchedCinemaName": "INOX BROOKE FIELD MALL (Bangalore)",
+      "derivedCity": "Bangalore",
+      "method": "city-token",
+      "previousCity": "KARNATAKA"
+    },
+    {
+      "sheet": "Dec-2025",
+      "row": 928,
+      "clientName": "Bal",
+      "originalCinemaLocation": "PVR STAR MALL OF INDIA NOIDA",
+      "matchedCinemaName": "PVR DC Mall Of India Noida",
+      "derivedCity": "Noida",
+      "method": "city-token",
+      "previousCity": "UTTAR PRADESH"
+    },
+    {
+      "sheet": "Dec-2025",
+      "row": 929,
+      "clientName": "Bal",
+      "originalCinemaLocation": "PVR CAPITAL MALL NALLASOPARA",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "MAHARASHTRA"
+    },
+    {
+      "sheet": "Dec-2025",
+      "row": 930,
+      "clientName": "Bal",
+      "originalCinemaLocation": "PVR CAPITAL MALL NALLASOPARA",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "MAHARASHTRA"
+    },
+    {
+      "sheet": "Dec-2025",
+      "row": 931,
+      "clientName": "Bal",
+      "originalCinemaLocation": "PVR CAPITAL MALL NALLASOPARA",
+      "matchedCinemaName": null,
+      "derivedCity": "Mumbai",
+      "method": "confirmed-override",
+      "previousCity": "MAHARASHTRA"
+    },
+    {
+      "sheet": "Dec-2025",
+      "row": 943,
+      "clientName": "Bal",
+      "originalCinemaLocation": "PVR GAUR CITY MALL GREATER NOIDA",
+      "matchedCinemaName": "INOX OMAXE MALL (Greater Noida)",
+      "derivedCity": "Greater Noida",
+      "method": "city-token",
+      "previousCity": "UTTAR PRADESH"
+    },
+    {
+      "sheet": "JUNE-2026",
+      "row": 14,
+      "clientName": "Neel",
+      "originalCinemaLocation": "PVR MALL OF JAIPUR",
+      "matchedCinemaName": "PVR MALL OF JAIPUR",
+      "derivedCity": "Jaipur",
+      "method": "exact",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "JUNE-2026",
+      "row": 15,
+      "clientName": "Neel",
+      "originalCinemaLocation": "INOX PVS MALL",
+      "matchedCinemaName": null,
+      "derivedCity": "Meerut",
+      "method": "confirmed-override",
+      "previousCity": "UTTAR PARADESH"
+    },
+    {
+      "sheet": "JUNE-2026",
+      "row": 18,
+      "clientName": "Neel",
+      "originalCinemaLocation": "INOX Urban Sqaure Mall",
+      "matchedCinemaName": "Urban Sqaure Mall (Udaipur)",
+      "derivedCity": "Udaipur",
+      "method": "substring",
+      "previousCity": "RAJASTHAN"
+    },
+    {
+      "sheet": "JUNE-2026",
+      "row": 19,
+      "clientName": "Neel",
+      "originalCinemaLocation": "INOX RELIANCE MEGA MALL",
+      "matchedCinemaName": "INOX RELIANCE MEGA MALL (Baroda)",
+      "derivedCity": "Baroda",
+      "method": "exact",
+      "previousCity": "GUJARAT"
+    },
+    {
+      "sheet": "JUNE-2026",
+      "row": 20,
+      "clientName": "Neel",
+      "originalCinemaLocation": "INOX TRILIUM MALL",
+      "matchedCinemaName": "INOX TRILIUM MALL (Amritsar)",
+      "derivedCity": "Amritsar",
+      "method": "exact",
+      "previousCity": "PUNJAB"
+    },
+    {
+      "sheet": "JUNE-2026",
+      "row": 26,
+      "clientName": "Neel",
+      "originalCinemaLocation": "PVR MARKET CITY PUNE",
+      "matchedCinemaName": "PVR MARKET CITY PUNE",
+      "derivedCity": "Pune",
+      "method": "exact",
+      "previousCity": "MAHARASHTRA"
+    }
+  ],
+  "unmatched": [
+    {
+      "cinemaLocation": "PVR Multipal",
+      "closest": [
+        {
+          "cinemaName": "PVR Lido (Mumbai)",
+          "city": "Mumbai",
+          "editDistance": 6
+        },
+        {
+          "cinemaName": "PVR PRIYA (New Delhi)",
+          "city": "New Delhi",
+          "editDistance": 6
+        },
+        {
+          "cinemaName": "PVR AURA BHOPAL",
+          "city": "Bhopal",
+          "editDistance": 7
+        }
+      ],
+      "rows": [
+        {
+          "sheet": "Year 2022 data",
+          "row": 251,
+          "clientName": "SK Fans Club"
+        },
+        {
+          "sheet": "Year 2022 data",
+          "row": 252,
+          "clientName": "IDFC Bank"
+        },
+        {
+          "sheet": "Year 2022 data",
+          "row": 253,
+          "clientName": "IDFC Bank"
+        },
+        {
+          "sheet": "Year 2022 data",
+          "row": 265,
+          "clientName": "Global events"
+        },
+        {
+          "sheet": "Year 2022 data",
+          "row": 301,
+          "clientName": "T-Series"
+        }
+      ],
+      "count": 5
+    },
+    {
+      "cinemaLocation": "Multipal",
+      "closest": [
+        {
+          "cinemaName": "KRIPA (Trivandrum)",
+          "city": "Trivandrum",
+          "editDistance": 5
+        },
+        {
+          "cinemaName": "AURA (Bengaluru)",
+          "city": "Bengaluru",
+          "editDistance": 6
+        },
+        {
+          "cinemaName": "SATHYAM (Chennai)",
+          "city": "Chennai",
+          "editDistance": 6
+        }
+      ],
+      "rows": [
+        {
+          "sheet": "Year 2022 data",
+          "row": 285,
+          "clientName": "BIG Tree Entertainment"
+        },
+        {
+          "sheet": "Year 2022 data",
+          "row": 286,
+          "clientName": "Pine Lab"
+        },
+        {
+          "sheet": "Year 2022 data",
+          "row": 318,
+          "clientName": "BMS"
+        },
+        {
+          "sheet": "Year 2022 data",
+          "row": 319,
+          "clientName": "BMS"
+        },
+        {
+          "sheet": "Year 2022 data",
+          "row": 320,
+          "clientName": "BMS"
+        }
+      ],
+      "count": 5
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+[
+  {
+    "sheet": "Year 2022 data",
+    "row": 7,
+    "clientName": "Apollo Hospitals Enterprise Limited",
+    "cinemaLocation": "PVR Orion",
+    "currentCity": null,
+    "currentRegion": "South",
+    "candidateCities": [
+      "Bengaluru",
+      "Mumbai"
+    ],
+    "kind": "ambiguous-single-name",
+    "reason": "cinemaLocation text matches real properties in more than one city; no way to tell which one this booking meant"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 10,
+    "clientName": "Apollo Hospitals Enterprise Limited",
+    "cinemaLocation": "PVR Forum",
+    "currentCity": null,
+    "currentRegion": "South",
+    "candidateCities": [
+      "Mysore",
+      "Mangalore",
+      "Bengaluru",
+      "Rourkela"
+    ],
+    "kind": "ambiguous-single-name",
+    "reason": "cinemaLocation text matches real properties in more than one city; no way to tell which one this booking meant"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 11,
+    "clientName": "Apollo Hospitals Enterprise Limited",
+    "cinemaLocation": "PVR Forum",
+    "currentCity": null,
+    "currentRegion": "South",
+    "candidateCities": [
+      "Mysore",
+      "Mangalore",
+      "Bengaluru",
+      "Rourkela"
+    ],
+    "kind": "ambiguous-single-name",
+    "reason": "cinemaLocation text matches real properties in more than one city; no way to tell which one this booking meant"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 14,
+    "clientName": "Wings Brand Activations Pvt Ltd",
+    "cinemaLocation": "Multi Location",
+    "currentCity": null,
+    "currentRegion": "Multi",
+    "candidateCities": [],
+    "kind": "genuine-multi",
+    "reason": "\"multi\" placeholder — no specific cinema/city named at all"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 23,
+    "clientName": "PIDILITE INDUSTRIES LTD",
+    "cinemaLocation": "Multi Location",
+    "currentCity": null,
+    "currentRegion": "Multi",
+    "candidateCities": [],
+    "kind": "genuine-multi",
+    "reason": "\"multi\" placeholder — no specific cinema/city named at all"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 24,
+    "clientName": "Group M Media Pvt Ltd.",
+    "cinemaLocation": "Multi Location",
+    "currentCity": null,
+    "currentRegion": "Multi",
+    "candidateCities": [],
+    "kind": "genuine-multi",
+    "reason": "\"multi\" placeholder — no specific cinema/city named at all"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 26,
+    "clientName": "Khushi Advertising",
+    "cinemaLocation": "Multi Location",
+    "currentCity": null,
+    "currentRegion": "Multi",
+    "candidateCities": [],
+    "kind": "genuine-multi",
+    "reason": "\"multi\" placeholder — no specific cinema/city named at all"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 42,
+    "clientName": "Pidilite Industries Ltd.",
+    "cinemaLocation": "Multi Location",
+    "currentCity": null,
+    "currentRegion": "Multi",
+    "candidateCities": [],
+    "kind": "genuine-multi",
+    "reason": "\"multi\" placeholder — no specific cinema/city named at all"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 46,
+    "clientName": "Pidilite Industries Ltd.",
+    "cinemaLocation": "Multi Location",
+    "currentCity": null,
+    "currentRegion": "Multi",
+    "candidateCities": [],
+    "kind": "genuine-multi",
+    "reason": "\"multi\" placeholder — no specific cinema/city named at all"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 48,
+    "clientName": "Quantiphai",
+    "cinemaLocation": "Mumbai, Banguluru, Trivandrum",
+    "currentCity": null,
+    "currentRegion": "Multi",
+    "candidateCities": [
+      "Mumbai",
+      "Trivandrum"
+    ],
+    "kind": "genuine-multi",
+    "reason": "raw value directly names more than one different city"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 52,
+    "clientName": "Khushi",
+    "cinemaLocation": "Maison & Ambience",
+    "currentCity": null,
+    "currentRegion": "TLC",
+    "candidateCities": [
+      "Mumbai",
+      "Gurgaon",
+      "Delhi"
+    ],
+    "kind": "genuine-multi",
+    "reason": "raw value references more than one cinema, and they do not all resolve to a single shared city"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 56,
+    "clientName": "Floret",
+    "cinemaLocation": "Surat & Prashantvihar",
+    "currentCity": null,
+    "currentRegion": "Multi",
+    "candidateCities": [
+      "Surat"
+    ],
+    "kind": "genuine-multi",
+    "reason": "raw value references more than one cinema, and they do not all resolve to a single shared city"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 57,
+    "clientName": "Khushi (4th Jul)",
+    "cinemaLocation": "Multi Cinemas",
+    "currentCity": null,
+    "currentRegion": "Multi",
+    "candidateCities": [],
+    "kind": "genuine-multi",
+    "reason": "\"multi\" placeholder — no specific cinema/city named at all"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 63,
+    "clientName": "Team Event Communication",
+    "cinemaLocation": "VR & Lulu",
+    "currentCity": null,
+    "currentRegion": "South",
+    "candidateCities": [
+      "Cochin",
+      "Lucknow",
+      "Trivandrum"
+    ],
+    "kind": "genuine-multi",
+    "reason": "raw value references more than one cinema, and they do not all resolve to a single shared city"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 74,
+    "clientName": "Global Event",
+    "cinemaLocation": "Multiple",
+    "currentCity": null,
+    "currentRegion": "Multi",
+    "candidateCities": [],
+    "kind": "genuine-multi",
+    "reason": "\"multi\" placeholder — no specific cinema/city named at all"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 78,
+    "clientName": "Khushi (Viacom)",
+    "cinemaLocation": "Mumbai/Delhi",
+    "currentCity": null,
+    "currentRegion": "Multi",
+    "candidateCities": [
+      "Mumbai",
+      "Dombivli",
+      "Delhi"
+    ],
+    "kind": "genuine-multi",
+    "reason": "raw value references more than one cinema, and they do not all resolve to a single shared city"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 124,
+    "clientName": "IDFC Bank",
+    "cinemaLocation": "Mega Mall / Logix",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [
+      "Kolhapur",
+      "Baroda",
+      "Surat",
+      "Aurangabad",
+      "Jodhpur",
+      "Gurgaon",
+      "Noida"
+    ],
+    "kind": "genuine-multi",
+    "reason": "raw value references more than one cinema, and they do not all resolve to a single shared city"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 139,
+    "clientName": "TVF",
+    "cinemaLocation": "PVR Forum",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [
+      "Mysore",
+      "Mangalore",
+      "Bengaluru",
+      "Rourkela"
+    ],
+    "kind": "ambiguous-single-name",
+    "reason": "cinemaLocation text matches real properties in more than one city; no way to tell which one this booking meant"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 172,
+    "clientName": "TATA TELE",
+    "cinemaLocation": "Mega Mall",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [
+      "Kolhapur",
+      "Baroda",
+      "Surat",
+      "Aurangabad",
+      "Jodhpur",
+      "Gurgaon"
+    ],
+    "kind": "ambiguous-single-name",
+    "reason": "cinemaLocation text matches real properties in more than one city; no way to tell which one this booking meant"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 173,
+    "clientName": "TATA TELE",
+    "cinemaLocation": "Plaza",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [
+      "Zirakpur",
+      "Kolkata",
+      "Delhi"
+    ],
+    "kind": "ambiguous-single-name",
+    "reason": "cinemaLocation text matches real properties in more than one city; no way to tell which one this booking meant"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 187,
+    "clientName": "FERVENT COMMUNICATION",
+    "cinemaLocation": "Bangalore, Mumbai, Gurgaon, Noida",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [
+      "Mumbai",
+      "Gurgaon",
+      "Bangalore",
+      "Noida"
+    ],
+    "kind": "genuine-multi",
+    "reason": "raw value directly names more than one different city"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 194,
+    "clientName": "RBL",
+    "cinemaLocation": "Forum",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [
+      "Cochin",
+      "Kolkata",
+      "Bangalore",
+      "Bengaluru",
+      "Mysore",
+      "Mangalore",
+      "Rourkela"
+    ],
+    "kind": "ambiguous-single-name",
+    "reason": "cinemaLocation text matches real properties in more than one city; no way to tell which one this booking meant"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 223,
+    "clientName": "Global Events",
+    "cinemaLocation": "Multi locations",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [],
+    "kind": "genuine-multi",
+    "reason": "\"multi\" placeholder — no specific cinema/city named at all"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 234,
+    "clientName": "Tata tele",
+    "cinemaLocation": "Plaza",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [
+      "Zirakpur",
+      "Kolkata",
+      "Delhi"
+    ],
+    "kind": "ambiguous-single-name",
+    "reason": "cinemaLocation text matches real properties in more than one city; no way to tell which one this booking meant"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 254,
+    "clientName": "Life Fitness",
+    "cinemaLocation": "PVR Juhu and Pune",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [
+      "Pune"
+    ],
+    "kind": "genuine-multi",
+    "reason": "raw value references more than one cinema, and they do not all resolve to a single shared city"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 287,
+    "clientName": "TATA Tele Services",
+    "cinemaLocation": "Ambience",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [
+      "Gurgaon",
+      "Delhi"
+    ],
+    "kind": "ambiguous-single-name",
+    "reason": "cinemaLocation text matches real properties in more than one city; no way to tell which one this booking meant"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 296,
+    "clientName": "IDFC BANk",
+    "cinemaLocation": "PVR Vega",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [
+      "Bengaluru",
+      "New Delhi"
+    ],
+    "kind": "ambiguous-single-name",
+    "reason": "cinemaLocation text matches real properties in more than one city; no way to tell which one this booking meant"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 323,
+    "clientName": "BRAND USA",
+    "cinemaLocation": "Mumbai / Chennai",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [
+      "Mumbai",
+      "Dombivli",
+      "Chennai"
+    ],
+    "kind": "genuine-multi",
+    "reason": "raw value references more than one cinema, and they do not all resolve to a single shared city"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 335,
+    "clientName": "Chiranjeevi",
+    "cinemaLocation": "PVR Forum",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [
+      "Mysore",
+      "Mangalore",
+      "Bengaluru",
+      "Rourkela"
+    ],
+    "kind": "ambiguous-single-name",
+    "reason": "cinemaLocation text matches real properties in more than one city; no way to tell which one this booking meant"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 353,
+    "clientName": "BMS",
+    "cinemaLocation": "PVR Sangam",
+    "currentCity": null,
+    "currentRegion": null,
+    "candidateCities": [
+      "Delhi",
+      "Mumbai"
+    ],
+    "kind": "ambiguous-single-name",
+    "reason": "cinemaLocation text matches real properties in more than one city; no way to tell which one this booking meant"
+  }
+]

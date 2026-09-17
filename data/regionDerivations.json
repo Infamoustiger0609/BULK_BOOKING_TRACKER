@@ -2,7 +2,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 13,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Selectcity",
     "originalRegion": "TLC",
     "derivedRegion": "North"
@@ -10,7 +10,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 33,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR Ambience",
     "originalRegion": "TLC",
     "derivedRegion": "North"
@@ -18,7 +18,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 36,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR Ambience",
     "originalRegion": "TLC",
     "derivedRegion": "North"
@@ -26,7 +26,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 37,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR Ambience",
     "originalRegion": "TLC",
     "derivedRegion": "North"
@@ -34,7 +34,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 47,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR Ambience Gurgaon",
     "originalRegion": "TLC",
     "derivedRegion": "North"
@@ -42,7 +42,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 49,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR Ambience Gurgaon",
     "originalRegion": "TLC",
     "derivedRegion": "North"
@@ -50,47 +50,39 @@
   {
     "sheet": "Year 2022 data",
     "row": 50,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "SCW",
     "originalRegion": "TLC",
-    "derivedRegion": null
-  },
-  {
-    "sheet": "Year 2022 data",
-    "row": 52,
-    "city": null,
-    "cinemaLocation": "Maison & Ambience",
-    "originalRegion": "TLC",
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 61,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "Ambi GGN",
     "originalRegion": "TLC",
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 64,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "Ambi GGN",
     "originalRegion": "TLC",
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 65,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "SCW Gold",
     "originalRegion": "TLC",
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 67,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "DCGGN",
     "originalRegion": "TLC",
     "derivedRegion": "North"
@@ -98,15 +90,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 96,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "SCW",
     "originalRegion": "TLC",
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 117,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Juhu",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -114,18 +106,18 @@
   {
     "sheet": "Year 2022 data",
     "row": 118,
-    "city": null,
+    "city": "Puducherry",
     "cinemaLocation": "PVR Pondi",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 119,
-    "city": null,
+    "city": "Kolkata",
     "cinemaLocation": "PVR Star Mall",
     "originalRegion": null,
-    "derivedRegion": "North"
+    "derivedRegion": "East"
   },
   {
     "sheet": "Year 2022 data",
@@ -138,7 +130,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 121,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Galada",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -146,7 +138,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 122,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Satyam",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -154,23 +146,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 123,
-    "city": null,
+    "city": "Pune",
     "cinemaLocation": "multipal cinemas in pune",
     "originalRegion": null,
-    "derivedRegion": null
-  },
-  {
-    "sheet": "Year 2022 data",
-    "row": 124,
-    "city": null,
-    "cinemaLocation": "Mega Mall / Logix",
-    "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 125,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "Kurla",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -178,23 +162,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 126,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "Ambi/ Maison/ Forum / VR Chennai",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 127,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Subash Nagar",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 128,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Plaza",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -202,7 +186,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 129,
-    "city": null,
+    "city": "Chandigarh",
     "cinemaLocation": "PVR Elante",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -210,15 +194,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 130,
-    "city": null,
+    "city": "Pune",
     "cinemaLocation": "PVR Pavallion Pune",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 131,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR MGF",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -226,7 +210,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 132,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Ampa",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -234,7 +218,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 133,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Juhu",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -242,23 +226,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 134,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR City Center GGN",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 137,
-    "city": null,
+    "city": "Pune",
     "cinemaLocation": "PVR Pune",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 138,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR Ambi",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -274,7 +258,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 140,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Citi Andheri",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -282,7 +266,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 141,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Citi Andheri",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -290,23 +274,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 142,
-    "city": null,
+    "city": "Ahmedabad",
     "cinemaLocation": "PVR, Acropolis-",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Year 2022 data",
     "row": 143,
-    "city": null,
+    "city": "Vadodara",
     "cinemaLocation": "PVR EVA Mall Vadodara",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Year 2022 data",
     "row": 144,
-    "city": null,
+    "city": "Nagpur",
     "cinemaLocation": "PVR EMPRESS NAGPUR",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -314,31 +298,31 @@
   {
     "sheet": "Year 2022 data",
     "row": 145,
-    "city": null,
+    "city": "Bangalore",
     "cinemaLocation": "PVR, Forum Mall, Koramangala",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 146,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR Ambi/ Forum / Maison",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 147,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "Multipal Cities",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 148,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -346,7 +330,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 149,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Chanakya",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -354,7 +338,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 150,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Chanakya",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -362,7 +346,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 151,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Juhu",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -370,7 +354,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 152,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Satyam",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -378,7 +362,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 153,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR MGF",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -386,23 +370,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 154,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR City Gurgaon",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 155,
-    "city": null,
+    "city": "Ahmedabad",
     "cinemaLocation": "PVR Acropolis",
     "originalRegion": null,
-    "derivedRegion": "West"
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Year 2022 data",
     "row": 156,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Market City Kurla",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -410,15 +394,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 157,
-    "city": null,
+    "city": "Pune",
     "cinemaLocation": "PVR PAVALLION (PUNE)",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 158,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -426,7 +410,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 159,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Chanakya",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -434,15 +418,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 160,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR City Gurgaon",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 161,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -450,15 +434,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 162,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR City Andheri",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 163,
-    "city": null,
+    "city": "Ghaziabad",
     "cinemaLocation": "PVR EDM",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -466,15 +450,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 164,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR City Andheri",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 165,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Infinity Malad",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -482,7 +466,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 166,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Juhu",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -490,7 +474,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 167,
-    "city": null,
+    "city": "Chandigarh",
     "cinemaLocation": "PVR Elante",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -498,23 +482,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 168,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 169,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 170,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Oberoi Goregaon",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -522,7 +506,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 171,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "Logix",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -546,15 +530,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 174,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "Multipal Cities",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 175,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Juhu",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -562,7 +546,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 176,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "PVR Logix",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -570,7 +554,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 177,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "PVR Logix",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -578,15 +562,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 178,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "PVR Logix / MGF / Forum / Market City Kurla",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 179,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Satyam",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -594,7 +578,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 180,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "Logix",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -602,7 +586,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 181,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR MGF",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -610,55 +594,47 @@
   {
     "sheet": "Year 2022 data",
     "row": 182,
-    "city": null,
+    "city": "Indore",
     "cinemaLocation": "PVR Indore",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Year 2022 data",
     "row": 185,
-    "city": null,
+    "city": "Lucknow",
     "cinemaLocation": "PVR Lucknow / Kanpur",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 186,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "pvr Pomanade",
     "originalRegion": null,
     "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
-    "row": 187,
-    "city": null,
-    "cinemaLocation": "Bangalore, Mumbai, Gurgaon, Noida",
-    "originalRegion": null,
-    "derivedRegion": null
-  },
-  {
-    "sheet": "Year 2022 data",
     "row": 188,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "JIO",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 189,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Mumbai",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 190,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -666,7 +642,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 191,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -674,15 +650,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 192,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "Multipal Place",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 193,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "Juhu",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -698,15 +674,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 195,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 196,
-    "city": null,
+    "city": "Hyderabad",
     "cinemaLocation": "Hyderabad",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -714,23 +690,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 197,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "Multipal Place",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 198,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 199,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "Vegas Dwarka",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -738,15 +714,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 200,
-    "city": null,
+    "city": "Bhubaneswar",
     "cinemaLocation": "MCB",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "East"
   },
   {
     "sheet": "Year 2022 data",
     "row": 201,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Select gold",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -754,7 +730,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 202,
-    "city": null,
+    "city": "Hyderabad",
     "cinemaLocation": "Next Galleria Panjagutta",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -762,23 +738,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 203,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 204,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "Promanade",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 205,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "Escape",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -786,31 +762,31 @@
   {
     "sheet": "Year 2022 data",
     "row": 206,
-    "city": null,
+    "city": "Bangalore",
     "cinemaLocation": "Soul Sprit",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 207,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "Select/ Ambi",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 208,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "Mkt City Kurla",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 209,
-    "city": null,
+    "city": "Chandigarh",
     "cinemaLocation": "PVR City Centre Chandighar",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -818,7 +794,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 210,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR Ambience",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -826,7 +802,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 211,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR MGF",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -834,15 +810,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 212,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR MCB",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 213,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Plaza",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -850,7 +826,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 214,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR PLAZA",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -858,23 +834,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 215,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 216,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR City Mall Andheri Mumbai",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 217,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "PVR Logix Noida",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -882,7 +858,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 218,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR Mega Mall",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -890,47 +866,39 @@
   {
     "sheet": "Year 2022 data",
     "row": 219,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 220,
-    "city": null,
+    "city": "Bangalore",
     "cinemaLocation": "PVR Koramnagla, Bangalore",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 221,
-    "city": null,
+    "city": "Lucknow",
     "cinemaLocation": "Phoenix United Lucknow",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 222,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "Logix Noida",
     "originalRegion": null,
     "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
-    "row": 223,
-    "city": null,
-    "cinemaLocation": "Multi locations",
-    "originalRegion": null,
-    "derivedRegion": null
-  },
-  {
-    "sheet": "Year 2022 data",
     "row": 226,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "Kurla",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -938,23 +906,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 227,
-    "city": null,
+    "city": "Coimbatore",
     "cinemaLocation": "Coimbatore",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 228,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "Palazzo",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 229,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -962,34 +930,34 @@
   {
     "sheet": "Year 2022 data",
     "row": 230,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "Palazzo / VR",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 231,
-    "city": null,
+    "city": "Coimbatore",
     "cinemaLocation": "Coimbatore",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 232,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "Galada",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 233,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "S2 Perambur",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
@@ -1002,7 +970,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 235,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Escape",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -1010,7 +978,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 236,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1018,31 +986,31 @@
   {
     "sheet": "Year 2022 data",
     "row": 237,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Cinemas Chennai",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 238,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Cinemas Chennai",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 239,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR BKC",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 240,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Escape",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -1050,7 +1018,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 241,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1058,7 +1026,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 242,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "PVR Logix",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1066,7 +1034,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 243,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Plaza",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1074,7 +1042,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 244,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR MGF",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1082,7 +1050,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 245,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1090,7 +1058,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 246,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1098,15 +1066,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 247,
-    "city": null,
+    "city": "Bangalore",
     "cinemaLocation": "PVR Forum Bangalore",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 248,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Maison",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1114,18 +1082,18 @@
   {
     "sheet": "Year 2022 data",
     "row": 249,
-    "city": null,
+    "city": "Bangalore",
     "cinemaLocation": "PVR Vega Bangalore",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 250,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
@@ -1153,16 +1121,8 @@
   },
   {
     "sheet": "Year 2022 data",
-    "row": 254,
-    "city": null,
-    "cinemaLocation": "PVR Juhu and Pune",
-    "originalRegion": null,
-    "derivedRegion": null
-  },
-  {
-    "sheet": "Year 2022 data",
     "row": 255,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1170,23 +1130,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 256,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 257,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 258,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR Ambience",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1194,7 +1154,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 259,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Rivoli",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1202,7 +1162,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 260,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "PVR Logix",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1210,31 +1170,31 @@
   {
     "sheet": "Year 2022 data",
     "row": 261,
-    "city": null,
+    "city": "Ludhiana",
     "cinemaLocation": "PVR Ludhiana",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 262,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 263,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR BKC",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 264,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Escape",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -1250,7 +1210,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 266,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Juhu",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1258,15 +1218,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 267,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 268,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Vegas",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1274,7 +1234,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 269,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Phoenix Mumbai",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1282,7 +1242,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 270,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Phoenix Mumbai",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1290,15 +1250,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 271,
-    "city": null,
+    "city": "Pune",
     "cinemaLocation": "PVR Mcpune",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 272,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Plaza",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1306,7 +1266,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 273,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Malad",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1314,15 +1274,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 274,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 277,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "Chennai",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -1330,7 +1290,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 278,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "Juhu",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1338,7 +1298,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 279,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1346,7 +1306,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 280,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1354,15 +1314,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 281,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "Ghatkopar",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 282,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "Lower parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1370,15 +1330,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 283,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "Malad",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 284,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1410,31 +1370,31 @@
   {
     "sheet": "Year 2022 data",
     "row": 288,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 289,
-    "city": null,
+    "city": "Pune",
     "cinemaLocation": "PVR Pimperi",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 290,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 291,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Maison",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1442,23 +1402,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 292,
-    "city": null,
+    "city": "Pune",
     "cinemaLocation": "PVR Pune",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 293,
-    "city": null,
+    "city": "Pune",
     "cinemaLocation": "PVR Pune",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 294,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1466,7 +1426,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 295,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1482,7 +1442,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 297,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Versova",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1490,26 +1450,26 @@
   {
     "sheet": "Year 2022 data",
     "row": 298,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR JIO",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 299,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "pvr Mumbai",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 300,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
@@ -1522,15 +1482,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 302,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "PVR DC",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 303,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1538,23 +1498,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 304,
-    "city": null,
+    "city": "Hyderabad",
     "cinemaLocation": "PVR RK Hyd",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 305,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Palazzo Chennai",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 306,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR MGF",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1562,7 +1522,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 307,
-    "city": null,
+    "city": "Chandigarh",
     "cinemaLocation": "PVR Elante",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1570,23 +1530,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 308,
-    "city": null,
+    "city": "Bangalore",
     "cinemaLocation": "PVR REX",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 309,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Vervosa",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 310,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Satyam",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -1594,7 +1554,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 311,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Juhu",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1602,7 +1562,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 312,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR ECR Chennai",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -1610,7 +1570,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 313,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Escape",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -1618,18 +1578,18 @@
   {
     "sheet": "Year 2022 data",
     "row": 314,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR City Centre Gurgaon",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 315,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Selectcity City",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
@@ -1658,31 +1618,23 @@
   {
     "sheet": "Year 2022 data",
     "row": 321,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "Ambi Dc",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 322,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR Ambience",
     "originalRegion": null,
     "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
-    "row": 323,
-    "city": null,
-    "cinemaLocation": "Mumbai / Chennai",
-    "originalRegion": null,
-    "derivedRegion": null
-  },
-  {
-    "sheet": "Year 2022 data",
     "row": 324,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1690,15 +1642,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 325,
-    "city": null,
+    "city": "Hyderabad",
     "cinemaLocation": "PVR Banjahils Hyd",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Year 2022 data",
     "row": 326,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Satyam",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -1706,7 +1658,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 327,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Satyam",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -1714,7 +1666,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 328,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "PVR Logix",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1722,15 +1674,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 329,
-    "city": null,
+    "city": "Ahmedabad",
     "cinemaLocation": "PVR Acropolis",
     "originalRegion": null,
-    "derivedRegion": "West"
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Year 2022 data",
     "row": 330,
-    "city": null,
+    "city": "Bangalore",
     "cinemaLocation": "Vaishnavi Bnglr",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -1738,15 +1690,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 331,
-    "city": null,
+    "city": "Ahmedabad",
     "cinemaLocation": "PVR Acropolis",
     "originalRegion": null,
-    "derivedRegion": "West"
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Year 2022 data",
     "row": 332,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Escape",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -1754,7 +1706,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 333,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR MGF",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1762,10 +1714,10 @@
   {
     "sheet": "Year 2022 data",
     "row": 334,
-    "city": null,
+    "city": "Bhubaneswar",
     "cinemaLocation": "PVR Regalia- Elements.",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "East"
   },
   {
     "sheet": "Year 2022 data",
@@ -1778,15 +1730,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 336,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "DC VK",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 337,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Vegas",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1794,7 +1746,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 338,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "PVR Logix",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1802,7 +1754,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 339,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Maison",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1810,31 +1762,31 @@
   {
     "sheet": "Year 2022 data",
     "row": 340,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Subash Nagar",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 341,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR MCB",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Year 2022 data",
     "row": 342,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Maison Mumbai",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 343,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Juhu",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1842,7 +1794,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 344,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR Ambience",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1850,7 +1802,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 345,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Satyam",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -1858,15 +1810,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 346,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Mumbai's",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 347,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Juhu",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1874,7 +1826,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 348,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR selectcity",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1882,7 +1834,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 349,
-    "city": null,
+    "city": "Ghaziabad",
     "cinemaLocation": "PVR EDM",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1890,7 +1842,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 350,
-    "city": null,
+    "city": "Ghaziabad",
     "cinemaLocation": "PVR EDM",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1898,7 +1850,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 351,
-    "city": null,
+    "city": "Ghaziabad",
     "cinemaLocation": "PVR EDM",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1906,7 +1858,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 352,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Juhu",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -1922,15 +1874,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 354,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR LP Mumbai",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Year 2022 data",
     "row": 355,
-    "city": null,
+    "city": "Chennai",
     "cinemaLocation": "PVR Satyam",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -1938,7 +1890,7 @@
   {
     "sheet": "Year 2022 data",
     "row": 356,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "PVR Logix",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1946,15 +1898,15 @@
   {
     "sheet": "Year 2022 data",
     "row": 357,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Mumbai's",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "West"
   },
   {
     "sheet": "Sep-2023",
     "row": 23,
-    "city": null,
+    "city": "Delhi",
     "cinemaLocation": "PVR Chanakya",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1962,7 +1914,7 @@
   {
     "sheet": "Sep-2023",
     "row": 24,
-    "city": null,
+    "city": "Gurgaon",
     "cinemaLocation": "PVR Mega Mall",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1970,7 +1922,7 @@
   {
     "sheet": "Sep-2023",
     "row": 25,
-    "city": null,
+    "city": "Noida",
     "cinemaLocation": "PVR Gaur City",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1978,7 +1930,7 @@
   {
     "sheet": "Sep-2023",
     "row": 26,
-    "city": null,
+    "city": "Ghaziabad",
     "cinemaLocation": "PVR VVIP",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1986,7 +1938,7 @@
   {
     "sheet": "Sep-2023",
     "row": 27,
-    "city": null,
+    "city": "Ghaziabad",
     "cinemaLocation": "PVR EDM",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -1994,7 +1946,7 @@
   {
     "sheet": "Sep-2023",
     "row": 28,
-    "city": null,
+    "city": "Bareilly",
     "cinemaLocation": "PVR Bareilly",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -2002,31 +1954,31 @@
   {
     "sheet": "Sep-2023",
     "row": 29,
-    "city": null,
+    "city": "Moradabad",
     "cinemaLocation": "PVR Moradabad",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Sep-2023",
     "row": 30,
-    "city": null,
+    "city": "Kanpur",
     "cinemaLocation": "PVR South X Kanpur",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Sep-2023",
     "row": 31,
-    "city": null,
+    "city": "Lucknow",
     "cinemaLocation": "PVR United Lucknow",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "North"
   },
   {
     "sheet": "Sep-2023",
     "row": 32,
-    "city": null,
+    "city": "Ghaziabad",
     "cinemaLocation": "PVR Mahagun",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -2034,7 +1986,7 @@
   {
     "sheet": "Sep-2023",
     "row": 33,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Malad",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -2042,7 +1994,7 @@
   {
     "sheet": "Sep-2023",
     "row": 34,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Icon Versova",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -2050,7 +2002,7 @@
   {
     "sheet": "Sep-2023",
     "row": 35,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR Lower Parel",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -2258,10 +2210,10 @@
   {
     "sheet": "May-2024",
     "row": 59,
-    "city": "Chhattisgarh",
+    "city": "Chennai",
     "cinemaLocation": "INOX Citi Centre, RK Salai, Mylapore",
     "originalRegion": null,
-    "derivedRegion": "East"
+    "derivedRegion": "South"
   },
   {
     "sheet": "June-2024",
@@ -2318,6 +2270,14 @@
     "cinemaLocation": null,
     "originalRegion": null,
     "derivedRegion": null
+  },
+  {
+    "sheet": "June-2024",
+    "row": 14,
+    "city": "Raipur",
+    "cinemaLocation": "CINEMAX CITY CENTRE MALL",
+    "originalRegion": null,
+    "derivedRegion": "Central"
   },
   {
     "sheet": "July-2024",
@@ -2562,7 +2522,7 @@
   {
     "sheet": "July-2024",
     "row": 32,
-    "city": null,
+    "city": "Kolhapur",
     "cinemaLocation": "Inox Kolhapur",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -2570,7 +2530,7 @@
   {
     "sheet": "July-2024",
     "row": 33,
-    "city": null,
+    "city": "Dombivali",
     "cinemaLocation": "PVR Dombivali",
     "originalRegion": null,
     "derivedRegion": null
@@ -2586,7 +2546,7 @@
   {
     "sheet": "July-2024",
     "row": 35,
-    "city": "Punjab",
+    "city": "Chandigarh",
     "cinemaLocation": "PVR Elante Chandighar",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -2682,7 +2642,7 @@
   {
     "sheet": "Aug - 2024",
     "row": 5,
-    "city": null,
+    "city": "Lucknow",
     "cinemaLocation": "PVR INOX PHOENIX PALASSIO MALL, GOMTI NAGAR",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -2810,7 +2770,7 @@
   {
     "sheet": "Aug - 2024",
     "row": 26,
-    "city": "Rajasthan",
+    "city": "Ajmer",
     "cinemaLocation": "INOX - City Square Mall, Panch Sheel Nagar",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -2818,39 +2778,39 @@
   {
     "sheet": "Aug - 2024",
     "row": 27,
-    "city": "Rajasthan",
+    "city": "Jodhpur",
     "cinemaLocation": "INOX Multiplex",
     "originalRegion": null,
-    "derivedRegion": "North"
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Aug - 2024",
     "row": 28,
-    "city": "Rajasthan",
+    "city": "Jodhpur",
     "cinemaLocation": "PVR Ridhi Sidhi Mall,",
     "originalRegion": null,
-    "derivedRegion": "North"
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Aug - 2024",
     "row": 29,
-    "city": "Ci",
+    "city": "Indore",
     "cinemaLocation": "Sapna Sngeeta Inox",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Aug - 2024",
     "row": 30,
-    "city": null,
+    "city": "Kochi",
     "cinemaLocation": "PVR Cinema, Lullu Mall",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Aug - 2024",
     "row": 31,
-    "city": "Karnataka",
+    "city": "Bangalore",
     "cinemaLocation": "PVR, Dr Rajkumar Road Malleshwaram,",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -2858,7 +2818,7 @@
   {
     "sheet": "Aug - 2024",
     "row": 32,
-    "city": "Karnataka",
+    "city": "Belgaum",
     "cinemaLocation": "INOX Post Office Road",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -2866,15 +2826,15 @@
   {
     "sheet": "Aug - 2024",
     "row": 33,
-    "city": "Andhra Pradesh",
+    "city": "Nizamabad",
     "cinemaLocation": "PVR Cinema - Phulong",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Aug - 2024",
     "row": 34,
-    "city": "Maharashtra",
+    "city": "Aurangabad",
     "cinemaLocation": "INOX - Gajananmaharaj Mandir Road",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -2882,7 +2842,7 @@
   {
     "sheet": "Aug - 2024",
     "row": 35,
-    "city": "Andhra Pradesh",
+    "city": "Machilipatnam",
     "cinemaLocation": "PVR The Cenima Naaz Center",
     "originalRegion": null,
     "derivedRegion": null
@@ -2930,7 +2890,7 @@
   {
     "sheet": "Aug - 2024",
     "row": 41,
-    "city": "Rajasthan",
+    "city": "Ajmer",
     "cinemaLocation": "INOX - City Square Mall, Panch Sheel Nagar",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -2938,39 +2898,39 @@
   {
     "sheet": "Aug - 2024",
     "row": 42,
-    "city": "Rajasthan",
+    "city": "Jodhpur",
     "cinemaLocation": "INOX Multiplex",
     "originalRegion": null,
-    "derivedRegion": "North"
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Aug - 2024",
     "row": 43,
-    "city": "Rajasthan",
+    "city": "Jodhpur",
     "cinemaLocation": "PVR Ridhi Sidhi Mall,",
     "originalRegion": null,
-    "derivedRegion": "North"
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Aug - 2024",
     "row": 44,
-    "city": "Ci",
+    "city": "Indore",
     "cinemaLocation": "Sapna Sngeeta Inox",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Aug - 2024",
     "row": 45,
-    "city": null,
+    "city": "Kochi",
     "cinemaLocation": "PVR Cinema, Lullu Mall",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Aug - 2024",
     "row": 46,
-    "city": "Karnataka",
+    "city": "Bangalore",
     "cinemaLocation": "PVR, Dr Rajkumar Road Malleshwaram,",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -2978,7 +2938,7 @@
   {
     "sheet": "Aug - 2024",
     "row": 47,
-    "city": "Karnataka",
+    "city": "Belgaum",
     "cinemaLocation": "INOX Post Office Road",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -2986,15 +2946,15 @@
   {
     "sheet": "Aug - 2024",
     "row": 48,
-    "city": "Andhra Pradesh",
+    "city": "Nizamabad",
     "cinemaLocation": "PVR Cinema - Phulong",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Aug - 2024",
     "row": 49,
-    "city": "Maharashtra",
+    "city": "Aurangabad",
     "cinemaLocation": "INOX - Gajananmaharaj Mandir Road",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -3002,7 +2962,7 @@
   {
     "sheet": "Aug - 2024",
     "row": 50,
-    "city": "Andhra Pradesh",
+    "city": "Machilipatnam",
     "cinemaLocation": "PVR The Cenima Naaz Center",
     "originalRegion": null,
     "derivedRegion": null
@@ -3050,7 +3010,7 @@
   {
     "sheet": "Aug - 2024",
     "row": 56,
-    "city": "Rajasthan",
+    "city": "Ajmer",
     "cinemaLocation": "INOX - City Square Mall, Panch Sheel Nagar",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -3058,39 +3018,39 @@
   {
     "sheet": "Aug - 2024",
     "row": 57,
-    "city": "Rajasthan",
+    "city": "Jodhpur",
     "cinemaLocation": "INOX Multiplex",
     "originalRegion": null,
-    "derivedRegion": "North"
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Aug - 2024",
     "row": 58,
-    "city": "Rajasthan",
+    "city": "Jodhpur",
     "cinemaLocation": "PVR Ridhi Sidhi Mall,",
     "originalRegion": null,
-    "derivedRegion": "North"
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Aug - 2024",
     "row": 59,
-    "city": "Ci",
+    "city": "Indore",
     "cinemaLocation": "Sapna Sngeeta Inox",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Aug - 2024",
     "row": 60,
-    "city": null,
+    "city": "Kochi",
     "cinemaLocation": "PVR Cinema, Lullu Mall",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Aug - 2024",
     "row": 61,
-    "city": "Karnataka",
+    "city": "Bangalore",
     "cinemaLocation": "PVR, Dr Rajkumar Road Malleshwaram,",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -3098,7 +3058,7 @@
   {
     "sheet": "Aug - 2024",
     "row": 62,
-    "city": "Karnataka",
+    "city": "Belgaum",
     "cinemaLocation": "INOX Post Office Road",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -3106,15 +3066,15 @@
   {
     "sheet": "Aug - 2024",
     "row": 63,
-    "city": "Andhra Pradesh",
+    "city": "Nizamabad",
     "cinemaLocation": "PVR Cinema - Phulong",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Aug - 2024",
     "row": 64,
-    "city": "Maharashtra",
+    "city": "Aurangabad",
     "cinemaLocation": "INOX - Gajananmaharaj Mandir Road",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -3122,7 +3082,7 @@
   {
     "sheet": "Aug - 2024",
     "row": 65,
-    "city": "Andhra Pradesh",
+    "city": "Machilipatnam",
     "cinemaLocation": "PVR The Cenima Naaz Center",
     "originalRegion": null,
     "derivedRegion": null
@@ -3170,7 +3130,7 @@
   {
     "sheet": "Aug - 2024",
     "row": 71,
-    "city": "Rajasthan",
+    "city": "Ajmer",
     "cinemaLocation": "INOX - City Square Mall, Panch Sheel Nagar",
     "originalRegion": null,
     "derivedRegion": "North"
@@ -3178,39 +3138,39 @@
   {
     "sheet": "Aug - 2024",
     "row": 72,
-    "city": "Rajasthan",
+    "city": "Jodhpur",
     "cinemaLocation": "INOX Multiplex",
     "originalRegion": null,
-    "derivedRegion": "North"
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Aug - 2024",
     "row": 73,
-    "city": "Rajasthan",
+    "city": "Jodhpur",
     "cinemaLocation": "PVR Ridhi Sidhi Mall,",
     "originalRegion": null,
-    "derivedRegion": "North"
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Aug - 2024",
     "row": 74,
-    "city": "Ci",
+    "city": "Indore",
     "cinemaLocation": "Sapna Sngeeta Inox",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "Central"
   },
   {
     "sheet": "Aug - 2024",
     "row": 75,
-    "city": null,
+    "city": "Kochi",
     "cinemaLocation": "PVR Cinema, Lullu Mall",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Aug - 2024",
     "row": 76,
-    "city": "Karnataka",
+    "city": "Bangalore",
     "cinemaLocation": "PVR, Dr Rajkumar Road Malleshwaram,",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -3218,7 +3178,7 @@
   {
     "sheet": "Aug - 2024",
     "row": 77,
-    "city": "Karnataka",
+    "city": "Belgaum",
     "cinemaLocation": "INOX Post Office Road",
     "originalRegion": null,
     "derivedRegion": "South"
@@ -3226,15 +3186,15 @@
   {
     "sheet": "Aug - 2024",
     "row": 78,
-    "city": "Andhra Pradesh",
+    "city": "Nizamabad",
     "cinemaLocation": "PVR Cinema - Phulong",
     "originalRegion": null,
-    "derivedRegion": null
+    "derivedRegion": "South"
   },
   {
     "sheet": "Aug - 2024",
     "row": 79,
-    "city": "Maharashtra",
+    "city": "Aurangabad",
     "cinemaLocation": "INOX - Gajananmaharaj Mandir Road",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -3242,7 +3202,7 @@
   {
     "sheet": "Aug - 2024",
     "row": 80,
-    "city": "Andhra Pradesh",
+    "city": "Machilipatnam",
     "cinemaLocation": "PVR The Cenima Naaz Center",
     "originalRegion": null,
     "derivedRegion": null
@@ -3306,7 +3266,7 @@
   {
     "sheet": "Dec-2025",
     "row": 316,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR PHOENIX MARKETCITY KURLA",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -3314,7 +3274,7 @@
   {
     "sheet": "Dec-2025",
     "row": 317,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR PHOENIX MARKETCITY KURLA",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -3322,7 +3282,7 @@
   {
     "sheet": "Dec-2025",
     "row": 318,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR PHOENIX MARKETCITY KURLA",
     "originalRegion": null,
     "derivedRegion": "West"
@@ -3330,7 +3290,7 @@
   {
     "sheet": "Dec-2025",
     "row": 324,
-    "city": null,
+    "city": "Mumbai",
     "cinemaLocation": "PVR PHOENIX LOWER PAREL",
     "originalRegion": null,
     "derivedRegion": "West"

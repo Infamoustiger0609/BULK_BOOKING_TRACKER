@@ -1,0 +1,1370 @@
+[
+  {
+    "cinemaName": "AURA (Bengaluru)",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "Ashoka (Patna)",
+    "city": "Patna"
+  },
+  {
+    "cinemaName": "CINEMAX CITY CENTER RAIPUR",
+    "city": "Raipur"
+  },
+  {
+    "cinemaName": "CINEMAX CITY CENTRE NASIK (Nashik)",
+    "city": "Nashik"
+  },
+  {
+    "cinemaName": "CINEMAX INFINITI MALAD MUMBAI",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "CINEMAX OBERON KOCHI (Cochin)",
+    "city": "Cochin"
+  },
+  {
+    "cinemaName": "CINEMAX SOUTH X KANPUR",
+    "city": "Kanpur"
+  },
+  {
+    "cinemaName": "City Cente Mall, Patna",
+    "city": "Patna"
+  },
+  {
+    "cinemaName": "Dharwad Smart City",
+    "city": "Dharwad"
+  },
+  {
+    "cinemaName": "Director’s Cut KOPA Mall, Pune",
+    "city": "Pune"
+  },
+  {
+    "cinemaName": "ESCAPE (Chennai)",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "Forum Mall (Cochin)",
+    "city": "Cochin"
+  },
+  {
+    "cinemaName": "Himalaya Mall, Ahmedabad",
+    "city": "Ahmedabad"
+  },
+  {
+    "cinemaName": "INOX AIPL JOY STREET MALL (Gurgaon)",
+    "city": "Gurgaon"
+  },
+  {
+    "cinemaName": "INOX ARDEE MALL (Gurgaon)",
+    "city": "Gurgaon"
+  },
+  {
+    "cinemaName": "INOX ASHOKA ONE MALL (Hyderabad)",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "INOX ATRIA MALL, WORLI (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "INOX AURUS MALL (Guwahati)",
+    "city": "Guwahati"
+  },
+  {
+    "cinemaName": "INOX BEACH ROAD (Vizag)",
+    "city": "Vizag"
+  },
+  {
+    "cinemaName": "INOX BMC BHAWANI MALL (Bhubaneswar)",
+    "city": "Bhubaneswar"
+  },
+  {
+    "cinemaName": "INOX BROOKE FIELD MALL (Bangalore)",
+    "city": "Bangalore"
+  },
+  {
+    "cinemaName": "INOX BUNDGARDEN ROAD (Pune)",
+    "city": "Pune"
+  },
+  {
+    "cinemaName": "INOX BURDWAN ARCADE",
+    "city": "Burdwan"
+  },
+  {
+    "cinemaName": "INOX C-21 MALL (Indore)",
+    "city": "Indore"
+  },
+  {
+    "cinemaName": "INOX CENTRAL, JP NAGAR (Bangalore)",
+    "city": "Bangalore"
+  },
+  {
+    "cinemaName": "INOX CENTRO MYSORE",
+    "city": "Mysore"
+  },
+  {
+    "cinemaName": "INOX CHANDAN CINEMA (Belgaum)",
+    "city": "Belgaum"
+  },
+  {
+    "cinemaName": "INOX CHITRALAYAA (Vizag)",
+    "city": "Vizag"
+  },
+  {
+    "cinemaName": "INOX CITI CENTRE CHENNAI",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "INOX CITY CENTRE 2, RAJARHAT (Kolkata)",
+    "city": "Kolkata"
+  },
+  {
+    "cinemaName": "INOX CITY CENTRE, SALT LAKE (Kolkata)",
+    "city": "Kolkata"
+  },
+  {
+    "cinemaName": "INOX CITY MALL GORAKHPUR",
+    "city": "Gorakhpur"
+  },
+  {
+    "cinemaName": "INOX CITY MALL RAIPUR",
+    "city": "Raipur"
+  },
+  {
+    "cinemaName": "INOX CITY PULSE MALL (Anand)",
+    "city": "Anand"
+  },
+  {
+    "cinemaName": "INOX CITY SQUARE MALL (Ajmer)",
+    "city": "Ajmer"
+  },
+  {
+    "cinemaName": "INOX CMR CENTRAL (Vizag)",
+    "city": "Vizag"
+  },
+  {
+    "cinemaName": "INOX CR2 MALL, NARIMAN POINT (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "INOX CROWN MALL, FAIZABAD ROAD (Lucknow)",
+    "city": "Lucknow"
+  },
+  {
+    "cinemaName": "INOX CRYSTAL MALL (Jamnagar)",
+    "city": "Jamnagar"
+  },
+  {
+    "cinemaName": "INOX DB MALL (Gwalior)",
+    "city": "Gwalior"
+  },
+  {
+    "cinemaName": "INOX DHILLON PLAZA (Zirakpur)",
+    "city": "Zirakpur"
+  },
+  {
+    "cinemaName": "INOX DN REGALIA, PATRAPARA (Bhubaneswar)",
+    "city": "Bhubaneswar"
+  },
+  {
+    "cinemaName": "INOX EF-3 MALL (Faridabad)",
+    "city": "Faridabad"
+  },
+  {
+    "cinemaName": "INOX ELEMENTS MALL (Jaipur)",
+    "city": "Jaipur"
+  },
+  {
+    "cinemaName": "INOX ELPRO CITY SQUARE MALL, CHINCHWAD (Pune)",
+    "city": "Pune"
+  },
+  {
+    "cinemaName": "INOX EPICURIA NEHRU PLACE (New Delhi)",
+    "city": "New Delhi"
+  },
+  {
+    "cinemaName": "INOX EROS (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "INOX FORUM MALL, ELGIN ROAD (Kolkata)",
+    "city": "Kolkata"
+  },
+  {
+    "cinemaName": "INOX FORUM NEIGHBOURHOOD MALL, WHITEFIELD (Bangalore)",
+    "city": "Bangalore"
+  },
+  {
+    "cinemaName": "INOX GAJUWAKA VISHAKHAPATNAM (Vizag)",
+    "city": "Vizag"
+  },
+  {
+    "cinemaName": "INOX GARUDA CENTRAL, YELAHANKA (Bangalore)",
+    "city": "Bangalore"
+  },
+  {
+    "cinemaName": "INOX GARUDA MALL, MAGRATH ROAD (Bangalore)",
+    "city": "Bangalore"
+  },
+  {
+    "cinemaName": "INOX GMC PANJIM",
+    "city": "Panjim"
+  },
+  {
+    "cinemaName": "INOX GREEN FIELD RELIANCE MALL, MEYYANUR (Salem)",
+    "city": "Salem"
+  },
+  {
+    "cinemaName": "INOX GSM MALL, MADEENAGUDA (Hyderabad)",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "INOX GT CENTRAL, MALVIYA NAGAR (Jaipur)",
+    "city": "Jaipur"
+  },
+  {
+    "cinemaName": "INOX GVK ONE, BANJARA HILLS (Hyderabad)",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "INOX INORBIT MALL, MALAD (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "INOX INTERIORZ CROWN MALL (Faridabad)",
+    "city": "Faridabad"
+  },
+  {
+    "cinemaName": "INOX JAI GANESH VISION MALL, AKURDI (Pune)",
+    "city": "Pune"
+  },
+  {
+    "cinemaName": "INOX JAM SHIPRA (Ghaziabad)",
+    "city": "Ghaziabad"
+  },
+  {
+    "cinemaName": "INOX JANAK PLACE (New Delhi)",
+    "city": "New Delhi"
+  },
+  {
+    "cinemaName": "INOX JASWANT TULI (Nagpur)",
+    "city": "Nagpur"
+  },
+  {
+    "cinemaName": "INOX JTM MALL, JAGATPURA (Jaipur)",
+    "city": "Jaipur"
+  },
+  {
+    "cinemaName": "INOX KOLHAPUR RELIANCE MEGA MALL",
+    "city": "Kolhapur"
+  },
+  {
+    "cinemaName": "INOX KORUM MALL (Thane)",
+    "city": "Thane"
+  },
+  {
+    "cinemaName": "INOX LAILA (Vijayawada)",
+    "city": "Vijayawada"
+  },
+  {
+    "cinemaName": "INOX LAKE CITY MALL (Udaipur)",
+    "city": "Udaipur"
+  },
+  {
+    "cinemaName": "INOX LEPL ICON (Vijayawada)",
+    "city": "Vijayawada"
+  },
+  {
+    "cinemaName": "INOX LIDO MALL, ULSOOR (Bangalore)",
+    "city": "Bangalore"
+  },
+  {
+    "cinemaName": "INOX LUCKNOW EMERALD MALL",
+    "city": "Lucknow"
+  },
+  {
+    "cinemaName": "INOX LUXE JAZZ (Chennai)",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "INOX MALL DE GOA PORVORIM (Provorim)",
+    "city": "Porvorim"
+  },
+  {
+    "cinemaName": "INOX MALL OF MYSORE",
+    "city": "Mysore"
+  },
+  {
+    "cinemaName": "INOX MANTRI SQUARE MALL, MALLESHWARAM (Bangalore)",
+    "city": "Bangalore"
+  },
+  {
+    "cinemaName": "INOX MEGAPLEX SKY CITY BORIVAL (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "INOX METRO CINEMA, MARINE LINES (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "INOX METRO JUNCTION MALL (Kalyan)",
+    "city": "Kalyan"
+  },
+  {
+    "cinemaName": "INOX METRO, ESPLANADE (Kolkata)",
+    "city": "Kolkata"
+  },
+  {
+    "cinemaName": "INOX METROPOLIS MALL, HILAND PARK (Kolkata)",
+    "city": "Kolkata"
+  },
+  {
+    "cinemaName": "INOX MP MALL, KACHIGUDA (Hyderabad)",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "INOX NAKSHTRA MALL, DADAR (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "INOX NATIONAL (Chennai)",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "INOX NCS Square Mall Adabari Guwahati",
+    "city": "Guwahati"
+  },
+  {
+    "cinemaName": "INOX NEHRU PLACE (New Delhi)",
+    "city": "New Delhi"
+  },
+  {
+    "cinemaName": "INOX ODEON CONNAUGHT PLACE (New Delhi)",
+    "city": "New Delhi"
+  },
+  {
+    "cinemaName": "INOX OMAXE MALL (Greater Noida)",
+    "city": "Greater Noida"
+  },
+  {
+    "cinemaName": "INOX OPAL ONE MALL (Nadiad)",
+    "city": "Nadiad"
+  },
+  {
+    "cinemaName": "INOX ORCHID MALL, KALABURAGI (Gulbarga)",
+    "city": "Gulbarga"
+  },
+  {
+    "cinemaName": "INOX ORION MALL, MOHADDIPUR (Gorakhpur)",
+    "city": "Gorakhpur"
+  },
+  {
+    "cinemaName": "INOX OSIA 2 COMMERCIAL ARCADE A-WING (Margao)",
+    "city": "Margao"
+  },
+  {
+    "cinemaName": "INOX OSIA COMMERCIAL ARCADE G-WING (Margao)",
+    "city": "Margao"
+  },
+  {
+    "cinemaName": "INOX Odeon Mall Chikkadpally (Hyderabad)",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "INOX PALM BEACH GALLERIA MALL, VASHI (Navi Mumbai)",
+    "city": "Navi Mumbai"
+  },
+  {
+    "cinemaName": "INOX PATEL NAGAR (New Delhi)",
+    "city": "New Delhi"
+  },
+  {
+    "cinemaName": "INOX PHOENIX CITADEL (Indore)",
+    "city": "Indore"
+  },
+  {
+    "cinemaName": "INOX PHOENIX PALASSIO MALL, GOMTI NAGAR (Lucknow)",
+    "city": "Lucknow"
+  },
+  {
+    "cinemaName": "INOX PINK SQUARE MALL, RAJA PARK (Jaipur)",
+    "city": "Jaipur"
+  },
+  {
+    "cinemaName": "INOX PRABHATAM GRAND MALL (Dhanbad)",
+    "city": "Dhanbad"
+  },
+  {
+    "cinemaName": "INOX PROZONE MALL (Aurangabad)",
+    "city": "Aurangabad"
+  },
+  {
+    "cinemaName": "INOX PROZONE MALL COIMBATORE",
+    "city": "Coimbatore"
+  },
+  {
+    "cinemaName": "INOX PVS MALL (Meerut)",
+    "city": "Meerut"
+  },
+  {
+    "cinemaName": "INOX QUEST MALL (Kolkata)",
+    "city": "Kolkata"
+  },
+  {
+    "cinemaName": "INOX R MALL, GHODBUNDER ROAD (Thane)",
+    "city": "Thane"
+  },
+  {
+    "cinemaName": "INOX R-WORLD ADALAJ (Gandhinagar)",
+    "city": "Gandhinagar"
+  },
+  {
+    "cinemaName": "INOX RACE COURSE ROAD (Baroda)",
+    "city": "Baroda"
+  },
+  {
+    "cinemaName": "INOX RAGHULEELA MALL, KANDIVALI (W) (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "INOX RAGHULEELA MALL, VASHI (Navi Mumbai)",
+    "city": "Navi Mumbai"
+  },
+  {
+    "cinemaName": "INOX RAJ IMPERIAL (Surat)",
+    "city": "Surat"
+  },
+  {
+    "cinemaName": "INOX RAJKOT R-WORLD",
+    "city": "Rajkot"
+  },
+  {
+    "cinemaName": "INOX RAJKOT RELIANCE MALL",
+    "city": "Rajkot"
+  },
+  {
+    "cinemaName": "INOX RANGOLI MALL BELUR (Howrah)",
+    "city": "Howrah"
+  },
+  {
+    "cinemaName": "INOX RCITY MALL, GHATKOPAR (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "INOX RCUBE RAJOURI GARDEN (New Delhi)",
+    "city": "New Delhi"
+  },
+  {
+    "cinemaName": "INOX RELIANCE MALL, CHITTOR ROAD (Bhilwara)",
+    "city": "Bhilwara"
+  },
+  {
+    "cinemaName": "INOX RELIANCE MALL, JALANDHAR",
+    "city": "Jalandhar"
+  },
+  {
+    "cinemaName": "INOX RELIANCE MEGA MALL (Baroda)",
+    "city": "Baroda"
+  },
+  {
+    "cinemaName": "INOX RELIANCE MEGA MALL SURAT",
+    "city": "Surat"
+  },
+  {
+    "cinemaName": "INOX RELIANCE MEGA MALL, AURANGABAD",
+    "city": "Aurangabad"
+  },
+  {
+    "cinemaName": "INOX RMZ GALLERIA (Bangalore)",
+    "city": "Bangalore"
+  },
+  {
+    "cinemaName": "INOX ROYAL HERITAGE MALL (Pune)",
+    "city": "Pune"
+  },
+  {
+    "cinemaName": "INOX S MALL, TUMAKURU",
+    "city": "Tumakuru"
+  },
+  {
+    "cinemaName": "INOX SAPPHIRE 83 MALL (Gurgaon)",
+    "city": "Gurgaon"
+  },
+  {
+    "cinemaName": "INOX SAPPHIRE 90 MALL (Gurgaon)",
+    "city": "Gurgaon"
+  },
+  {
+    "cinemaName": "INOX SATTVA NECKLACE MALL, KAVADIGUDA (Hyderabad)",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "INOX SBR HORIZON MALL, SEEGEHALLI (Bangalore)",
+    "city": "Bangalore"
+  },
+  {
+    "cinemaName": "INOX SGBL SQUARE MALL (Cuttack)",
+    "city": "Cuttack"
+  },
+  {
+    "cinemaName": "INOX SHREE GARUDA SWAGATH MALL, JAYANAGAR (Bangalore)",
+    "city": "Bangalore"
+  },
+  {
+    "cinemaName": "INOX SHRIRAM (Dhanbad)",
+    "city": "Dhanbad"
+  },
+  {
+    "cinemaName": "INOX SMR VINAY METRO MALL (Hyderabad)",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "INOX SOBHA CITY MALL (Thrissur)",
+    "city": "Thrissur"
+  },
+  {
+    "cinemaName": "INOX SOUTH CITY MALL (Kolkata)",
+    "city": "Kolkata"
+  },
+  {
+    "cinemaName": "INOX SRMT MALL (Kakinada)",
+    "city": "Kakinada"
+  },
+  {
+    "cinemaName": "INOX STAR MALL, MADHYAMGRAM (Kolkata)",
+    "city": "Kolkata"
+  },
+  {
+    "cinemaName": "INOX SUNNY TRADE CENTER (Jaipur)",
+    "city": "Jaipur"
+  },
+  {
+    "cinemaName": "INOX SWABHUMI (Kolkata)",
+    "city": "Kolkata"
+  },
+  {
+    "cinemaName": "INOX SYMPHONY MALL, RUDRAPUR (Bhubaneswar)",
+    "city": "Bhubaneswar"
+  },
+  {
+    "cinemaName": "INOX TAKSH GALAXY MALL (Baroda)",
+    "city": "Baroda"
+  },
+  {
+    "cinemaName": "INOX THAKUR DAHISAR (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "INOX THE GREAT MALL (Kota)",
+    "city": "Kota"
+  },
+  {
+    "cinemaName": "INOX THE MARINA MALL (Chennai)",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "INOX TREASURE ISLAND NEXT MALL, REGAL SQUARE (Indore)",
+    "city": "Indore"
+  },
+  {
+    "cinemaName": "INOX TRILIUM MALL (Amritsar)",
+    "city": "Amritsar"
+  },
+  {
+    "cinemaName": "INOX UMRAO MALL, NISHANT GANJ (Lucknow)",
+    "city": "Lucknow"
+  },
+  {
+    "cinemaName": "INOX URVASHI THEATRE (Vijayawada)",
+    "city": "Vijayawada"
+  },
+  {
+    "cinemaName": "INOX VAIBHAV COMPLEX (Jaipur)",
+    "city": "Jaipur"
+  },
+  {
+    "cinemaName": "INOX VISHAAL DE MALL MADURAI",
+    "city": "Madurai"
+  },
+  {
+    "cinemaName": "INOX VR MALL (Surat)",
+    "city": "Surat"
+  },
+  {
+    "cinemaName": "INOX WORLDMARK MALL (Gurgaon)",
+    "city": "Gurgaon"
+  },
+  {
+    "cinemaName": "INOX Z SQUARE (Kanpur)",
+    "city": "Kanpur"
+  },
+  {
+    "cinemaName": "IRIS Broadway (Gurugram)",
+    "city": "Gurugram"
+  },
+  {
+    "cinemaName": "Indiabulls Mega mall (Jodhpur)",
+    "city": "Jodhpur"
+  },
+  {
+    "cinemaName": "KRIPA (Trivandrum)",
+    "city": "Trivandrum"
+  },
+  {
+    "cinemaName": "LE REVE (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "M5 Ecity MALL Bangalore",
+    "city": "Bangalore"
+  },
+  {
+    "cinemaName": "Maison, Jio World Centre, BKC Mumbai",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "Mall of Asia (Bangalore)",
+    "city": "Bangalore"
+  },
+  {
+    "cinemaName": "Mall of Faridabad",
+    "city": "Faridabad"
+  },
+  {
+    "cinemaName": "Mittal Mall (Ajmer)",
+    "city": "Ajmer"
+  },
+  {
+    "cinemaName": "PALAZZO (Chennai)",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "PVR 3C'S DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR ACROPOLIC AHMEDABAD",
+    "city": "Ahmedabad"
+  },
+  {
+    "cinemaName": "PVR AEROHUB CHENNAI",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "PVR AMPA CHENNAI",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "PVR ANUPAM DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR ARVED TRANSCUBE AHMEDABAD",
+    "city": "Ahmedabad"
+  },
+  {
+    "cinemaName": "PVR ATRIUM MALL HYDERABAD",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "PVR AURA BHOPAL",
+    "city": "Bhopal"
+  },
+  {
+    "cinemaName": "PVR AVANI KOLKATA",
+    "city": "Kolkata"
+  },
+  {
+    "cinemaName": "PVR Alvael Fun Savvy Mall, Coimbatore",
+    "city": "Coimbatore"
+  },
+  {
+    "cinemaName": "PVR BHARATIYA MALL OF BENGALURU",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "PVR BHARTI LUDHIANA",
+    "city": "Ludhiana"
+  },
+  {
+    "cinemaName": "PVR BOKARO",
+    "city": "Bokaro"
+  },
+  {
+    "cinemaName": "PVR CELEBRATION UDAIPUR",
+    "city": "Udaipur"
+  },
+  {
+    "cinemaName": "PVR CENTRA CHANDIGARH",
+    "city": "Chandigarh"
+  },
+  {
+    "cinemaName": "PVR CINEMALL KOTA",
+    "city": "Kota"
+  },
+  {
+    "cinemaName": "PVR CITI MALL ANDHERI (W) MUMBAI",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR CITY CENTRE GURGAON",
+    "city": "Gurgaon"
+  },
+  {
+    "cinemaName": "PVR CITY CENTRE MALL CHANDIGARH",
+    "city": "Chandigarh"
+  },
+  {
+    "cinemaName": "PVR CITY CENTRE MALL, GUWAHATI",
+    "city": "Guwahati"
+  },
+  {
+    "cinemaName": "PVR CITY MALL YAMUNA NAGAR",
+    "city": "Yamuna Nagar"
+  },
+  {
+    "cinemaName": "PVR CITY ONE MALL PIMPRI PUNE",
+    "city": "Pune"
+  },
+  {
+    "cinemaName": "PVR COSMO MALL,ZIRAKPUR",
+    "city": "Zirakpur"
+  },
+  {
+    "cinemaName": "PVR CURO JALANDHER (Jalandhar)",
+    "city": "Jalandhar"
+  },
+  {
+    "cinemaName": "PVR Capital Mall, Vasai (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR Centrio Dehradun",
+    "city": "Dehradun"
+  },
+  {
+    "cinemaName": "PVR Cinemagic Elegant Unity One Mall (Delhi)",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR Cinemagic, Ambience Mall (Gurgaon)",
+    "city": "Gurgaon"
+  },
+  {
+    "cinemaName": "PVR DC Mall Of India Noida",
+    "city": "Noida"
+  },
+  {
+    "cinemaName": "PVR DEEP KANPUR",
+    "city": "Kanpur"
+  },
+  {
+    "cinemaName": "PVR DIAMOND PLAZA JESSORE KOLKATA",
+    "city": "Kolkata"
+  },
+  {
+    "cinemaName": "PVR DIRECTOR'S CUT AMBIENCE DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR DIRECTOR'S CUT AMBIENCE GURGAON",
+    "city": "Gurgaon"
+  },
+  {
+    "cinemaName": "PVR DIRECTOR'S CUT FORUM REX WALK MALLL (Bengaluru)",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "PVR DLF Mid town (Delhi)",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR DYNAMIC JUHU MUMBAI",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR DYP CITY KOLHAPUR",
+    "city": "Kolhapur"
+  },
+  {
+    "cinemaName": "PVR ECR CHENNAI",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "PVR ECX CHANAKYAPURI DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR ECX DLF MALL OF INDIA NOIDA",
+    "city": "Noida"
+  },
+  {
+    "cinemaName": "PVR EDM GHAZIABAD",
+    "city": "Ghaziabad"
+  },
+  {
+    "cinemaName": "PVR ELAN TOWN CENTRE GURGAON",
+    "city": "Gurgaon"
+  },
+  {
+    "cinemaName": "PVR ELANTE CHANDIGARH",
+    "city": "Chandigarh"
+  },
+  {
+    "cinemaName": "PVR EVA MALL VADODRA (Vadodara)",
+    "city": "Vadodara"
+  },
+  {
+    "cinemaName": "PVR Elan Mercado (Gurgaon)",
+    "city": "Gurgaon"
+  },
+  {
+    "cinemaName": "PVR Elan Miracle (Gurgaon)",
+    "city": "Gurgaon"
+  },
+  {
+    "cinemaName": "PVR FLAMEZ LUDHIANA",
+    "city": "Ludhiana"
+  },
+  {
+    "cinemaName": "PVR FORUM CENTRE CITY MALL, MYSORE",
+    "city": "Mysore"
+  },
+  {
+    "cinemaName": "PVR FORUM FIZA MANGALORE",
+    "city": "Mangalore"
+  },
+  {
+    "cinemaName": "PVR FORUM MALL KORAMANGALA (Bengaluru)",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "PVR FORUM MALL ROURKELA",
+    "city": "Rourkela"
+  },
+  {
+    "cinemaName": "PVR FRIENDS MALL, JALANDHAR",
+    "city": "Jalandhar"
+  },
+  {
+    "cinemaName": "PVR FUN CITY PANIPAT",
+    "city": "Panipat"
+  },
+  {
+    "cinemaName": "PVR GARUDA MALL ALBERT VICTOR ROAD MYSURU (Mysore)",
+    "city": "Mysore"
+  },
+  {
+    "cinemaName": "PVR GAUR CITY NOIDA",
+    "city": "Noida"
+  },
+  {
+    "cinemaName": "PVR GHATKOPAR MUMBAI",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR GRAND GALADA CHENNAI",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "PVR GRAND HIGHSTREET MALL, HINJEWADI (Pune)",
+    "city": "Pune"
+  },
+  {
+    "cinemaName": "PVR Global Mall (Bengaluru)",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "PVR ICON HITECH MADHAPUR HYDERABAD",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "PVR ICON INFINITY ANDHERI (W) MUMBAI",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR ICON OBEROI GOREGAON (E) MUMBAI",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR ICON PHOENIX LOWER PAREL MUMBAI",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR ICON THE PAVILLION PUNE",
+    "city": "Pune"
+  },
+  {
+    "cinemaName": "PVR INORBIT CYBERABAD",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "PVR INOX CP67 Mohali",
+    "city": "Mohali"
+  },
+  {
+    "cinemaName": "PVR INOX PLUTONE (Rourkela)",
+    "city": "Rourkela"
+  },
+  {
+    "cinemaName": "PVR INOX Pacific Mall Jasola (New Delhi)",
+    "city": "New Delhi"
+  },
+  {
+    "cinemaName": "PVR INOX Paras (New Delhi)",
+    "city": "New Delhi"
+  },
+  {
+    "cinemaName": "PVR IRRUM MANZIL HYDERABAD",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "PVR JALGAON",
+    "city": "Jalgaon"
+  },
+  {
+    "cinemaName": "PVR JIO WORLD DRIVE- BANDRA KURLA COMPLEX (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR Jeevan Reddy Mall (Armoor)",
+    "city": "Armoor"
+  },
+  {
+    "cinemaName": "PVR KC JAMMU",
+    "city": "Jammu"
+  },
+  {
+    "cinemaName": "PVR KUKATPALLY HYDERABAD",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "PVR KUMAR PACIFIC PUNE",
+    "city": "Pune"
+  },
+  {
+    "cinemaName": "PVR LAKESHORE MALL HYDERABAD",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "PVR LATUR",
+    "city": "Latur"
+  },
+  {
+    "cinemaName": "PVR LOGIX NOIDA",
+    "city": "Noida"
+  },
+  {
+    "cinemaName": "PVR LULU KOCHI (Cochin)",
+    "city": "Cochin"
+  },
+  {
+    "cinemaName": "PVR Lido (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR Lulu Lucknow",
+    "city": "Lucknow"
+  },
+  {
+    "cinemaName": "PVR MAGNETO RAIPUR",
+    "city": "Raipur"
+  },
+  {
+    "cinemaName": "PVR MAHAGUN GHAZIABAD",
+    "city": "Ghaziabad"
+  },
+  {
+    "cinemaName": "PVR MAISON, JIO WORLD DRIVE- BANDRA KURLA COMPLEX (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR MALL OF JAIPUR",
+    "city": "Jaipur"
+  },
+  {
+    "cinemaName": "PVR MANI SQUARE KOLKATA",
+    "city": "Kolkata"
+  },
+  {
+    "cinemaName": "PVR MARKET CITY KURLA MUMBAI",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR MARKET CITY PUNE",
+    "city": "Pune"
+  },
+  {
+    "cinemaName": "PVR MARUTI SOLARIS ANAND",
+    "city": "Anand"
+  },
+  {
+    "cinemaName": "PVR MBD JALANDHER (Jalandhar)",
+    "city": "Jalandhar"
+  },
+  {
+    "cinemaName": "PVR MEGA MALL GURGAON",
+    "city": "Gurgaon"
+  },
+  {
+    "cinemaName": "PVR MGF GURGAON",
+    "city": "Gurgaon"
+  },
+  {
+    "cinemaName": "PVR MILAP KANDIVALI (W) MUMBAI",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR MOTERA AHMEDABAD",
+    "city": "Ahmedabad"
+  },
+  {
+    "cinemaName": "PVR MSR ELEMENTS MALL BENGALURU",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "PVR MUSARAMBAGH HYDERABAD",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "PVR Mall Of Dehradun",
+    "city": "Dehradun"
+  },
+  {
+    "cinemaName": "PVR NARAINA DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR NARASIPATNAM",
+    "city": "Narasipatnam"
+  },
+  {
+    "cinemaName": "PVR NEXT GALLERIA MALL PANJAGUTTA (Hyderabad)",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "PVR NILAMBER TRIUMPH VADODARA",
+    "city": "Vadodara"
+  },
+  {
+    "cinemaName": "PVR NOVELTY MALL PATHANKOT",
+    "city": "Pathankot"
+  },
+  {
+    "cinemaName": "PVR NUCLEUS MALL RANCHI JHARKHAND",
+    "city": "Jharkhand"
+  },
+  {
+    "cinemaName": "PVR OPULENT GHAZIABAD",
+    "city": "Ghaziabad"
+  },
+  {
+    "cinemaName": "PVR ORION BENGALURU",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "PVR ORION PANVEL MUMBAI",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR ORION UPTOWN (Bengaluru)",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "PVR PACIFIC DEHRADUN",
+    "city": "Dehradun"
+  },
+  {
+    "cinemaName": "PVR PACIFIC DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR PACIFIC DWARKA (New Delhi)",
+    "city": "New Delhi"
+  },
+  {
+    "cinemaName": "PVR PANJAGUTTA HYDERABAD",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "PVR PARSVNATH MORADABAD",
+    "city": "Moradabad"
+  },
+  {
+    "cinemaName": "PVR PEBBLE FARIDABAD",
+    "city": "Faridabad"
+  },
+  {
+    "cinemaName": "PVR PHOENIX LUCKNOW",
+    "city": "Lucknow"
+  },
+  {
+    "cinemaName": "PVR PHOENIX MARKET CITY WHITE FIELD ROAD BENGALURU",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "PVR PHOENIX UNITED BAREILLY",
+    "city": "Bareilly"
+  },
+  {
+    "cinemaName": "PVR PIYUSH MALL, FARIDABAD",
+    "city": "Faridabad"
+  },
+  {
+    "cinemaName": "PVR PLAZA DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR PP Mall Mohali",
+    "city": "Mohali"
+  },
+  {
+    "cinemaName": "PVR PRASHANT VIHAR DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR PRESTON HYDERABAD",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "PVR PRIYA (New Delhi)",
+    "city": "New Delhi"
+  },
+  {
+    "cinemaName": "PVR PROMENADE VASANT KUNJ DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR Palladium (Ahemdabad)",
+    "city": "Ahemdabad"
+  },
+  {
+    "cinemaName": "PVR R K CINEPLEX HYDERABAD",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "PVR RAHUL RAJ SURAT",
+    "city": "Surat"
+  },
+  {
+    "cinemaName": "PVR RAMA MAGNETO BILASPUR",
+    "city": "Bilaspur"
+  },
+  {
+    "cinemaName": "PVR RIPPLES VIJAYAWADA",
+    "city": "Vijayawada"
+  },
+  {
+    "cinemaName": "PVR RIVOLI DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR SAHARA LUCKNOW",
+    "city": "Lucknow"
+  },
+  {
+    "cinemaName": "PVR SAHU, LUCKNOW",
+    "city": "Lucknow"
+  },
+  {
+    "cinemaName": "PVR SANGAM DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR SCT AMRITSAR",
+    "city": "Amritsar"
+  },
+  {
+    "cinemaName": "PVR SELECT CITY WALK DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR SHALIMAR BAGH DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR SILVER ARC LUDHIANA",
+    "city": "Ludhiana"
+  },
+  {
+    "cinemaName": "PVR SKLS GALAXY MALL RED HILLS CHENNAI",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "PVR SOUL SPACE SPIRIT BENGALURU",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "PVR SRI GANGANAGAR",
+    "city": "Sri Ganganagar"
+  },
+  {
+    "cinemaName": "PVR SUPERPLEX LULU MALL, TRIVANDRUM",
+    "city": "Trivandrum"
+  },
+  {
+    "cinemaName": "PVR Sangam Andheri (Mumbai)",
+    "city": "Mumbai"
+  },
+  {
+    "cinemaName": "PVR Superplex, Forum Mall Kanakapura Rd (Bengaluru)",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "PVR THE CELEBRATION MALL KHANNA",
+    "city": "Khanna"
+  },
+  {
+    "cinemaName": "PVR TRANSCUBE VADODRA (Vadodara)",
+    "city": "Vadodara"
+  },
+  {
+    "cinemaName": "PVR TREASURE BHILAI",
+    "city": "Bhilai"
+  },
+  {
+    "cinemaName": "PVR TREASURE ISLAND INDORE",
+    "city": "Indore"
+  },
+  {
+    "cinemaName": "PVR TREASURE NANDED",
+    "city": "Nanded"
+  },
+  {
+    "cinemaName": "PVR TREASURE UJJAIN",
+    "city": "Ujjain"
+  },
+  {
+    "cinemaName": "PVR UTSAV JCR ENTERTAINMENT WORLD, JAMNAGAR",
+    "city": "Jamnagar"
+  },
+  {
+    "cinemaName": "PVR Utkal Galleria Mall, Bhubaneswar",
+    "city": "Bhubaneswar"
+  },
+  {
+    "cinemaName": "PVR VAISHNAVI SAPPHIRE BENGALURU",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "PVR VEGA MALL BENGALURU",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "PVR VEGAS DWARKA (New Delhi)",
+    "city": "New Delhi"
+  },
+  {
+    "cinemaName": "PVR VELACHERY CHENNAI",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "PVR VELOCITY SILK MILL GANDHI NAGAR (Vellore)",
+    "city": "Vellore"
+  },
+  {
+    "cinemaName": "PVR VENU MALL NIZAMABAD",
+    "city": "Nizamabad"
+  },
+  {
+    "cinemaName": "PVR VENUS GORAKHPUR",
+    "city": "Gorakhpur"
+  },
+  {
+    "cinemaName": "PVR VIKASPURI DELHI",
+    "city": "Delhi"
+  },
+  {
+    "cinemaName": "PVR VINAYAK PRAYAGRAJ (Allahabad)",
+    "city": "Allahabad"
+  },
+  {
+    "cinemaName": "PVR VR BENGALURU",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "PVR VR CHENNAI ANNA NAGAR",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "PVR VR PUNJAB MOHALI",
+    "city": "Mohali"
+  },
+  {
+    "cinemaName": "PVR VRC MALL PATIALA",
+    "city": "Patiala"
+  },
+  {
+    "cinemaName": "PVR VVIP GHAZIABAD",
+    "city": "Ghaziabad"
+  },
+  {
+    "cinemaName": "PVR XPERIA PALAVA MUMBAI (Dombivli)",
+    "city": "Dombivli"
+  },
+  {
+    "cinemaName": "PVT INORBIT HUBBALLI",
+    "city": "Hubballi"
+  },
+  {
+    "cinemaName": "Phoenix Mall of Millenium, Walad, Pune",
+    "city": "Pune"
+  },
+  {
+    "cinemaName": "Prism Mall, Hyderabad",
+    "city": "Hyderabad"
+  },
+  {
+    "cinemaName": "S2 HASEEN THANE (Bhiwandi)",
+    "city": "Bhiwandi"
+  },
+  {
+    "cinemaName": "S2 PERAMBUR (Chennai)",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "S2 THEYAGARAJA (Chennai)",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "S2 WARRANGAL",
+    "city": "Warangal"
+  },
+  {
+    "cinemaName": "SATHYAM (Chennai)",
+    "city": "Chennai"
+  },
+  {
+    "cinemaName": "Satymev Emporio (Ahemdabad)",
+    "city": "Ahemdabad"
+  },
+  {
+    "cinemaName": "THE CINEMA (BENGALURU)",
+    "city": "Bengaluru"
+  },
+  {
+    "cinemaName": "THE CINEMA (COIMBATORE)",
+    "city": "Coimbatore"
+  },
+  {
+    "cinemaName": "THE CINEMA PROVIDENCE (Puducherry)",
+    "city": "Puducherry"
+  },
+  {
+    "cinemaName": "Urban Sqaure Mall (Udaipur)",
+    "city": "Udaipur"
+  },
+  {
+    "cinemaName": "V Squar Mall, Cuddalore",
+    "city": "Cuddalore"
+  },
+  {
+    "cinemaName": "Varam Mall (Machlipatnam)",
+    "city": "Machilipatnam"
+  },
+  {
+    "cinemaName": "Vishal Enclave (New Delhi)",
+    "city": "New Delhi"
+  }
+]

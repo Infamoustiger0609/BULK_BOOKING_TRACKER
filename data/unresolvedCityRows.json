@@ -1,0 +1,245 @@
+[
+  {
+    "sheet": "Year 2022 data",
+    "row": 194,
+    "clientName": "RBL Bank",
+    "cinemaLocation": "Forum",
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 234,
+    "clientName": "Tata Tele Services",
+    "cinemaLocation": "Plaza",
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 265,
+    "clientName": "Global Events",
+    "cinemaLocation": "PVR Multipal",
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 285,
+    "clientName": "Big Tree Entertainment",
+    "cinemaLocation": "Multipal",
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 286,
+    "clientName": "Pine Labs",
+    "cinemaLocation": "Multipal",
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 287,
+    "clientName": "Tata Tele Services",
+    "cinemaLocation": "Ambience",
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 296,
+    "clientName": "IDFC Bank",
+    "cinemaLocation": "PVR Vega",
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 301,
+    "clientName": "T-series",
+    "cinemaLocation": "PVR Multipal",
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 318,
+    "clientName": "Bms",
+    "cinemaLocation": "multipal",
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 319,
+    "clientName": "Bms",
+    "cinemaLocation": "multipal",
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "Year 2022 data",
+    "row": 320,
+    "clientName": "Bms",
+    "cinemaLocation": "multipal",
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 44,
+    "clientName": "Ambience Public School",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 45,
+    "clientName": "Interactive Television",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 46,
+    "clientName": "Dook International",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 47,
+    "clientName": "Amahealth",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 48,
+    "clientName": "Kidzee",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 49,
+    "clientName": "T-series",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 50,
+    "clientName": "Dbs Bank",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "May-2024",
+    "row": 51,
+    "clientName": "Salesforce",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "June-2024",
+    "row": 2,
+    "clientName": "Pidilite Industries Ltd",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "June-2024",
+    "row": 3,
+    "clientName": "Dr. Fixit Wall Putti",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "June-2024",
+    "row": 4,
+    "clientName": "Rare Rabbit",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "June-2024",
+    "row": 5,
+    "clientName": "Air India",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "June-2024",
+    "row": 6,
+    "clientName": "Prosports Events",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "June-2024",
+    "row": 7,
+    "clientName": "Sifi",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "June-2024",
+    "row": 8,
+    "clientName": "RBL Bank",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  },
+  {
+    "sheet": "April - 2025",
+    "row": 120,
+    "clientName": "Ceat",
+    "cinemaLocation": null,
+    "region": null,
+    "rawCityValue": null,
+    "gapType": "unresolved-cinema-location"
+  }
+]

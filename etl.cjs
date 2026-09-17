@@ -13,7 +13,7 @@ const XLSX = require('xlsx');
 
 const DEFAULT_INPUT = 'BULK BOOKING SALES TRACKER.xlsx';
 const OUT_DIR = path.join(__dirname, 'data');
-
+  
 // ---------------------------------------------------------------------------
 // Header name -> unified schema field. Anything not listed here is dropped
 // (this also drops "Zone (India A/B)" and the invoice/payment tracking
@@ -69,7 +69,7 @@ const MONTH_NAME_TO_NUM = {
 // ---------------------------------------------------------------------------
 // Reporting accumulators
 // ---------------------------------------------------------------------------
-const flaggedValues = { bookingType: new Map(), clientCategory: new Map(), movieIndustry: new Map(), movieLanguage: new Map(), city: new Map() };
+const flaggedValues = { bookingType: new Map(), clientCategory: new Map(), movieIndustry: new Map(), movieLanguage: new Map(), city: new Map(), clientName: new Map(), corporateName: new Map() };
 const dataIssues = [];
 const recordsPerSheet = {};
 
@@ -191,6 +191,25 @@ function toNumberOrNull(raw) {
 // Categorical normalization (region / booking type / client type)
 // ---------------------------------------------------------------------------
 const CANONICAL_REGION_MAP = { west: 'West', north: 'North', south: 'South', east: 'East', central: 'Central' };
+
+// The "direct recognition" half of region normalization — everything
+// resolveRegions() below can decide WITHOUT falling back to a city/
+// cinemaLocation-based derivation. Pulled out on its own so the Year-2022
+// manual region-correction override (main()) can canonicalize its values
+// the same way resolveRegions would, without going through the full
+// derivation pass (that file's Region values are meant to be trusted
+// directly, not re-derived).
+function canonicalizeDirectRegion(raw) {
+  const lower = raw == null ? null : String(raw).trim().toLowerCase();
+  if (!lower) return null;
+  if (CANONICAL_REGION_MAP[lower]) return CANONICAL_REGION_MAP[lower];
+  // "North East" is no longer a distinct region — full merge into "North",
+  // dataset-wide, supersedes the earlier decision to keep it separate.
+  if (lower === 'ne' || lower === 'north east' || lower === 'northeast') return 'North';
+  if (lower === 'multi') return 'Multi';
+  if (lower === 'sount') return 'South';
+  return null; // not directly recognized — caller decides what to do
+}
 
 // Region is normalized in two passes: parseMonthlySheet/parseYear2022Sheet store
 // the raw trimmed value on record.region; resolveRegions() (called once all
@@ -314,18 +333,9 @@ function resolveRegions(allRecords) {
 
   for (const rec of allRecords) {
     const raw = rec.region;
-    const lower = raw == null ? null : raw.toLowerCase();
-    let finalRegion;
+    let finalRegion = canonicalizeDirectRegion(raw);
 
-    if (lower && CANONICAL_REGION_MAP[lower]) {
-      finalRegion = CANONICAL_REGION_MAP[lower];
-    } else if (lower === 'ne') {
-      finalRegion = 'North East';
-    } else if (lower === 'multi') {
-      finalRegion = 'Multi';
-    } else if (lower === 'sount') {
-      finalRegion = 'South';
-    } else {
+    if (finalRegion == null) {
       let derived = null;
       if (rec.city) derived = cityToRegion.get(normCityKey(rec.city)) || null;
       if (!derived && rec.cinemaLocation) derived = cinemaToRegion.get(normCityKey(rec.cinemaLocation)) || null;
@@ -343,7 +353,12 @@ function resolveRegions(allRecords) {
     rec.region = finalRegion;
   }
 
-  for (const rec of allRecords) delete rec._excelRow;
+  // NOTE: `_excelRow` is intentionally NOT deleted here — later steps in
+  // main() (the cinema master-list resolution pass, and building
+  // nullCityRows/unresolvedCityRows) still need it. It's stripped once, in
+  // main(), right before bookings.json is written. (This used to happen
+  // here, which silently dropped `row` from most of unresolvedCityRows.json
+  // — see the fix note in main().)
 
   return regionDerivations;
 }
@@ -419,6 +434,182 @@ const MOVIE_LANGUAGE_CANON = {
   gujrati: 'Gujarati', // typo, confirmed correct — no sibling spelling in the data to auto-merge against
 };
 
+// Confirmed client-identity merges only — same "never guess" discipline as
+// CITY_CANON: applied to BOTH clientName and corporateName (an alias can
+// show up in either field across different rows/sheets; the dashboard's own
+// normalizeClientKey() reads `corporateName || clientName`, so both need
+// the same treatment for the merge to take effect regardless of which
+// field a given row actually used). Every entry here was explicitly
+// confirmed by the user — this directly affects revenue attribution on the
+// Leaderboard, so nothing gets merged on a guess, no matter how close two
+// names look. See data/reports/clientNameCandidates.json for everything
+// that looked similar but wasn't confirmed.
+const CLIENT_NAME_CANON = {
+  rbl: 'RBL Bank',
+  'rbl bank': 'RBL Bank',
+  // Confirmed by user: merge despite being different real business units
+  // (mutual fund / AMC / bank arm), for this dashboard's purposes only.
+  'bandhan mutual fund': 'Bandhan',
+  'bandhan amc': 'Bandhan',
+  'bandhan bank': 'Bandhan',
+  // Extended from an earlier pass (which only had these 3 pointing at bare
+  // "Khushi") once the candidate audit showed "Khushi" is itself shorthand
+  // for "Khushi Advertising" — see the big merge batch below, which folds
+  // all of these into that fuller name instead.
+  khushi: 'Khushi Advertising',
+  'khushi (4th jul)': 'Khushi Advertising',
+  'khushi (viacom)': 'Khushi Advertising',
+  'fervent communication': 'Fervent Communication',
+  'fervent communication private limited': 'Fervent Communication',
+  'global event': 'Global Events',
+  'global events': 'Global Events',
+  bcg: 'BCG',
+  'bcg ( food)': 'BCG',
+  // Confirmed by user. Data actually has 7 distinct raw spellings under
+  // this cluster (one more than the 6 named) — "pidilite industries ltd."
+  // (with a trailing period) is obviously the same entity, so it's merged
+  // too rather than left out on a technicality.
+  pidilite: 'Pidilite Industries Ltd',
+  'pidilite industries': 'Pidilite Industries Ltd',
+  'pidilite industries ltd': 'Pidilite Industries Ltd',
+  'pidilite industries ltd.': 'Pidilite Industries Ltd',
+  'pidilite ltd': 'Pidilite Industries Ltd',
+  pidilitte: 'Pidilite Industries Ltd',
+  'pidilite ind ltd': 'Pidilite Industries Ltd',
+
+  // Large batch from the clientNameCandidates.json audit — confirmed by
+  // user, 34 of the 42 candidate groups (full or partial). Deliberately
+  // NOT merged, even though they showed up as candidates: "Bms"/"Bmw"
+  // (BookMyShow vs BMW — unrelated), "Eco"/"Ey"/"Eo" (Ey is likely Ernst &
+  // Young — left as 3 separate clients), "Zoom Communications" (not the
+  // same as the Stroam/Strom/Strong cluster), "Everest Food Products"
+  // (likely the unrelated Everest Masala/spice brand, not merged into
+  // "Everest"), "Raman" (not the same as "Mr Aman"/"Aman"), and "Heera
+  // Enterprises" (not the same as "Dheeraj Enterprises"). These stay as
+  // their own canonical values so a future pass doesn't silently re-merge
+  // them without asking again.
+  'khushi advertising': 'Khushi Advertising',
+  'khushi advertising (prince pipe)': 'Khushi Advertising',
+  'khushi advertisings': 'Khushi Advertising',
+  'aamika / khushi advertising': 'Khushi Advertising',
+  'idfc bank': 'IDFC Bank',
+  idfc: 'IDFC Bank',
+  'idfc first': 'IDFC Bank',
+  'idfc bank chennai': 'IDFC Bank',
+  'idfc first bank': 'IDFC Bank',
+  'cramo services': 'Cramo Services',
+  'cramo swrvice': 'Cramo Services',
+  'zee entertainment enterprises': 'Zee Entertainment Enterprises',
+  'zee entertainment': 'Zee Entertainment Enterprises',
+  nagaro: 'Nagarro', // "Nagarro" (the group's own less-frequent spelling) is the real, correctly-spelled company name
+  nagarro: 'Nagarro',
+  'gm moduler': 'Gm Modular',
+  'gm modular': 'Gm Modular',
+  'radio mirchi': 'Radio Mirchi',
+  'radio mirchi kolkata': 'Radio Mirchi',
+  'apollo hospitals enterprise limited': 'Apollo Hospitals Enterprise Limited',
+  'apollo hospital': 'Apollo Hospitals Enterprise Limited',
+  'apollo hospitals': 'Apollo Hospitals Enterprise Limited',
+  'apolo hospital': 'Apollo Hospitals Enterprise Limited',
+  interactive: 'Interactive Television',
+  'interactive televison': 'Interactive Television',
+  'interactive television': 'Interactive Television',
+  intractive: 'Interactive Television',
+  kotak: 'Kotak Mahindra',
+  'kotak bank': 'Kotak Mahindra',
+  'kotak mahindra': 'Kotak Mahindra',
+  'kotal bank': 'Kotak Mahindra',
+  'mercedes benze': 'Mercedes Benz',
+  'mercedes benz': 'Mercedes Benz',
+  'pine labs': 'Pine Labs',
+  pinelab: 'Pine Labs',
+  pinelabs: 'Pine Labs',
+  'pine lab': 'Pine Labs',
+  fervent: 'Fervent Communication',
+  // "Roterry Club Chennai" candidate group — all 14 variants confirmed as
+  // the same contact/club, including the bare "Yogesh" entries.
+  'roterry club chennai': 'Rotary Club Chennai',
+  'rotaary club': 'Rotary Club Chennai',
+  'rotery club': 'Rotary Club Chennai',
+  yogesh: 'Rotary Club Chennai',
+  'mr yogesh (rottary club)': 'Rotary Club Chennai',
+  '(rottary club)': 'Rotary Club Chennai',
+  'yogesh rottery club chennai': 'Rotary Club Chennai',
+  'rotarry club chennai': 'Rotary Club Chennai',
+  'rotary club chennai': 'Rotary Club Chennai',
+  'yogesh rottary club': 'Rotary Club Chennai',
+  'yogesh rotarry club': 'Rotary Club Chennai',
+  'yogesh rotary club chennai': 'Rotary Club Chennai',
+  'yogesh rotarry club chennai': 'Rotary Club Chennai',
+  'yogesh (rotary club)': 'Rotary Club Chennai',
+  'dheeraj enterprises': 'Dheeraj Enterprises', // "Heera Enterprises" deliberately excluded — see note above
+  dheeraj: 'Dheeraj Enterprises',
+  'dlf gurgaon': 'DLF Limited',
+  'dlf chandighar': 'DLF Limited',
+  'dlf motinagar': 'DLF Limited',
+  'dlf limited': 'DLF Limited',
+  'dlf chandigarh': 'DLF Limited',
+  dlf: 'DLF Limited',
+  'panaroma studio': 'Panorama Studio',
+  'panorama studio': 'Panorama Studio',
+  'dav school ho': 'Dav School Ho',
+  'dav school moi': 'Dav School Ho',
+  'tata tele': 'Tata Tele Services',
+  'tata tele services': 'Tata Tele Services',
+  'tata tel': 'Tata Tele Services',
+  'tata tele service': 'Tata Tele Services',
+  'lutha & luthra': 'Luthra And Luthra',
+  'luthra and luthra': 'Luthra And Luthra',
+  luthra: 'Luthra And Luthra',
+  'rajasthan club': 'Rajasthan Club',
+  'mr. yogesh rajastan cliub chennai': 'Rajasthan Club',
+  'mr yogesh rajastan club chennai': 'Rajasthan Club',
+  'mr yogesh rajasthan club chennai': 'Rajasthan Club',
+  'super cassettes industries pvt. ltd': 'Super Cassettes Industries Pvt. Ltd',
+  'super cassettes industries pvt ltd': 'Super Cassettes Industries Pvt. Ltd',
+  'coco cola': 'Coco Cola',
+  'coco-cola': 'Coco Cola',
+  'airtel - tamil nadu': 'Bharti Airtel',
+  'bharti airtel': 'Bharti Airtel',
+  'airtel delhi': 'Bharti Airtel',
+  airtel: 'Bharti Airtel',
+  'stroam communications': 'Stroam Communications', // "Zoom Communications" deliberately excluded — see note above
+  'strom cummunication': 'Stroam Communications',
+  'strom communications': 'Stroam Communications',
+  'strong communications': 'Stroam Communications',
+  'singapore airlines': 'Singapore Airlines',
+  'singapore ailines': 'Singapore Airlines',
+  'mr aman': 'Aman Goel', // "Raman" deliberately excluded — see note above
+  'aman goel': 'Aman Goel',
+  'aman madras club': 'Aman Goel',
+  aman: 'Aman Goel',
+  'audi south delhi': 'Audi South Delhi',
+  'audi south': 'Audi South Delhi',
+  'wings barnd actications pvt ltd': 'Wings Brand Activations Pvt Ltd',
+  'wings brand activations pvt ltd': 'Wings Brand Activations Pvt Ltd',
+  evenmark: 'Evenmark',
+  'event mark': 'Evenmark',
+  'madhuvan events & entertainments': 'Madhuvan Events & Entertainments',
+  'madhuvan events': 'Madhuvan Events & Entertainments',
+  sony: 'Sony Pictures',
+  'sony pictures': 'Sony Pictures',
+  'the stallions': 'The Stallions',
+  stallions: 'The Stallions',
+  amazon: 'Amazon',
+  'amazon chennai': 'Amazon',
+  'le-meridian': 'Le-meridian',
+  lemeredian: 'Le-meridian',
+  'meta acadmy': 'Meta Academy',
+  'meta acadamy': 'Meta Academy',
+  'meta academy': 'Meta Academy',
+  'google it': 'Google',
+  google: 'Google',
+  'jw marriot': 'Jw Marriot',
+  'jw merriot': 'Jw Marriot',
+  'sun rise learning': 'Sunrise Learning',
+  'sunrise learning': 'Sunrise Learning',
+};
+
 // Confirmed genuine typos from the flaggedValues.json city review — every
 // other flagged city (suburb/neighborhood names that just happen to be
 // edit-distance-close to an unrelated real city, e.g. "GOREGAON" near
@@ -465,6 +656,22 @@ const CITY_CANON = {
   mysuru: 'Mysore',
   'new delhi': 'Delhi',
   bengaluru: 'Bangalore',
+  vishakhapatanam: 'Visakhapatnam', // a second, separate misspelling from "vishakhapatnam" above
+  bhillai: 'Bhilai',
+  velacherry: 'Velachery',
+  // "Yamuna Nagar" (3 occurrences) outnumbers "Yamunanagar" (1) in the data,
+  // so per the standard frequency-first rule, the less common spelling folds
+  // into the more common one rather than the reverse.
+  yamunanagar: 'Yamuna Nagar',
+  gurugram: 'Gurgaon', // official 2016 rename — same city
+  baroda: 'Vadodara', // old/new name — same city
+  nasik: 'Nashik', // standardized to "Nashik" per explicit user decision
+  cyberabad: 'Hyderabad',
+  // Pinned as-is (not a merge): introducing "Nashik" as a canonical value
+  // above put it within edit-distance of this real, unrelated Navi Mumbai
+  // locality, which would otherwise start getting flagged as a false
+  // positive purely as a side effect of that unrelated fix.
+  vashi: 'Vashi',
   // State names that leaked into the City column — there's no way to
   // recover which actual city was meant, so these are nulled out rather
   // than guessed at (see the console note this produces, listing every
@@ -477,7 +684,541 @@ const CITY_CANON = {
   'uttar paradesh': null,
   gujrat: null,
   kerala: null,
+  'andhra pradesh': null, // found during the cinema-master-list resolution pass — same leaked-state-name pattern as the others above
 };
+
+// ---------------------------------------------------------------------------
+// Cinema master-list resolution — an optional bonus pass that uses PVR's own
+// internal cinema-pricing workbook (a *second* reference file, separate from
+// the main booking tracker) to resolve rows whose city is still missing/a
+// leaked state name, or whose region is still null, by matching the row's
+// raw cinemaLocation text against PVR's real property list. If the
+// reference file isn't present this whole pass is skipped — nothing else in
+// the ETL depends on it.
+// ---------------------------------------------------------------------------
+const CINEMA_MASTER_INPUT = 'Final_Consolidated_Cinema_Pricing_private_screening.xlsx';
+
+// A hand-corrected copy of just the "Year 2022 data" sheet, Region column
+// only — the user manually reviewed and fixed ambiguous/wrong Region values
+// for that sheet. These are trusted directly (see main()): applied as the
+// final word on rec.region for that sheet, after every other region step
+// (resolveRegions' derivation, the cinema master-list pass's "Multi"
+// tagging), so nothing else in the pipeline second-guesses them. Does NOT
+// touch city — that sheet has no City column, and city resolution for its
+// rows is untouched by this file.
+const YEAR_2022_REGION_FIX_INPUT = 'YEAR 2022 SHEET FIXED WITH MULTI AND NE.xlsx';
+
+/**
+ * Reads YEAR_2022_REGION_FIX_INPUT and returns a Map of excelRow (1-based,
+ * matching parseYear2022Sheet's own row numbering) -> canonicalized region
+ * string, for every row where the corrected file has a non-blank Region.
+ * Rows left blank in the corrected file are omitted from the map entirely
+ * (not forced to null) — the sheet's own author only corrected the rows
+ * they actually reviewed; everything else still goes through the normal
+ * derivation fallback. Returns null (with a warning) if the file is
+ * missing — this override is optional, like the cinema master list.
+ */
+function loadYear2022RegionFixes(inputPath) {
+  if (!fs.existsSync(inputPath)) {
+    console.warn(`\nYear 2022 region-fix reference not found (${inputPath}) — skipping the manual region override for that sheet.`);
+    return null;
+  }
+  const wb = XLSX.readFile(inputPath);
+  const sheetName = wb.SheetNames.find((n) => /year 2022/i.test(n)) || wb.SheetNames[0];
+  const rows = XLSX.utils.sheet_to_json(wb.Sheets[sheetName], { header: 1, raw: true, defval: null });
+  const fixes = new Map();
+  for (let i = 1; i < rows.length; i++) {
+    const raw = rows[i] ? rows[i][9] : null; // column 9 = Region, same layout as parseYear2022Sheet
+    if (raw == null || String(raw).trim() === '') continue;
+    const excelRow = i + 1;
+    const canon = canonicalizeDirectRegion(raw) || titleCase(String(raw).trim());
+    fixes.set(excelRow, canon);
+  }
+  return fixes;
+}
+
+// Raw city values that mean "a state name leaked into the city column, not a
+// real city" — the null-mapped CITY_CANON keys above, plus their correctly-
+// spelled originals (which CITY_CANON never sees, because it only nulls the
+// key it's given — a correctly-spelled state name self-canonicalizes as its
+// own "city" instead unless caught here first).
+const STATE_NAME_LEAK_VALUES = new Set([
+  'maharashta', 'maharastra', 'maharashtra', 'chattisgarh', 'chhattisgarh',
+  'karnatak', 'karnataka', 'uttar paradesh', 'uttar pradesh', 'gujrat',
+  'gujarat', 'kerala', 'punjab', 'rajasthan', 'andhra pradesh',
+]);
+
+// Known Indian city names/phrases, used to pull a city out of a master-list
+// "Cinema Name" string that has no "(City)" suffix — longest phrase first,
+// so a 2-word city like "Yamuna Nagar" wins over a coincidental 1-word tail.
+const MASTER_LIST_KNOWN_CITIES = [
+  'Yamuna Nagar', 'Sri Ganganagar', 'New Delhi', 'Navi Mumbai',
+  'Ahmedabad', 'Ajmer', 'Allahabad', 'Amritsar', 'Anand', 'Armoor', 'Aurangabad',
+  'Bangalore', 'Bengaluru', 'Bareilly', 'Belgaum', 'Bhilai', 'Bhilwara', 'Bhiwadi', 'Bhiwandi',
+  'Bhopal', 'Bhubaneswar', 'Bilaspur', 'Bokaro', 'Burdwan', 'Chandigarh', 'Chennai',
+  'Coimbatore', 'Cuddalore', 'Cuttack', 'Dehradun', 'Delhi', 'Dhanbad', 'Dombivli', 'Dombivali',
+  'Faridabad', 'Gandhinagar', 'Ghaziabad', 'Goa', 'Gorakhpur', 'Greater Noida',
+  'Gulbarga', 'Kalaburagi', 'Guntur', 'Gurgaon', 'Gurugram', 'Guwahati', 'Gwalior',
+  'Howrah', 'Hubli', 'Hubballi', 'Hyderabad', 'Indore', 'Jabalpur', 'Jaipur', 'Jalandhar',
+  'Jalgaon', 'Jammu', 'Jamnagar', 'Jodhpur', 'Jharkhand', 'Kakinada', 'Kalyan', 'Kanpur',
+  'Khanna', 'Kochi', 'Cochin', 'Kolhapur', 'Kolkata', 'Kota', 'Kurla', 'Latur', 'Lucknow',
+  'Ludhiana', 'Machlipatnam', 'Madurai', 'Mangalore', 'Margao', 'Meerut', 'Mohali', 'Moradabad',
+  'Mumbai', 'Mysore', 'Mysuru', 'Nadiad', 'Nagpur', 'Nanded', 'Narasipatnam', 'Nashik', 'Nasik',
+  'Nizamabad', 'Noida', 'Panipat', 'Panjim', 'Pathankot', 'Patiala', 'Patna', 'Pimpri',
+  'Pondicherry', 'Puducherry', 'Porvorim', 'Provorim', 'Prayagraj', 'Pune', 'Raipur', 'Rajkot',
+  'Ranchi', 'Rourkela', 'Salem', 'Siliguri', 'Surat', 'Thane', 'Thrissur', 'Trivandrum',
+  'Tumakuru', 'Udaipur', 'Ujjain', 'Vadodara', 'Vadodra', 'Vellore', 'Vijayawada',
+  'Visakhapatnam', 'Vizag', 'Warangal', 'Zirakpur',
+].sort((a, b) => b.split(' ').length - a.split(' ').length || b.length - a.length);
+
+// Master-list "Cinema Name" entries the parens/comma/suffix heuristics below
+// can't reach — hand-checked once against the full ~342-entry list. Also
+// used for one deliberate spelling fix: the source file's own parenthetical
+// for the Porvorim, Goa property is itself typo'd ("Provorim").
+const MASTER_LIST_CITY_OVERRIDES = {
+  'Dharwad Smart City': 'Dharwad',
+  'INOX BURDWAN ARCADE': 'Burdwan',
+  'INOX GMC PANJIM': 'Panjim',
+  'INOX KOLHAPUR RELIANCE MEGA MALL': 'Kolhapur',
+  'INOX LUCKNOW EMERALD MALL': 'Lucknow',
+  'INOX MALL OF MYSORE': 'Mysore',
+  'INOX RAJKOT R-WORLD': 'Rajkot',
+  'INOX RAJKOT RELIANCE MALL': 'Rajkot',
+  'INOX RELIANCE MALL, JALANDHAR': 'Jalandhar',
+  'PVT INORBIT HUBBALLI': 'Hubballi',
+  'S2 HASEEN THANE (Bhiwandi)': 'Bhiwandi',
+  'PVR INORBIT CYBERABAD': 'Hyderabad',
+  'PVR NARASIPATNAM': 'Narasipatnam',
+  'PVR VR CHENNAI ANNA NAGAR': 'Chennai',
+  'S2 WARRANGAL': 'Warangal',
+  'INOX MALL DE GOA PORVORIM (Provorim)': 'Porvorim',
+  'Varam Mall (Machlipatnam)': 'Machilipatnam', // fixing the source file's own spelling to match the confirmed real place name
+};
+
+function masterListMatchKnownCitySuffix(text) {
+  const words = text.replace(/[,-]/g, ' ').split(/\s+/).filter(Boolean);
+  for (const cityPhrase of MASTER_LIST_KNOWN_CITIES) {
+    const cityWords = cityPhrase.split(' ');
+    const suffix = words.slice(-cityWords.length).join(' ');
+    if (suffix.toLowerCase() === cityPhrase.toLowerCase()) return cityPhrase;
+  }
+  return null;
+}
+
+// Pulls the city out of a master-list "Cinema Name" string — trailing
+// "(City)" first (the majority format), then a comma-separated tail, then a
+// trailing-word match against MASTER_LIST_KNOWN_CITIES, then the curated
+// overrides above for the handful nothing else reaches. Always returns
+// Title Case regardless of the source row's own casing (the sheet mixes ALL
+// CAPS and Title Case inconsistently across rows).
+function extractMasterListCity(cinemaName) {
+  if (MASTER_LIST_CITY_OVERRIDES[cinemaName]) return MASTER_LIST_CITY_OVERRIDES[cinemaName];
+
+  const parenMatch = cinemaName.match(/\(([^)]+)\)\s*$/);
+  if (parenMatch) return titleCase(parenMatch[1].trim());
+
+  const lastComma = cinemaName.lastIndexOf(',');
+  if (lastComma !== -1) {
+    const tail = cinemaName.slice(lastComma + 1).trim();
+    const known = masterListMatchKnownCitySuffix(tail);
+    if (known) return known;
+    if (tail && /^[A-Za-z .]+$/.test(tail)) return titleCase(tail);
+  }
+
+  return masterListMatchKnownCitySuffix(cinemaName);
+}
+
+/**
+ * Builds the {cinemaName, city} master list from PVR's internal cinema-
+ * pricing workbook. Returns null (and logs a warning) if the reference file
+ * isn't present — the whole cinema-master resolution pass is optional, not
+ * a hard dependency of the core ETL.
+ */
+function buildCinemaMasterList(inputPath) {
+  if (!fs.existsSync(inputPath)) {
+    console.warn(`\nCinema master-list reference not found (${inputPath}) — skipping the cinema-based city/region resolution pass.`);
+    return null;
+  }
+  const wb = XLSX.readFile(inputPath);
+  const sheetName = wb.SheetNames.find((n) => /consolidated/i.test(n)) || wb.SheetNames[0];
+  const rows = XLSX.utils.sheet_to_json(wb.Sheets[sheetName], { defval: null });
+  const distinctNames = [...new Set(
+    rows.map((r) => String(r['Cinema Name'] || '').trim().replace(/\s+/g, ' ')).filter(Boolean),
+  )].sort();
+  return distinctNames.map((cinemaName) => ({ cinemaName, city: extractMasterListCity(cinemaName) }));
+}
+
+// User-confirmed literal resolutions, verified by hand against the master
+// list — checked as an EXACT normalized match only (never substring), so
+// e.g. "Maison" here never fires on "Maison & Ambience" (that's two
+// different cinemas concatenated in one field — see
+// resolveMultiFragmentCinemaLocation below, which catches it via the "&").
+const CINEMA_LOCATION_OVERRIDES = {
+  SCW: 'Delhi', // PVR Select City Walk — the master list's own entry for it ("PVR SELECT CITY WALK DELHI") has no city in parens, just a trailing "DELHI"; normalized to "Delhi" (not "New Delhi") to match this project's existing canonical spelling
+  'SCW GOLD': 'Delhi', // same property, a premium-format screen
+  'AMBI GGN': 'Gurgaon', // PVR/INOX Ambience Mall, Gurgaon
+  'INOX PVS MALL': 'Meerut',
+  'PVR ICON INFINITY': 'Mumbai',
+  MAISON: 'Mumbai',
+  'PVR VERVOSA': 'Mumbai', // confirmed: garbled spelling of "Versova" — see JUNE-2026 row 133's "PVR ICON INFINITY VERSOVA" (Mumbai) in the same client's own sheet
+  'PVR LOWER PAREL': 'Mumbai', // confirmed by user — Lower Parel is a Mumbai neighborhood
+  'PVR JUHU': 'Mumbai', // confirmed by user — Juhu is a Mumbai neighborhood
+  'PVR CINEMA PHULONG': 'Nizamabad', // confirmed by user — cinema closed/renamed (PVR Venu Nizamabad); these bookings belong there
+  'PVR THE CENIMA NAAZ CENTER': 'Machilipatnam', // confirmed by user — Varam Mall, Machilipatnam
+  // Confirmed same-city cases: >1 cinema referenced, but every one of them
+  // is in the same real city, so this is NOT a multi-location booking.
+  // Hardcoded rather than left to the general fragment-intersection check
+  // below, because that check requires >=2 fragments to independently
+  // resolve to something before it will trust an intersection (a safety
+  // rule added after a single-fragment "wins" produced a wrong answer for
+  // "Surat & Prashantvihar" — see resolveMultiFragmentCinemaLocation) — and
+  // "Palazzo / VR" only has ONE side ("Palazzo") that resolves confidently
+  // on its own ("VR" is too short/generic to mean anything by itself).
+  'PLAZA RIVOLI': 'Delhi', // PVR Plaza Delhi + PVR Rivoli Delhi
+  'SELECT AMBI': 'Delhi', // PVR Select City Walk Delhi + PVR Ambience Delhi
+  'PALAZZO VR': 'Chennai', // Palazzo is Chennai-only; VR Chennai Anna Nagar is a real match
+
+  // Large confirmed batch — every entry below is a user-confirmed city/
+  // property identification for a specific cinemaLocation string, applied
+  // dataset-wide (every row using that exact text, not just the ones
+  // originally reported).
+  'PVR SATYAM': 'Chennai', // Sathyam
+  'SPI SATYAM': 'Chennai', // Sathyam
+  'PVR SPECTRUM': 'Chennai', // confirmed via S2 Perambur reference
+  'PVR AMBIENCE': 'Gurgaon', // PVR Ambience Gurgaon (all occurrences — not Delhi)
+  'PVR ACROPOLIS': 'Ahmedabad',
+  'PVR CAPITAL MALL NALLASOPARA': 'Mumbai', // PVR Capital Mall, Vasai
+  MGF: 'Gurgaon', // PVR MGF Gurgaon
+  'PVR MCB': 'Gurgaon', // PVR MGF Gurgaon
+  'PVR CHANAKYA': 'Delhi', // PVR ECX Chanakyapuri
+  'INOX MULTIPLEX': 'Jodhpur', // Indiabulls Mega Mall
+  'PVR RIDHI SIDHI MALL': 'Jodhpur', // Indiabulls Mega Mall
+  'PVR DR RAJKUMAR ROAD MALLESHWARAM': 'Bangalore', // INOX Mantri Square Mall, Malleshwaram
+  'INOX POST OFFICE ROAD': 'Belgaum', // INOX Chandan Cinema
+  'INOX GAJANANMAHARAJ MANDIR ROAD': 'Aurangabad', // INOX Reliance Mega Mall
+  'PVR PHOENIX MARKETCITY KURLA': 'Mumbai',
+  'PVR BKC': 'Mumbai', // Maison, Jio World Centre BKC — a distinct property from the Kurla one above, same city
+  'PVR MALAD': 'Mumbai', // Cinemax Infiniti Malad
+  'PVR CITI ANDHERI': 'Mumbai', // PVR Citi Mall Andheri (W)
+  'PVR CITY ANDHERI': 'Mumbai', // PVR Citi Mall Andheri (W)
+  // Reversed from an earlier "Mumbai" (PVR Market City Kurla) mapping —
+  // Viman Nagar is a Pune locality, and the client's own nearby rows
+  // (including a separately-confirmed Pune row, "Mall of Millenium -
+  // Wakad") supported Pune over Mumbai. Confirmed by user.
+  'PVR MARKET CITY VIMAN NAGAR': 'Pune',
+  // Confirmed by user — apply directly, not left as an ambiguous fallback.
+  'AMBI MAISON FORUM VR CHENNAI': 'Gurgaon', // PVR Ambience Gurgaon
+  BANGLORE: 'Bengaluru', // PVR Forum Koramangala (region already set via the hand-corrected Year 2022 file — city only)
+  JUHU: 'Mumbai', // PVR Dynamic Juhu — bare "Juhu", distinct from "PVR Juhu" (already resolved)
+  'PVR CITY CENTER': 'Chandigarh', // PVR City Centre Mall
+  'PVR INORBIT MALAD': 'Mumbai', // INOX Inorbit Mall, Malad
+  'PVR RK CINEPLEX': 'Vijayawada', // PVR Ripples
+  'PVR VEGA CITY': 'Bengaluru', // PVR Vega Mall
+  'PVR VEGACITY BLR': 'Bengaluru', // PVR Vega Mall
+  'PVR SELECTCITY': 'Delhi', // PVR Select City Walk
+  'PVR SELECT GOLD': 'Delhi', // PVR Select City Walk
+  'PVR SELECTCITY CITY': 'Delhi', // PVR Select City Walk
+  'PVR VR MALL': 'Surat', // INOX VR Mall
+  SUBHASHNAGAR: 'Delhi', // PVR Pacific
+  'PVR SUBASH NAGAR': 'Delhi', // PVR Pacific
+  'PVR PACIFIC SUBASH NAGAR': 'Delhi', // PVR Pacific
+  'VAISHNAVI BNGLR': 'Bengaluru', // PVR Vaishnavi Sapphire
+  'PVR MANISQUARE': 'Kolkata', // PVR Mani Square
+  'PVR CITY CENTRE GGN': 'Gurgaon', // PVR City Centre
+  'PVR CITY CENTER GGN': 'Gurgaon', // PVR City Centre
+  'PVR REGALIA': 'Cuttack', // INOX SGBL Square Mall
+  'PVR FORUM KORMANGALA': 'Bengaluru', // PVR Forum Mall Koramangala
+  'LEREVE OBEROI ORION': 'Bengaluru', // PVR Orion — 3 real properties named together; this row resolved to the last one per explicit confirmation
+  DCGGN: 'Gurgaon', // PVR Director's Cut Ambience
+  'MARKET CITY BNGLR': 'Bengaluru', // PVR Phoenix Market City Whitefield Road
+  'STAR MALL GGN': 'Bengaluru', // PVR Phoenix Market City Whitefield Road — per explicit confirmation, despite "GGN" in the raw text
+  'ANDHERI CITY MALL': 'Mumbai', // PVR Citi Mall Andheri (W)
+  'PVR PONDI': 'Puducherry', // The Cinema Providence
+  'PVR STAR MALL': 'Kolkata', // INOX Star Mall, Madhyamgram
+  'PVR GALADA': 'Chennai', // PVR Grand Galada
+  GALADA: 'Chennai', // PVR Grand Galada
+  'PVR AMBI': 'Gurgaon', // PVR Cinemagic, Ambience Mall
+  'PVR INFINITY MALAD': 'Mumbai', // PVR Icon Infinity Andheri (W)
+  'PVR OBEROI GOREGAON': 'Mumbai', // PVR Icon Oberoi Goregaon (E)
+  'PVR POMANADE': 'Delhi', // PVR Promenade Vasant Kunj
+  PROMANADE: 'Delhi', // PVR Promenade Vasant Kunj
+  JIO: 'Mumbai', // Maison, Jio World Centre BKC
+  MCB: 'Bhubaneswar', // INOX BMC Bhawani Mall — distinct from "PVR MCB" above (Gurgaon)
+  'NEXT GALLERIA PANJAGUTTA': 'Hyderabad',
+  'SOUL SPRIT': 'Bengaluru', // PVR Soul Space Spirit
+  'MKT CITY KURLA': 'Mumbai', // PVR Market City Kurla
+  'PVR CITY CENTRE CHANDIGHAR': 'Chandigarh', // PVR City Centre Mall (typo preserved from source)
+  'PVR MCPUNE': 'Pune', // PVR Market City
+  'PVR PIMPERI': 'Pune', // PVR City One Mall Pimpri
+  'PVR VERSOVA': 'Mumbai', // PVR Icon Infinity Andheri (W)
+  'PVR RK HYD': 'Hyderabad', // INOX GVK One, Banjara Hills
+  'PVR BANJAHILS HYD': 'Hyderabad', // INOX GVK One, Banjara Hills
+  'PVR REX': 'Bengaluru', // PVR Director's Cut Forum Rex Walk Mall
+  'AMBI DC': 'Delhi', // PVR Director's Cut Vasant Vihar Ambience
+  'DC VK': 'Delhi', // PVR Director's Cut Vasant Vihar Ambience
+  'PVR REGALIA ELEMENTS': 'Bhubaneswar', // INOX DN Regalia, Patrapara
+  'PVR ICON VERSOVA': 'Mumbai', // PVR Icon Infinity Andheri (W)
+  'INOX CITI CENTRE RK SALAI MYLAPORE': 'Chennai',
+  'KHANDESH CENTRAL MALL': 'Bhilai', // PVR Treasure
+  'MALL OF MILLENIUM WAKAD': 'Pune', // Phoenix Mall of Millenium, Wakad
+  'PVR PHOENIX LOWER PAREL': 'Mumbai', // PVR Icon Phoenix Lower Parel
+  'MULTIPAL CITIES': 'Gurgaon', // PVR Ambience Gurgaon
+  'MULTIPAL PLACE': 'Mumbai', // PVR Lower Parel
+
+  // Rule-2 exception (Year 2022 data only): "EDM" alone is too short to
+  // clear the normal substring-match length floor, but it's not actually
+  // ambiguous — there's exactly one EDM property in the master list (PVR
+  // EDM Ghaziabad) — so this is a deliberate best-guess default, not a
+  // coin-flip, per the explicit Year-2022-only exception.
+  EDM: 'Ghaziabad',
+};
+
+function normalizeForCinemaMatch(s) {
+  return String(s || '').toUpperCase().replace(/[^A-Z0-9]+/g, ' ').trim().replace(/\s+/g, ' ');
+}
+
+// Loose length-scaled edit-distance budget for whole cinema-NAME strings —
+// these run 15-40+ characters, far longer than the single category words
+// closeMatchThreshold (used elsewhere in this file) is tuned for. Roughly a
+// 20%-of-length tolerance, floor of 2.
+function cinemaMatchThreshold(len) {
+  return Math.max(2, Math.round(len * 0.2));
+}
+
+function escapeRegExp(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Drops any matched city name that's simply a linguistic substring of
+// ANOTHER matched city name (e.g. "Noida" inside "Greater Noida") — without
+// this, a single mention of "Greater Noida" gets counted as naming TWO
+// cities (itself and "Noida"), which is what originally made "PVR GAUR CITY
+// MALL GREATER NOIDA" wrongly look ambiguous.
+function dedupeCityMatches(cities) {
+  return cities.filter((c) => !cities.some((other) => other !== c && other.length > c.length && other.toLowerCase().includes(c.toLowerCase())));
+}
+
+// Strips a master entry's own trailing "(City)"/comma-city so Tier 2 below
+// can match the *mall identity* against a raw cinemaLocation that names the
+// mall but not the city (e.g. "INOX PVS MALL" against the master's "INOX
+// PVS MALL (Meerut)").
+function masterListBaseName(entry) {
+  let base = entry.cinemaName.replace(/\s*\([^)]+\)\s*$/, '');
+  const lastComma = base.lastIndexOf(',');
+  if (lastComma !== -1 && base.slice(lastComma + 1).trim().toLowerCase() === entry.city.toLowerCase()) {
+    base = base.slice(0, lastComma);
+  }
+  return base.trim();
+}
+
+const MULTI_KEYWORD_PATTERN = /\bmulti\b|\bmultiple\b/i;
+const MULTI_SEPARATOR_PATTERN = /[/&]|\band\b/i;
+
+function splitCinemaFragments(raw) {
+  return raw.split(/\s*(?:[/&]|\band\b)\s*/i).map((s) => s.trim()).filter(Boolean);
+}
+
+// The candidate city set for ONE fragment of a multi-part cinemaLocation
+// (e.g. "Rivoli" out of "Plaza/Rivoli") — a smaller-scale exact/substring/
+// city-token match, with no fuzzy tier (too risky for a fragment this
+// short) and a lower substring-length floor than the full-string matcher
+// (fragments are naturally shorter: single words or short phrases).
+function fragmentCandidateCities(fragment, masterList, distinctCities) {
+  const normFrag = normalizeForCinemaMatch(fragment);
+  const cities = new Set();
+  if (normFrag.length < 3) return cities; // too short to mean anything on its own
+
+  for (const entry of masterList) {
+    const base = masterListBaseName(entry);
+    if (normFrag === normalizeForCinemaMatch(entry.cinemaName) || normFrag === normalizeForCinemaMatch(base)) {
+      return new Set([entry.city]); // exact — no need to look further
+    }
+  }
+
+  if (normFrag.length >= 4) {
+    for (const entry of masterList) {
+      const base = normalizeForCinemaMatch(masterListBaseName(entry));
+      if (base.length < 4) continue;
+      if (normFrag.includes(base) || base.includes(normFrag)) cities.add(entry.city);
+    }
+  }
+
+  for (const c of dedupeCityMatches(distinctCities.filter((city) => new RegExp(`\\b${escapeRegExp(city)}\\b`, 'i').test(fragment)))) {
+    cities.add(c);
+  }
+
+  return cities;
+}
+
+/**
+ * Handles a cinemaLocation that names more than one cinema — split on "/",
+ * "&", or " and ", or flagged outright by the word "multi". Returns null
+ * when neither applies (not a multi-part value at all — the caller falls
+ * through to the normal single-value tiers). Otherwise:
+ *   { city, method: 'multi-fragment-same-city', matchedCinemaName: null }
+ *     when every fragment that resolves to anything agrees on ONE city —
+ *     this is NOT a multi-location booking, just >1 cinema reference in the
+ *     same place (e.g. "Plaza/Rivoli" — both are Delhi properties).
+ *   { multiCinema: true, kind: 'genuine-multi', candidateCities, reason }
+ *     otherwise — a real multi-city/multi-location booking. `kind` is what
+ *     lets the caller apply region="Multi" safely, vs. the single-name
+ *     ambiguity case in the normal tiers below (kind: 'ambiguous-single-name'),
+ *     which must NOT get that tag — one unknown booking at one (of several
+ *     same-named) places is not a multi-city deal.
+ */
+function resolveMultiFragmentCinemaLocation(raw, masterList) {
+  if (MULTI_KEYWORD_PATTERN.test(raw)) {
+    return { multiCinema: true, kind: 'genuine-multi', candidateCities: [], reason: '"multi" placeholder — no specific cinema/city named at all' };
+  }
+  if (!MULTI_SEPARATOR_PATTERN.test(raw)) return null;
+
+  const distinctCities = [...new Set(masterList.map((e) => e.city))];
+
+  // Confirmed rule: a "/"-separated list of CINEMA NAMES (as opposed to a
+  // list of CITY names, e.g. "Mumbai/Delhi" or "Bangalore, Mumbai, Gurgaon,
+  // Noida" — those still fall through to the logic below and stay Multi)
+  // resolves using only the FIRST name in the list, ignoring the rest.
+  // Only fires when every "/"-fragment is NOT simply a bare city name —
+  // that's what distinguishes "PVR Logix / MGF / Forum / Market City
+  // Kurla" (cinema names) from "Mumbai/Delhi" (city names).
+  if (raw.includes('/')) {
+    const slashFragments = raw.split('/').map((s) => s.trim()).filter(Boolean);
+    const allBareCityNames = slashFragments.length > 1 && slashFragments.every((f) => {
+      const norm = normalizeForCinemaMatch(f);
+      return distinctCities.some((c) => normalizeForCinemaMatch(c) === norm);
+    });
+    if (slashFragments.length > 1 && !allBareCityNames) {
+      const firstMatch = matchCinemaLocationToMasterList(slashFragments[0], masterList);
+      if (firstMatch && firstMatch.city && !firstMatch.multiCinema) {
+        return { city: firstMatch.city, method: 'first-of-list', matchedCinemaName: firstMatch.matchedCinemaName };
+      }
+      // First fragment alone didn't resolve cleanly (unmatched, or itself
+      // ambiguous) — fall through to the fragment-intersection/genuine-
+      // multi logic below as a safety net, rather than silently doing
+      // nothing.
+    }
+  }
+
+  const fragments = splitCinemaFragments(raw);
+  const informativeSets = fragments.map((f) => fragmentCandidateCities(f, masterList, distinctCities)).filter((s) => s.size > 0);
+
+  // Require at least 2 fragments to independently resolve to something
+  // before trusting their intersection — a single informative fragment
+  // "winning" by default is exactly how "Surat & Prashantvihar" nearly
+  // resolved to just Surat (Prashant Vihar, a real Delhi neighborhood,
+  // wasn't recognized at all, so it contributed nothing to stop it). With
+  // only 1 informative fragment there's no actual corroboration, just one
+  // known place and one unknown one — that's still evidence of 2 different
+  // places, not proof they're the same.
+  if (informativeSets.length >= 2) {
+    let intersection = informativeSets[0];
+    for (const s of informativeSets.slice(1)) intersection = new Set([...intersection].filter((c) => s.has(c)));
+    if (intersection.size === 1) {
+      return { city: [...intersection][0], method: 'multi-fragment-same-city', matchedCinemaName: null };
+    }
+  }
+
+  const allCandidates = dedupeCityMatches([...new Set(informativeSets.flatMap((s) => [...s]))]);
+  return {
+    multiCinema: true,
+    kind: 'genuine-multi',
+    candidateCities: allCandidates,
+    reason: 'raw value references more than one cinema, and they do not all resolve to a single shared city',
+  };
+}
+
+/**
+ * Matches one raw cinemaLocation value against the PVR cinema master list.
+ * Returns:
+ *   { city, method, matchedCinemaName }                        on a confident, single-city match
+ *   { multiCinema: true, kind, candidateCities, reason }        when the raw value can't be pinned to one city — see resolveMultiFragmentCinemaLocation for `kind`
+ *   { closest: [...] } or null                                 when nothing confidently matches (closest = top 3 fuzzy candidates, for reference only)
+ * method is one of: 'confirmed-override' | 'exact' | 'substring' | 'city-token' | 'fuzzy' | 'multi-fragment-same-city'.
+ */
+function matchCinemaLocationToMasterList(raw, masterList) {
+  const normRaw = normalizeForCinemaMatch(raw);
+  if (!normRaw) return null;
+
+  if (CINEMA_LOCATION_OVERRIDES[normRaw]) {
+    return { city: CINEMA_LOCATION_OVERRIDES[normRaw], method: 'confirmed-override', matchedCinemaName: null };
+  }
+
+  const multiResult = resolveMultiFragmentCinemaLocation(raw, masterList);
+  if (multiResult) return multiResult;
+
+  const distinctCities = [...new Set(masterList.map((e) => e.city))];
+
+  // Tier 1: exact — against the full listed name or its city-stripped base.
+  for (const entry of masterList) {
+    const base = masterListBaseName(entry);
+    if (normRaw === normalizeForCinemaMatch(entry.cinemaName) || normRaw === normalizeForCinemaMatch(base)) {
+      return { city: entry.city, method: 'exact', matchedCinemaName: entry.cinemaName };
+    }
+  }
+
+  // Tier 2: substring/contains, either direction, against the base name —
+  // only when the shorter side is long enough to be distinctive (>= 5 normalized
+  // chars). Collects every match; requires every match to agree on one city.
+  if (normRaw.length >= 5) {
+    const substringMatches = [];
+    for (const entry of masterList) {
+      const base = normalizeForCinemaMatch(masterListBaseName(entry));
+      if (base.length < 5) continue;
+      if (normRaw.includes(base) || base.includes(normRaw)) substringMatches.push(entry);
+    }
+    if (substringMatches.length) {
+      const cities = [...new Set(substringMatches.map((e) => e.city))];
+      if (cities.length === 1) {
+        return { city: cities[0], method: 'substring', matchedCinemaName: substringMatches[0].cinemaName };
+      }
+      // Same cinemaLocation text genuinely matches real properties in more
+      // than one DIFFERENT city (e.g. "PVR Forum" exists in 4 cities) — one
+      // unknown booking at one of several same-named places, not a
+      // multi-city deal, so this must never get region="Multi".
+      return { multiCinema: true, kind: 'ambiguous-single-name', candidateCities: cities, reason: 'cinemaLocation text matches real properties in more than one city; no way to tell which one this booking meant' };
+    }
+  }
+
+  // Tier 3: does the raw string directly name one (and only one) of the
+  // master list's own city values, as a whole word/phrase?
+  const cityTokenMatches = dedupeCityMatches(distinctCities.filter((c) => new RegExp(`\\b${escapeRegExp(c)}\\b`, 'i').test(raw)));
+  if (cityTokenMatches.length === 1) {
+    const rep = masterList.find((e) => e.city === cityTokenMatches[0]);
+    return { city: cityTokenMatches[0], method: 'city-token', matchedCinemaName: rep ? rep.cinemaName : null };
+  }
+  if (cityTokenMatches.length > 1) {
+    // Unlike Tier 2 (the SAME cinema name existing in multiple cities), this
+    // is the raw text directly naming multiple different cities by word —
+    // e.g. "Bangalore, Mumbai, Gurgaon, Noida" (comma-separated, so it never
+    // hit resolveMultiFragmentCinemaLocation's "/", "&", "and" split above).
+    // That's unambiguous evidence of a genuine multi-city reference, not an
+    // unknown single booking.
+    return { multiCinema: true, kind: 'genuine-multi', candidateCities: cityTokenMatches, reason: 'raw value directly names more than one different city' };
+  }
+
+  // Tier 4: edit distance, last resort — whole-string, against every
+  // entry's base name; accepted only when unambiguous (no other entry
+  // within one edit of the best score points to a different city). Gated
+  // to strings of 12+ normalized characters: below that, a threshold of 2
+  // is loose enough to coincidentally match two short, otherwise-unrelated
+  // proper nouns (e.g. "PVR Juhu" — a real Mumbai neighborhood — was
+  // matching "PVR SAHU, LUCKNOW" at edit-distance 1, purely because "Juhu"
+  // and "Sahu" happen to be one letter apart).
+  const scored = masterList
+    .map((entry) => ({ entry, dist: levenshtein(normRaw, normalizeForCinemaMatch(masterListBaseName(entry))) }))
+    .sort((a, b) => a.dist - b.dist);
+
+  const threshold = cinemaMatchThreshold(normRaw.length);
+  const best = scored[0];
+  if (normRaw.length >= 12 && best && best.dist <= threshold) {
+    const rivalDifferentCity = scored.slice(1).find((s) => s.dist <= best.dist + 1 && s.entry.city !== best.entry.city);
+    if (!rivalDifferentCity) {
+      return { city: best.entry.city, method: 'fuzzy', matchedCinemaName: best.entry.cinemaName, editDistance: best.dist };
+    }
+  }
+
+  return { closest: scored.slice(0, 3).map((s) => ({ cinemaName: s.entry.cinemaName, city: s.entry.city, editDistance: s.dist })) };
+}
 
 // Edit-distance threshold for flagging a value as "suspiciously close to an
 // existing canonical value" — tighter for short strings, where one edit is a
@@ -557,6 +1298,124 @@ function normalizeCategoricalField(allRecords, field, curatedMap, flagKey) {
 
   const afterCount = new Set([...resolved.values()].filter((v) => v != null)).size;
   return { beforeCount, afterCount, nulledOutRows };
+}
+
+// ---------------------------------------------------------------------------
+// Client-name candidate audit — a REPORT-ONLY pass, run after
+// CLIENT_NAME_CANON's confirmed merges have already been applied. Finds
+// pairs of distinct client identities that look like they might be the same
+// real client (edit-distance-close, or one name a whole-word prefix/
+// substring of the other — e.g. "DLF" vs "DLF Chandigarh") and clusters
+// them into groups for data/reports/clientNameCandidates.json. Nothing
+// here is applied to the data — merging a real client incorrectly would
+// distort the Leaderboard, so this is strictly "here's what looked similar,
+// you decide."
+// ---------------------------------------------------------------------------
+
+// Length-scaled edit-distance budget for whole client-name strings — these
+// range from a few characters ("BCG") to 40+ (full private-limited company
+// names), far more varied than the fixed-width closeMatchThreshold used for
+// single category words. ~18% of length, floor of 1, cap of 4 (beyond that,
+// two names sharing that many edits are more likely coincidence than typo).
+function clientNameMatchThreshold(len) {
+  return Math.min(4, Math.max(1, Math.round(len * 0.18)));
+}
+
+// True when `shortKey` reads as a whole-word prefix or substring of
+// `longKey` — e.g. "dlf" inside "dlf chandigarh", but NOT "an" inside
+// "anand" (word-boundary guarded, so a short name never spuriously matches
+// as a fragment of an unrelated longer word).
+function isWholeWordSubstring(shortKey, longKey) {
+  if (shortKey.length < 3 || shortKey.length >= longKey.length) return false;
+  return new RegExp(`(^|\\s)${escapeRegExp(shortKey)}(\\s|$)`).test(longKey);
+}
+
+/**
+ * Builds the client-name candidate-group report. `allRecords` must already
+ * have CLIENT_NAME_CANON's confirmed merges applied. Returns an array of
+ * groups, each `{ suggestedCanonical, totalRecords, totalRevenue, members:
+ * [{ displayName, recordCount, revenue, matchedVia }] }`, sorted by total
+ * revenue descending — the groups most worth a human's attention first.
+ */
+function buildClientNameCandidateGroups(allRecords) {
+  const byKey = new Map(); // lowercase trimmed identity -> { displayName, nameCounts, recordCount, revenue }
+  for (const rec of allRecords) {
+    const raw = (rec.corporateName || rec.clientName || '').trim();
+    if (!raw) continue;
+    const key = raw.toLowerCase().replace(/\s+/g, ' ');
+    let entry = byKey.get(key);
+    if (!entry) {
+      entry = { key, nameCounts: new Map(), recordCount: 0, revenue: 0 };
+      byKey.set(key, entry);
+    }
+    entry.nameCounts.set(raw, (entry.nameCounts.get(raw) || 0) + 1);
+    entry.recordCount += 1;
+    entry.revenue += rec.totalAmount || 0;
+  }
+
+  const identities = [...byKey.values()].map((entry) => {
+    let displayName = null;
+    let bestCount = -1;
+    for (const [name, count] of entry.nameCounts) {
+      if (count > bestCount) { displayName = name; bestCount = count; }
+    }
+    return { key: entry.key, displayName, recordCount: entry.recordCount, revenue: entry.revenue };
+  });
+
+  // Union-find over candidate pairs, so a chain (A~B, B~C) groups A/B/C
+  // together even if A and C alone wouldn't have matched directly.
+  const parent = identities.map((_, i) => i);
+  const find = (i) => (parent[i] === i ? i : (parent[i] = find(parent[i])));
+  const union = (i, j) => { const ri = find(i); const rj = find(j); if (ri !== rj) parent[ri] = rj; };
+  const matchReasons = new Map(); // "i|j" -> reason string, for reporting
+
+  for (let i = 0; i < identities.length; i++) {
+    for (let j = i + 1; j < identities.length; j++) {
+      const a = identities[i].key;
+      const b = identities[j].key;
+      if (Math.abs(a.length - b.length) > Math.max(a.length, b.length) * 0.5 + 4) continue; // cheap skip before the expensive edit-distance call
+      let reason = null;
+      if (isWholeWordSubstring(a, b) || isWholeWordSubstring(b, a)) {
+        reason = 'one name is a whole-word prefix/substring of the other';
+      } else {
+        const dist = levenshtein(a, b);
+        if (dist > 0 && dist <= clientNameMatchThreshold(Math.max(a.length, b.length))) {
+          reason = `edit distance ${dist}`;
+        }
+      }
+      if (reason) {
+        union(i, j);
+        matchReasons.set(`${i}|${j}`, reason);
+      }
+    }
+  }
+
+  const clusters = new Map(); // root index -> array of identity indices
+  for (let i = 0; i < identities.length; i++) {
+    const root = find(i);
+    if (!clusters.has(root)) clusters.set(root, []);
+    clusters.get(root).push(i);
+  }
+
+  const groups = [];
+  for (const indices of clusters.values()) {
+    if (indices.length < 2) continue;
+    const members = indices.map((idx) => identities[idx]);
+    members.sort((x, y) => y.revenue - x.revenue);
+    const reasonsForGroup = [...new Set(
+      indices.flatMap((i) => indices.filter((j) => j > i).map((j) => matchReasons.get(`${i}|${j}`)).filter(Boolean)),
+    )];
+    groups.push({
+      suggestedCanonical: members[0].displayName, // highest-revenue member — a suggestion only, never applied
+      totalRecords: members.reduce((s, m) => s + m.recordCount, 0),
+      totalRevenue: members.reduce((s, m) => s + m.revenue, 0),
+      matchReasons: reasonsForGroup,
+      members: members.map((m) => ({ displayName: m.displayName, recordCount: m.recordCount, revenue: m.revenue })),
+    });
+  }
+
+  groups.sort((a, b) => b.totalRevenue - a.totalRevenue);
+  return groups;
 }
 
 // ---------------------------------------------------------------------------
@@ -764,6 +1623,237 @@ function main() {
     allRecords.push(...records);
   }
 
+  // ---------------------------------------------------------------------
+  // Manual, user-confirmed city resolutions for specific rows where a state
+  // name had leaked into the City column (see the earlier nullCityRows.json
+  // report) — applied BEFORE city normalization runs, keyed by sheet+row
+  // (the same identity nullCityRows.json itself used) since that's stable
+  // and unique per record. Two rows from that report are deliberately left
+  // out here ("PVR Icon Infinity" and "INOX PVS MALL") — genuinely
+  // unconfirmed at the time, they're now resolved instead by the cinema
+  // master-list pass a bit further down (CINEMA_LOCATION_OVERRIDES).
+  // ---------------------------------------------------------------------
+  const MANUAL_CITY_BY_ROW = {
+    'July-2024|32': 'Kolhapur',
+    'July-2024|33': 'Dombivali',
+    'Aug - 2024|30': 'Kochi',
+    'Aug - 2024|45': 'Kochi',
+    'Aug - 2024|60': 'Kochi',
+    'Aug - 2024|75': 'Kochi',
+    'Sep - 2024|72': 'Surat',
+    'Sep - 2024|84': 'Surat',
+    'Sep - 2024|90': 'Surat',
+    'April - 2025|2': 'Jamnagar',
+    'June-2025|90': 'Raipur',
+    'June-2025|94': 'Bangalore',
+    'Oct-2025|5': 'Kurla',
+    'Oct-2025|9': 'Mumbai',
+    'Nov-2025|34': 'Ahmedabad', // PVR Acropolis is in Ahmedabad (Thaltej), not Rajkot
+    'JUNE-2026|11': 'Ahmedabad',
+    'JUNE-2026|23': 'Lucknow',
+    'JUNE-2026|25': 'Raipur',
+    'June-2024|14': 'Raipur', // "CINEMAX CITY CENTRE MALL" — confirmed by user; the only one of the 7 bare-name rows whose current city ("Chennai") wasn't already a real candidate
+    // "Multy Cinemas" — same raw cinemaLocation text on both rows, but
+    // confirmed as two DIFFERENT real properties, not one — can't be a
+    // plain text override (CINEMA_LOCATION_OVERRIDES has no way to give
+    // the same string two different answers), so this needs row identity.
+    'Year 2022 data|90': 'Delhi', // PVR Shalimar Bagh
+    'Year 2022 data|94': 'Noida', // PVR Logix
+  };
+  // Rows in MANUAL_CITY_BY_ROW whose raw Region cell is ALSO wrong — not
+  // blank (which resolveRegions would fix on its own), but a real,
+  // confidently-typed-looking region string that's simply incorrect for the
+  // cinema's real city. Cleared here (rather than hardcoding the "right"
+  // region) so resolveRegions re-derives it from the now-correct city via
+  // the same trusted majority-vote mechanism every other row goes through.
+  const MANUAL_REGION_CLEAR = new Set([
+    'June-2024|14', // "CINEMAX CITY CENTRE MALL" — raw sheet says region "South" for a Raipur (Central) cinema; this whole client block in this sheet has scrambled regions (see nearby rows), so it's not treated as reliable
+  ]);
+  let manualCityOverrideCount = 0;
+  for (const rec of allRecords) {
+    const key = `${rec.sourceSheet}|${rec._excelRow}`;
+    if (Object.prototype.hasOwnProperty.call(MANUAL_CITY_BY_ROW, key)) {
+      rec.city = MANUAL_CITY_BY_ROW[key];
+      manualCityOverrideCount += 1;
+    }
+    if (MANUAL_REGION_CLEAR.has(key)) rec.region = null;
+  }
+
+  // "Sapna Sngeeta Inox" rows had a garbled 2-character city value ("Ci")
+  // that matched nothing — confirmed via public listing to be PVR INOX
+  // Sapna Sangeeta, Indore (the same property already correctly named
+  // elsewhere in the sheet as "PVR INOX Sapna Sangeeta, Indore").
+  let sapnaOverrideCount = 0;
+  for (const rec of allRecords) {
+    if (rec.cinemaLocation === 'Sapna Sngeeta Inox' && rec.city !== 'Indore') {
+      rec.city = 'Indore';
+      sapnaOverrideCount += 1;
+    }
+  }
+
+  // "PVR Market City, Viman nagar" — confirmed by user to be PVR Market
+  // City PUNE, reversing an earlier Mumbai/Kurla mapping. Forced
+  // unconditionally (unlike the normal city-override path, which only
+  // fires when a row's existing city is missing/leaked) because 2 of the
+  // 4 rows using this exact text already had a directly-typed "Mumbai" in
+  // the source sheet — the same property, same client ("Zee"), same
+  // sheet, contradicting the other 2 rows that already read "Pune". Since
+  // the user's confirmation is about the PROPERTY, not just the two rows
+  // originally flagged, all 4 get the same, now-consistent answer.
+  let vimanNagarOverrideCount = 0;
+  for (const rec of allRecords) {
+    if (rec.cinemaLocation === 'PVR Market City, Viman nagar' && rec.city !== 'Pune') {
+      rec.city = 'Pune';
+      vimanNagarOverrideCount += 1;
+    }
+  }
+
+  // movieCategory: "na"/"NA"/"Na" is a placeholder, not a real category —
+  // coerce every case variant to a proper null so it stops appearing as a
+  // distinct value in category breakdowns.
+  let movieCategoryNulledCount = 0;
+  for (const rec of allRecords) {
+    if (rec.movieCategory != null && String(rec.movieCategory).trim().toLowerCase() === 'na') {
+      rec.movieCategory = null;
+      movieCategoryNulledCount += 1;
+    }
+  }
+
+  // ---------------------------------------------------------------------
+  // Cinema master-list resolution — an optional bonus pass, run against
+  // whatever the manual/Sapna overrides above didn't already fix. Uses
+  // PVR's internal cinema-pricing workbook (a second, separate reference
+  // file) to resolve rows whose city is still missing/a leaked state name,
+  // or whose region is still null, by matching the row's raw cinemaLocation
+  // text against PVR's real property list — see
+  // matchCinemaLocationToMasterList above for the exact -> substring ->
+  // city-token -> edit-distance ladder, and looksLikeMultiCinemaList for
+  // what gets deliberately left alone instead of guessed at (two different
+  // cinemas concatenated into one field, e.g. "Maison & Ambience"). Runs
+  // BEFORE city normalization so anything it resolves gets the same
+  // CITY_CANON dedup/alias treatment as every other raw city value.
+  // ---------------------------------------------------------------------
+  const cinemaMasterList = buildCinemaMasterList(path.join(__dirname, CINEMA_MASTER_INPUT));
+  const masterListResolutions = [];
+  const multiCinemaRows = [];
+  const unmatchedCinemaLocations = new Map(); // normalized raw -> { cinemaLocation, closest, exampleRows, count }
+  let masterListResolvedCount = 0;
+  let multiConfirmedCount = 0;
+  let ambiguousSingleNameCount = 0;
+
+  if (cinemaMasterList) {
+    for (const rec of allRecords) {
+      const cityIsMissingOrLeaked =
+        rec.city == null || rec.city === '' ||
+        (typeof rec.city === 'string' && STATE_NAME_LEAK_VALUES.has(rec.city.trim().toLowerCase()));
+      // Deliberately NOT triggered by "region is null but city already
+      // looks fine" — that case belongs to resolveRegions' own city-based
+      // majority vote below, which runs right after this and needs no help
+      // here. Re-matching cinemaLocation for an already-good city only adds
+      // risk: several PVR mall names (Forum, Sangam, Vega, Plaza, VR, ...)
+      // are reused across multiple cities, so a record whose OWN city
+      // already disambiguates it could otherwise get wrongly flagged
+      // "ambiguous" purely because its cinemaLocation also matches a
+      // same-named property somewhere else.
+      // "Multi Cty" is a deliberate "more than one city" marker already —
+      // never try to resolve it down to a single city.
+      if (!cityIsMissingOrLeaked || rec.city === 'Multi Cty' || !rec.cinemaLocation) continue;
+
+      const match = matchCinemaLocationToMasterList(rec.cinemaLocation, cinemaMasterList);
+      if (!match) continue;
+
+      if (match.multiCinema) {
+        multiCinemaRows.push({
+          sheet: rec.sourceSheet,
+          row: rec._excelRow,
+          clientName: rec.clientName,
+          cinemaLocation: rec.cinemaLocation,
+          currentCity: rec.city,
+          currentRegion: rec.region,
+          candidateCities: match.candidateCities,
+          kind: match.kind, // 'genuine-multi' (gets region="Multi" below) vs 'ambiguous-single-name' (left untouched — one unknown booking at one of several same-named places, not a multi-city deal)
+          reason: match.reason,
+        });
+        if (match.kind === 'genuine-multi') {
+          rec.city = null;
+          rec.region = 'Multi';
+          multiConfirmedCount += 1;
+        } else {
+          ambiguousSingleNameCount += 1;
+        }
+        continue;
+      }
+
+      if (match.city) {
+        masterListResolutions.push({
+          sheet: rec.sourceSheet,
+          row: rec._excelRow,
+          clientName: rec.clientName,
+          originalCinemaLocation: rec.cinemaLocation,
+          matchedCinemaName: match.matchedCinemaName,
+          derivedCity: match.city,
+          method: match.method,
+          previousCity: rec.city,
+        });
+        rec.city = match.city;
+        masterListResolvedCount += 1;
+        continue;
+      }
+
+      // No confident match (match.closest only) — logged once per distinct
+      // cinemaLocation value, purely for reference, per the "confirm these
+      // have no match" ask (not auto-applied below the confidence
+      // threshold). Every row is recorded (not just a few examples) so this
+      // file can double as a sheet+row lookup, since a record can land here
+      // with region already non-null (derived from a sibling record with
+      // the same cinemaLocation) — meaning it's invisible to
+      // unresolvedCityRows.json's "region is null" check even though its
+      // city is still genuinely unresolved.
+      const key = normalizeForCinemaMatch(rec.cinemaLocation);
+      if (!unmatchedCinemaLocations.has(key)) {
+        unmatchedCinemaLocations.set(key, {
+          cinemaLocation: rec.cinemaLocation,
+          closest: match.closest || [],
+          rows: [],
+          count: 0,
+        });
+      }
+      const entry = unmatchedCinemaLocations.get(key);
+      entry.count += 1;
+      entry.rows.push({ sheet: rec.sourceSheet, row: rec._excelRow, clientName: rec.clientName });
+    }
+  }
+
+  // Special case: rows whose cinemaLocation is the BARE, ambiguous "Cinemax
+  // City Center" / "Cinemax City Centre Mall" name — the master list
+  // confirms two distinct real properties share this exact shorthand
+  // (Nashik and Raipur), so a bare mention with no city/area qualifier at
+  // all can't be resolved from the name alone. Scans every record (not
+  // just currently-unresolved ones), because a couple of these rows
+  // already carry a city value nothing else in this ETL run ever
+  // questioned. Only flagged when that current city ISN'T already one of
+  // the two real candidates — a row a human directly typed "Raipur" or
+  // "Nashik" into (or one already resolved via the earlier confirmed
+  // Chattisgarh->Raipur city-name fix) has real grounding and is left
+  // alone; only a current city that's neither (blank, or some unrelated
+  // value like "Chennai") means the ambiguity was never actually settled.
+  const bareCinemaxPattern = /^CINEMAX CITY (CENTRE|CENTER)( MALL)?$/;
+  const cinemaxSettledCities = new Set(['nashik', 'raipur']);
+  for (const rec of allRecords) {
+    if (!rec.cinemaLocation || !bareCinemaxPattern.test(normalizeForCinemaMatch(rec.cinemaLocation))) continue;
+    if (rec.city && cinemaxSettledCities.has(String(rec.city).trim().toLowerCase())) continue;
+    multiCinemaRows.push({
+      sheet: rec.sourceSheet,
+      row: rec._excelRow,
+      clientName: rec.clientName,
+      cinemaLocation: rec.cinemaLocation,
+      currentCity: rec.city,
+      currentRegion: rec.region,
+      candidateCities: ['Nashik', 'Raipur'],
+      reason: 'bare "Cinemax City Center" — the master list has two distinct properties by this exact shorthand (Nashik and Raipur); this row names neither, and its current city is neither, so it was never actually confirmed',
+    });
+  }
+
   const movieIndustryStats = normalizeCategoricalField(allRecords, 'movieIndustry', MOVIE_INDUSTRY_CANON, 'movieIndustry');
   const movieLanguageStats = normalizeCategoricalField(allRecords, 'movieLanguage', MOVIE_LANGUAGE_CANON, 'movieLanguage');
   // CITY_CANON only covers the handful of confirmed genuine typos manually
@@ -773,7 +1863,146 @@ function main() {
   // automatic casing merge + flag-if-uncertain treatment.
   const cityStats = normalizeCategoricalField(allRecords, 'city', CITY_CANON, 'city');
 
+  // Client-name consolidation — same curated-map-first, flag-don't-guess
+  // treatment as city/movieIndustry/movieLanguage above. Applied to BOTH
+  // fields (see CLIENT_NAME_CANON's comment for why) since the dashboard's
+  // own client-identity logic reads whichever one a given row actually
+  // used. The confirmed merges directly affect Leaderboard revenue
+  // attribution, so — same as CITY_CANON — everything NOT in the curated
+  // map either auto-merges safely (pure casing/whitespace) or gets flagged
+  // and left alone; see buildClientNameCandidateGroups below for the
+  // broader, report-only near-duplicate audit.
+  // Distinct-identity count before/after, using the SAME `corporateName ||
+  // clientName` precedence the dashboard's own normalizeClientKey() uses —
+  // not a per-field count, since that's what "how many clients" actually
+  // means to the app.
+  const countDistinctClientIdentities = (records) => {
+    const keys = new Set();
+    for (const rec of records) {
+      const raw = (rec.corporateName || rec.clientName || '').trim();
+      if (raw) keys.add(raw.toLowerCase().replace(/\s+/g, ' '));
+    }
+    return keys.size;
+  };
+  const clientIdentityCountBefore = countDistinctClientIdentities(allRecords);
+  const clientNameStats = normalizeCategoricalField(allRecords, 'clientName', CLIENT_NAME_CANON, 'clientName');
+  const corporateNameStats = normalizeCategoricalField(allRecords, 'corporateName', CLIENT_NAME_CANON, 'corporateName');
+  const clientIdentityCountAfter = countDistinctClientIdentities(allRecords);
+  const clientNameCandidateGroups = buildClientNameCandidateGroups(allRecords);
+
+  const neToNorthCount = allRecords.filter(
+    (rec) => rec.region != null && /^ne$|^north\s*east$|^northeast$/i.test(String(rec.region).trim()),
+  ).length;
+
   const regionDerivations = resolveRegions(allRecords);
+
+  // Manually-corrected Year 2022 Region values — applied last, after every
+  // other region step (the derivation above, and the cinema master-list
+  // pass's "Multi" tagging earlier), so these are the final word for that
+  // sheet's rows and nothing downstream second-guesses them. Only rows the
+  // corrected file actually has a value for are touched; everything else
+  // in that sheet keeps whatever resolveRegions already computed.
+  const year2022RegionFixes = loadYear2022RegionFixes(path.join(__dirname, YEAR_2022_REGION_FIX_INPUT));
+  let year2022RegionFixCount = 0;
+  if (year2022RegionFixes) {
+    for (const rec of allRecords) {
+      if (rec.sourceSheet !== 'Year 2022 data') continue;
+      if (!year2022RegionFixes.has(rec._excelRow)) continue;
+      rec.region = year2022RegionFixes.get(rec._excelRow);
+      year2022RegionFixCount += 1;
+    }
+  }
+
+  // "Ambi/ Maison/ Forum / VR Chennai" (row 126) — confirmed by user as
+  // PVR Ambience Gurgaon (city set via CINEMA_LOCATION_OVERRIDES above).
+  // Gurgaon's region is overwhelmingly North (253 of 263 records) — the
+  // hand-corrected Year 2022 file's own answer for this specific row
+  // ("West") predates that identification and is superseded here, per
+  // explicit instruction to apply city AND region directly rather than
+  // leave the file's earlier, more general answer standing.
+  for (const rec of allRecords) {
+    if (rec.sourceSheet === 'Year 2022 data' && rec.cinemaLocation === 'Ambi/ Maison/ Forum / VR Chennai') {
+      rec.region = 'North';
+    }
+  }
+
+  // ---------------------------------------------------------------------
+  // Fresh, dataset-wide re-scan: for every row where REGION is STILL null
+  // after every step above — including rows whose city already holds SOME
+  // value (even a wrong one, like a leaked state name, or "Own Content")
+  // that made them invisible to the cinema master-list pass's narrower
+  // "city missing or leaked" candidate check earlier — make one more
+  // attempt via cinemaLocation against the master list. Scans every
+  // record fresh (not a cached/logged list), so nothing that slipped past
+  // the earlier, narrower pass is missed. Never touches city here — only
+  // fills region, either directly (a confident single-city match whose
+  // region is knowable from the rest of the now-more-complete dataset) or
+  // as "Multi" (a genuine multi-cinema cinemaLocation, e.g. a "Multi Cty"
+  // city paired with a "Multi ..." cinemaLocation that was never actually
+  // confirmed as Multi before). An ambiguous single-cinema-name match
+  // (the same name reused across different real cities) still resolves
+  // nothing here, same as it always has — one unknown booking at one of
+  // several same-named places is not evidence of anything.
+  // ---------------------------------------------------------------------
+  let freshRegionResolvedCount = 0;
+  if (cinemaMasterList) {
+    const cityToRegionCounts2 = new Map();
+    for (const rec of allRecords) {
+      if (!rec.city || !rec.region || rec.region === 'Multi') continue;
+      const key = normCityKey(rec.city);
+      const m = cityToRegionCounts2.get(key) || new Map();
+      m.set(rec.region, (m.get(rec.region) || 0) + 1);
+      cityToRegionCounts2.set(key, m);
+    }
+    const cityToRegion2 = new Map();
+    for (const [key, counts] of cityToRegionCounts2) {
+      let best = null;
+      let bestCount = -1;
+      for (const [region, count] of counts) {
+        if (count > bestCount) { best = region; bestCount = count; }
+      }
+      cityToRegion2.set(key, best);
+    }
+    // Confirmed by user, for cities with no (or only 1) corroborating
+    // record to derive a region from via majority vote — takes priority
+    // over whatever the vote above computed.
+    const CONFIRMED_CITY_REGION = { Porvorim: 'West', Dombivali: 'West', Machilipatnam: 'South' };
+    for (const [city, region] of Object.entries(CONFIRMED_CITY_REGION)) {
+      cityToRegion2.set(normCityKey(city), region);
+    }
+
+    for (const rec of allRecords) {
+      if (rec.region != null || !rec.cinemaLocation) continue;
+      const match = matchCinemaLocationToMasterList(rec.cinemaLocation, cinemaMasterList);
+      if (!match) continue;
+      if (match.multiCinema && match.kind === 'genuine-multi') {
+        rec.region = 'Multi';
+        freshRegionResolvedCount += 1;
+      } else if (match.city) {
+        const derivedRegion = cityToRegion2.get(normCityKey(match.city));
+        if (derivedRegion) {
+          rec.region = derivedRegion;
+          freshRegionResolvedCount += 1;
+        }
+      }
+    }
+
+    // Direct catch-up for CONFIRMED_CITY_REGION: the pass above only fills
+    // region for rows whose cinemaLocation re-matches the master list
+    // right now — but some rows (e.g. "PVR Dombivali") already got their
+    // city from an earlier pass via a match this file's own matcher can't
+    // reproduce today (no contiguous substring against the master list
+    // entry). Those still deserve the confirmed region, so check by CITY
+    // directly instead of re-deriving through cinemaLocation.
+    for (const rec of allRecords) {
+      if (rec.region != null || !rec.city) continue;
+      const confirmed = CONFIRMED_CITY_REGION[rec.city];
+      if (confirmed) {
+        rec.region = confirmed;
+        freshRegionResolvedCount += 1;
+      }
+    }
+  }
 
   // `record` on each nulledOutRows entry is a live reference — read now,
   // after resolveRegions has run, so `region` reflects the final resolved
@@ -786,6 +2015,46 @@ function main() {
     region: row.record.region,
     rawCityValue: row.originalValue,
   }));
+
+  // Everything still wrong/unknown about city or region after every
+  // confirmed fix above — three distinct gap types in one report so nothing
+  // requires cross-referencing multiple files to triage:
+  //   1. state-name-in-city rows this run still couldn't resolve (city null)
+  //   2. correctly-SPELLED state names sitting in the city field (never
+  //      flagged, because nothing about them looks like a typo)
+  //   3. records whose region is still null — an unrecognized cinemaLocation
+  const STATE_NAME_CITIES = new Set(['Rajasthan', 'Punjab', 'Maharashtra', 'Karnataka']);
+  const unresolvedCityRows = [
+    ...nullCityRows.map((row) => ({ ...row, gapType: 'state-name-in-city-unresolved' })),
+    ...allRecords
+      .filter((rec) => STATE_NAME_CITIES.has(rec.city))
+      .map((rec) => ({
+        sheet: rec.sourceSheet,
+        row: rec._excelRow,
+        clientName: rec.clientName,
+        cinemaLocation: rec.cinemaLocation,
+        region: rec.region,
+        rawCityValue: rec.city,
+        gapType: 'correctly-spelled-state-name-in-city-field',
+      })),
+    ...allRecords
+      .filter((rec) => rec.region == null)
+      .map((rec) => ({
+        sheet: rec.sourceSheet,
+        row: rec._excelRow,
+        clientName: rec.clientName,
+        cinemaLocation: rec.cinemaLocation,
+        region: rec.region,
+        rawCityValue: rec.city,
+        gapType: 'unresolved-cinema-location',
+      })),
+  ];
+
+  // `_excelRow` is an internal-only field — strip it now, after every step
+  // that still needed it (the cinema master-list pass above, and the
+  // nullCityRows/unresolvedCityRows reports just built), so it never leaks
+  // into bookings.json.
+  for (const rec of allRecords) delete rec._excelRow;
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
@@ -804,6 +2073,27 @@ function main() {
   fs.copyFileSync(path.join(OUT_DIR, 'bookings.json'), path.join(publicDataDir, 'bookings.json'));
   fs.writeFileSync(path.join(OUT_DIR, 'regionDerivations.json'), JSON.stringify(regionDerivations, null, 2));
   fs.writeFileSync(path.join(OUT_DIR, 'nullCityRows.json'), JSON.stringify(nullCityRows, null, 2));
+  fs.writeFileSync(path.join(OUT_DIR, 'unresolvedCityRows.json'), JSON.stringify(unresolvedCityRows, null, 2));
+
+  if (cinemaMasterList) {
+    fs.writeFileSync(path.join(OUT_DIR, 'pvrCinemaMasterList.json'), JSON.stringify(cinemaMasterList, null, 2));
+    fs.writeFileSync(
+      path.join(OUT_DIR, 'masterListResolutions.json'),
+      JSON.stringify(
+        {
+          resolutions: masterListResolutions,
+          unmatched: [...unmatchedCinemaLocations.values()].sort((a, b) => b.count - a.count),
+        },
+        null,
+        2,
+      ),
+    );
+    fs.writeFileSync(path.join(OUT_DIR, 'multiCinemaRows.json'), JSON.stringify(multiCinemaRows, null, 2));
+  }
+
+  const reportsDir = path.join(OUT_DIR, 'reports');
+  fs.mkdirSync(reportsDir, { recursive: true });
+  fs.writeFileSync(path.join(reportsDir, 'clientNameCandidates.json'), JSON.stringify(clientNameCandidateGroups, null, 2));
 
   const flaggedOut = {};
   let flaggedRowCount = 0;
@@ -819,6 +2109,18 @@ function main() {
 
   console.log(`Synced: ${path.join(OUT_DIR, 'bookings.json')} -> ${path.join(publicDataDir, 'bookings.json')} (the path the running app actually fetches)`);
   console.log(`Total records: ${allRecords.length}`);
+  console.log(`Manual city fixes applied: ${manualCityOverrideCount} rows (confirmed cinemaLocation lookups) + ${sapnaOverrideCount} Sapna Sangeeta rows -> Indore + ${vimanNagarOverrideCount} Viman Nagar rows -> Pune`);
+  console.log(`movieCategory "na"/"NA"/"Na" coerced to null: ${movieCategoryNulledCount} rows`);
+  if (cinemaMasterList) {
+    console.log(`Cinema master-list resolution: ${cinemaMasterList.length} distinct properties loaded; ${masterListResolvedCount} row(s) resolved to a single city, ${multiConfirmedCount} confirmed genuine multi-city (region="Multi"), ${ambiguousSingleNameCount} left permanently unresolved (single cinema name reused across unrelated cities), ${unmatchedCinemaLocations.size} distinct cinemaLocation value(s) had no confident match`);
+  }
+  if (year2022RegionFixes) {
+    console.log(`Year 2022 manual region corrections applied: ${year2022RegionFixCount} of ${year2022RegionFixes.size} corrected rows (region trusted directly, not re-derived)`);
+  }
+  console.log(`"North East"/"NE"/"Northeast" region values merged into "North": ${neToNorthCount} rows dataset-wide`);
+  if (cinemaMasterList) {
+    console.log(`Fresh region-only re-scan (city already had some value, or was left null earlier): ${freshRegionResolvedCount} additional rows resolved`);
+  }
   console.log('Records per sheet:');
   for (const sheetName of wb.SheetNames) {
     console.log(`  ${sheetName}: ${recordsPerSheet[sheetName]}`);
@@ -827,13 +2129,34 @@ function main() {
   console.log(`  movieIndustry: ${movieIndustryStats.beforeCount} distinct raw values -> ${movieIndustryStats.afterCount} canonical`);
   console.log(`  movieLanguage: ${movieLanguageStats.beforeCount} distinct raw values -> ${movieLanguageStats.afterCount} canonical`);
   console.log(`  city: ${cityStats.beforeCount} distinct raw values -> ${cityStats.afterCount} canonical`);
+  console.log(`  clientName: ${clientNameStats.beforeCount} distinct raw values -> ${clientNameStats.afterCount} canonical`);
+  console.log(`  corporateName: ${corporateNameStats.beforeCount} distinct raw values -> ${corporateNameStats.afterCount} canonical`);
+  console.log(`Client identities (corporateName || clientName): ${clientIdentityCountBefore} -> ${clientIdentityCountAfter} after the ${Object.keys(CLIENT_NAME_CANON).length}-entry confirmed-merge map`);
+  console.log(`Client-name candidate audit: ${clientNameCandidateGroups.length} additional near-duplicate group(s) found (not applied) -> data/reports/clientNameCandidates.json`);
   if (nullCityRows.length > 0) {
     console.log(`  city: ${nullCityRows.length} row(s) had a state name (not a city) in the City column — set to null, not guessed; see data/nullCityRows.json`);
   }
   console.log(`Data issues (totalAmount/dateOfScreening): ${dataIssues.length} rows`);
   const regionResolved = regionDerivations.filter((d) => d.derivedRegion != null).length;
   console.log(`Region auto-derived from city/cinemaLocation: ${regionDerivations.length} rows (${regionResolved} resolved, ${regionDerivations.length - regionResolved} left null)`);
-  console.log(`\nWrote:\n  ${path.join(OUT_DIR, 'bookings.json')}\n  ${path.join(OUT_DIR, 'flaggedValues.json')}\n  ${path.join(OUT_DIR, 'dataIssues.json')}\n  ${path.join(OUT_DIR, 'regionDerivations.json')}\n  ${path.join(OUT_DIR, 'nullCityRows.json')}`);
+  console.log(`Still-unresolved city/region gaps: ${unresolvedCityRows.length} rows -> data/unresolvedCityRows.json`);
+  const writtenFiles = [
+    path.join(OUT_DIR, 'bookings.json'),
+    path.join(OUT_DIR, 'flaggedValues.json'),
+    path.join(OUT_DIR, 'dataIssues.json'),
+    path.join(OUT_DIR, 'regionDerivations.json'),
+    path.join(OUT_DIR, 'nullCityRows.json'),
+    path.join(OUT_DIR, 'unresolvedCityRows.json'),
+    path.join(reportsDir, 'clientNameCandidates.json'),
+  ];
+  if (cinemaMasterList) {
+    writtenFiles.push(
+      path.join(OUT_DIR, 'pvrCinemaMasterList.json'),
+      path.join(OUT_DIR, 'masterListResolutions.json'),
+      path.join(OUT_DIR, 'multiCinemaRows.json'),
+    );
+  }
+  console.log(`\nWrote:\n  ${writtenFiles.join('\n  ')}`);
 }
 
 main();

@@ -91,30 +91,35 @@
   "movieLanguage": [],
   "city": [
     {
-      "value": "Jaipur",
-      "count": 75,
+      "value": "RAIPUR",
+      "count": 85,
       "examples": [
         {
-          "sheet": "July-2023",
-          "row": 7,
-          "clientName": "Metellio"
-        },
-        {
-          "sheet": "August-2023",
-          "row": 44,
-          "clientName": "Khushi Advertising (Prince Pipe)"
-        },
-        {
           "sheet": "Oct-2023",
-          "row": 38,
+          "row": 21,
           "clientName": "Everest"
+        },
+        {
+          "sheet": "Dec-2023",
+          "row": 49,
+          "clientName": "GM Moduler"
+        },
+        {
+          "sheet": "Dec-2023",
+          "row": 50,
+          "clientName": "GM Moduler"
         }
       ]
     },
     {
       "value": "Nagpur",
-      "count": 34,
+      "count": 35,
       "examples": [
+        {
+          "sheet": "Year 2022 data",
+          "row": 144,
+          "clientName": "RBL"
+        },
         {
           "sheet": "May-2023",
           "row": 56,
@@ -124,17 +129,12 @@
           "sheet": "June-2023",
           "row": 77,
           "clientName": "Sanskriti Group"
-        },
-        {
-          "sheet": "Sep-2023",
-          "row": 10,
-          "clientName": "Everest"
         }
       ]
     },
     {
       "value": "Udaipur",
-      "count": 32,
+      "count": 35,
       "examples": [
         {
           "sheet": "April-2023",
@@ -154,29 +154,8 @@
       ]
     },
     {
-      "value": "Cyberabad",
-      "count": 26,
-      "examples": [
-        {
-          "sheet": "Aug-2025",
-          "row": 40,
-          "clientName": "Jayaprakash"
-        },
-        {
-          "sheet": "Aug-2025",
-          "row": 42,
-          "clientName": "Jayaprakash"
-        },
-        {
-          "sheet": "Dec-2025",
-          "row": 832,
-          "clientName": "Kalpesh"
-        }
-      ]
-    },
-    {
       "value": "Kanpur",
-      "count": 24,
+      "count": 25,
       "examples": [
         {
           "sheet": "June-2023",
@@ -189,9 +168,9 @@
           "clientName": "Khushi Advertising (Prince Pipe)"
         },
         {
-          "sheet": "Oct-2023",
-          "row": 25,
-          "clientName": "Everest"
+          "sheet": "Sep-2023",
+          "row": 30,
+          "clientName": "JK Lakshmi"
         }
       ]
     },
@@ -213,27 +192,6 @@
           "sheet": "October - 2024",
           "row": 138,
           "clientName": "Zee telefilms"
-        }
-      ]
-    },
-    {
-      "value": "NASHIK",
-      "count": 16,
-      "examples": [
-        {
-          "sheet": "Sep-2023",
-          "row": 8,
-          "clientName": "Everest"
-        },
-        {
-          "sheet": "Sep-2023",
-          "row": 9,
-          "clientName": "Everest"
-        },
-        {
-          "sheet": "Sep - 2024",
-          "row": 5,
-          "clientName": "Bandhan Bank"
         }
       ]
     },
@@ -322,17 +280,6 @@
       ]
     },
     {
-      "value": "Vishakhapatanam",
-      "count": 1,
-      "examples": [
-        {
-          "sheet": "August-2023",
-          "row": 6,
-          "clientName": "Bisleri"
-        }
-      ]
-    },
-    {
       "value": "Malegaon",
       "count": 1,
       "examples": [
@@ -340,17 +287,6 @@
           "sheet": "August-2023",
           "row": 12,
           "clientName": "Red Chillies"
-        }
-      ]
-    },
-    {
-      "value": "Velacherry",
-      "count": 1,
-      "examples": [
-        {
-          "sheet": "Oct-2023",
-          "row": 60,
-          "clientName": "Interactive"
         }
       ]
     },
@@ -388,28 +324,6 @@
       ]
     },
     {
-      "value": "Bhillai",
-      "count": 1,
-      "examples": [
-        {
-          "sheet": "Dec-2025",
-          "row": 54,
-          "clientName": "Dalip jain"
-        }
-      ]
-    },
-    {
-      "value": "YAMUNANAGAR",
-      "count": 1,
-      "examples": [
-        {
-          "sheet": "Dec-2025",
-          "row": 630,
-          "clientName": "Kalpesh"
-        }
-      ]
-    },
-    {
       "value": "SAKET",
       "count": 1,
       "examples": [
@@ -431,5 +345,454 @@
         }
       ]
     }
-  ]
+  ],
+  "clientName": [
+    {
+      "value": "Praveen",
+      "count": 6,
+      "examples": [
+        {
+          "sheet": "JULY-2026",
+          "row": 58,
+          "clientName": "Praveen"
+        },
+        {
+          "sheet": "JULY-2026",
+          "row": 59,
+          "clientName": "Praveen"
+        },
+        {
+          "sheet": "JULY-2026",
+          "row": 60,
+          "clientName": "Praveen"
+        }
+      ]
+    },
+    {
+      "value": "kanchan",
+      "count": 3,
+      "examples": [
+        {
+          "sheet": "March-2026",
+          "row": 49,
+          "clientName": "kanchan"
+        },
+        {
+          "sheet": "March-2026",
+          "row": 50,
+          "clientName": "kanchan"
+        },
+        {
+          "sheet": "March-2026",
+          "row": 51,
+          "clientName": "kanchan"
+        }
+      ]
+    },
+    {
+      "value": "Sanchit",
+      "count": 2,
+      "examples": [
+        {
+          "sheet": "March-2024",
+          "row": 184,
+          "clientName": "Sanchit"
+        },
+        {
+          "sheet": "March-2024",
+          "row": 185,
+          "clientName": "Sanchit"
+        }
+      ]
+    },
+    {
+      "value": "EY",
+      "count": 2,
+      "examples": [
+        {
+          "sheet": "May-2024",
+          "row": 53,
+          "clientName": "EY"
+        },
+        {
+          "sheet": "May-2024",
+          "row": 54,
+          "clientName": "EY"
+        }
+      ]
+    },
+    {
+      "value": "Parita",
+      "count": 2,
+      "examples": [
+        {
+          "sheet": "June-2025",
+          "row": 120,
+          "clientName": "Parita"
+        },
+        {
+          "sheet": "June-2025",
+          "row": 135,
+          "clientName": "Parita"
+        }
+      ]
+    },
+    {
+      "value": "hemang",
+      "count": 2,
+      "examples": [
+        {
+          "sheet": "March-2026",
+          "row": 33,
+          "clientName": "hemang"
+        },
+        {
+          "sheet": "March-2026",
+          "row": 34,
+          "clientName": "hemang"
+        }
+      ]
+    },
+    {
+      "value": "Rashi",
+      "count": 2,
+      "examples": [
+        {
+          "sheet": "May-2026",
+          "row": 10,
+          "clientName": "Rashi"
+        },
+        {
+          "sheet": "May-2026",
+          "row": 11,
+          "clientName": "Rashi"
+        }
+      ]
+    },
+    {
+      "value": "Prachi",
+      "count": 2,
+      "examples": [
+        {
+          "sheet": "May-2026",
+          "row": 12,
+          "clientName": "Prachi"
+        },
+        {
+          "sheet": "May-2026",
+          "row": 13,
+          "clientName": "Prachi"
+        }
+      ]
+    },
+    {
+      "value": "ECO",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "April-2023",
+          "row": 7,
+          "clientName": "ECO"
+        }
+      ]
+    },
+    {
+      "value": "Raman",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "April-2023",
+          "row": 42,
+          "clientName": "Raman"
+        }
+      ]
+    },
+    {
+      "value": "Heera Enterprises",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "May-2023",
+          "row": 4,
+          "clientName": "Heera Enterprises"
+        }
+      ]
+    },
+    {
+      "value": "Reena",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "July-2023",
+          "row": 23,
+          "clientName": "Reena"
+        }
+      ]
+    },
+    {
+      "value": "Rishab",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "Dec-2023",
+          "row": 95,
+          "clientName": "Rishab"
+        }
+      ]
+    },
+    {
+      "value": "Hilti",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "March-2024",
+          "row": 33,
+          "clientName": "Hilti"
+        }
+      ]
+    },
+    {
+      "value": "Radika",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "April-2024",
+          "row": 23,
+          "clientName": "Radika"
+        }
+      ]
+    },
+    {
+      "value": "DBS Bank",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "May-2024",
+          "row": 50,
+          "clientName": "DBS Bank"
+        }
+      ]
+    },
+    {
+      "value": "BMW",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "July-2024",
+          "row": 3,
+          "clientName": "BMW"
+        }
+      ]
+    },
+    {
+      "value": "Aditi",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "Sep - 2024",
+          "row": 32,
+          "clientName": "Aditi"
+        }
+      ]
+    },
+    {
+      "value": "KG Media",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "October - 2024",
+          "row": 22,
+          "clientName": "KG Media"
+        }
+      ]
+    },
+    {
+      "value": "Manan",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "October - 2024",
+          "row": 34,
+          "clientName": "Manan"
+        }
+      ]
+    },
+    {
+      "value": "namita",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "March - 2025",
+          "row": 41,
+          "clientName": "namita"
+        }
+      ]
+    },
+    {
+      "value": "Sonia",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "May-2025",
+          "row": 12,
+          "clientName": "Sonia"
+        }
+      ]
+    },
+    {
+      "value": "Washiuue",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "May-2025",
+          "row": 13,
+          "clientName": "Washiuue"
+        }
+      ]
+    },
+    {
+      "value": "Ayush",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "May-2025",
+          "row": 17,
+          "clientName": "Ayush"
+        }
+      ]
+    },
+    {
+      "value": "Sneha",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "June-2025",
+          "row": 3,
+          "clientName": "Sneha"
+        }
+      ]
+    },
+    {
+      "value": "Naeem",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "June-2025",
+          "row": 13,
+          "clientName": "Naeem"
+        }
+      ]
+    },
+    {
+      "value": "Ankit",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "July-2025",
+          "row": 6,
+          "clientName": "Ankit"
+        }
+      ]
+    },
+    {
+      "value": "Vaishali",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "Aug-2025",
+          "row": 5,
+          "clientName": "Vaishali"
+        }
+      ]
+    },
+    {
+      "value": "rakesh",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "Aug-2025",
+          "row": 7,
+          "clientName": "rakesh"
+        }
+      ]
+    },
+    {
+      "value": "Heena",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "Aug-2025",
+          "row": 11,
+          "clientName": "Heena"
+        }
+      ]
+    },
+    {
+      "value": "Nitish",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "March-2026",
+          "row": 35,
+          "clientName": "Nitish"
+        }
+      ]
+    },
+    {
+      "value": "Parvez",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "March-2026",
+          "row": 57,
+          "clientName": "Parvez"
+        }
+      ]
+    },
+    {
+      "value": "Richi",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "April-2026",
+          "row": 34,
+          "clientName": "Richi"
+        }
+      ]
+    },
+    {
+      "value": "Suchi",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "May-2026",
+          "row": 27,
+          "clientName": "Suchi"
+        }
+      ]
+    },
+    {
+      "value": "Arvind",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "JULY-2026",
+          "row": 52,
+          "clientName": "Arvind"
+        }
+      ]
+    },
+    {
+      "value": "Tarun",
+      "count": 1,
+      "examples": [
+        {
+          "sheet": "AUG - 2026",
+          "row": 829,
+          "clientName": "Tarun"
+        }
+      ]
+    }
+  ],
+  "corporateName": []
 }

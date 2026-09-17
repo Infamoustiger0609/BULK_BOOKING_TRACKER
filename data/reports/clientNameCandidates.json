@@ -1,0 +1,107 @@
+[
+  {
+    "suggestedCanonical": "Everest",
+    "totalRecords": 61,
+    "totalRevenue": 7090309,
+    "matchReasons": [
+      "one name is a whole-word prefix/substring of the other"
+    ],
+    "members": [
+      {
+        "displayName": "Everest",
+        "recordCount": 60,
+        "revenue": 6917614
+      },
+      {
+        "displayName": "Everest Food Products",
+        "recordCount": 1,
+        "revenue": 172695
+      }
+    ]
+  },
+  {
+    "suggestedCanonical": "Bms",
+    "totalRecords": 18,
+    "totalRevenue": 2637417,
+    "matchReasons": [
+      "edit distance 1"
+    ],
+    "members": [
+      {
+        "displayName": "Bms",
+        "recordCount": 16,
+        "revenue": 2193417
+      },
+      {
+        "displayName": "Bmw",
+        "recordCount": 2,
+        "revenue": 444000
+      }
+    ]
+  },
+  {
+    "suggestedCanonical": "Dheeraj Enterprises",
+    "totalRecords": 50,
+    "totalRevenue": 1830516,
+    "matchReasons": [
+      "edit distance 2"
+    ],
+    "members": [
+      {
+        "displayName": "Dheeraj Enterprises",
+        "recordCount": 49,
+        "revenue": 1722360
+      },
+      {
+        "displayName": "Heera Enterprises",
+        "recordCount": 1,
+        "revenue": 108156
+      }
+    ]
+  },
+  {
+    "suggestedCanonical": "Stroam Communications",
+    "totalRecords": 7,
+    "totalRevenue": 674478,
+    "matchReasons": [
+      "edit distance 4"
+    ],
+    "members": [
+      {
+        "displayName": "Stroam Communications",
+        "recordCount": 6,
+        "revenue": 559143
+      },
+      {
+        "displayName": "Zoom Communications",
+        "recordCount": 1,
+        "revenue": 115335
+      }
+    ]
+  },
+  {
+    "suggestedCanonical": "Eco",
+    "totalRecords": 5,
+    "totalRevenue": 656273,
+    "matchReasons": [
+      "edit distance 1"
+    ],
+    "members": [
+      {
+        "displayName": "Eco",
+        "recordCount": 1,
+        "revenue": 241773
+      },
+      {
+        "displayName": "Ey",
+        "recordCount": 2,
+        "revenue": 214500
+      },
+      {
+        "displayName": "Eo",
+        "recordCount": 2,
+        "revenue": 200000
+      }
+    ]
+  }
+]
